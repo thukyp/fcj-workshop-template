@@ -1,59 +1,69 @@
 ---
-title: "Worklog Tuần 1"
-date: 2024-01-01
+title: "Nhật ký tuần 1"
+date: 2026-04-20
 weight: 1
 chapter: false
 pre: " <b> 1.1. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
+
+{{% notice info %}}
+Báo cáo này tóm tắt các hoạt động đã thực hiện trong tuần đầu tiên của chương trình thực tập AWS.
 {{% /notice %}}
 
+### Mục tiêu tuần 1
 
-### Mục tiêu tuần 1:
+- Chuẩn bị môi trường học tập và phát triển.
+- Tạo và bảo mật tài khoản AWS.
+- Làm quen với các dịch vụ nền tảng của AWS.
+- Hoàn thành các bài Lab cơ bản.
 
-* Kết nối, làm quen với các thành viên trong First Cloud AI Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+---
 
-### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCAJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
+### Công việc đã thực hiện
 
+| Ngày | Nội dung | Thời gian |
+|------|----------|-----------|
+| Thứ 2 | Cài đặt Hugo Extended, đăng ký tài khoản AWS, cấu hình MFA, IAM User và IAM Group. | 20/04/2026 |
+| Thứ 3 | Tìm hiểu Cloud Computing và thực hành xây dựng Amazon VPC gồm Subnet, Route Table và Internet Gateway. | 21/04/2026 |
+| Thứ 4 | Thực hành khởi tạo Amazon EC2 Windows Server 2025 và Amazon Linux Instance. | 22/04/2026 |
+| Thứ 5 | Tìm hiểu Amazon EC2 và thực hành tạo cơ sở dữ liệu Amazon RDS. | 23/04/2026 |
+| Thứ 6 | Hoàn thành các bài Lab về Amazon EC2 và IAM. | 24/04/2026 |
+| Thứ 7 | Thiết lập AWS Budgets và nghiên cứu IAM Policy, AWS Governance. | 25/04/2026 |
+| Chủ nhật | Ôn tập kiến thức tuần 1 và tối ưu các thiết lập bảo mật ban đầu. | 26/04/2026 |
 
-### Kết quả đạt được tuần 1:
+---
 
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+### Thực hành
 
-* Đã tạo và cấu hình AWS Free Tier account thành công.
+- Cài đặt Hugo Extended.
+- Đăng ký tài khoản AWS Free Tier.
+- Kích hoạt xác thực đa yếu tố (MFA).
+- Tạo IAM User, IAM Group và IAM Policy.
+- Xây dựng Amazon VPC.
+- Cấu hình Subnet, Route Table và Internet Gateway.
+- Khởi tạo EC2 Windows Server và Amazon Linux.
+- Tạo cơ sở dữ liệu Amazon RDS.
+- Thiết lập AWS Budgets để theo dõi chi phí.
+- Ôn tập và củng cố các kiến thức bảo mật cơ bản.
 
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
+---
 
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
+### Kiến thức đạt được
 
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
+- Cloud Computing.
+- AWS Global Infrastructure.
+- AWS IAM.
+- Amazon VPC.
+- Amazon EC2.
+- Amazon RDS.
+- AWS Budgets.
+- AWS Governance.
 
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
+---
 
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
+### Kết quả đạt được
 
-
+- Chuẩn bị thành công môi trường học tập AWS.
+- Xây dựng tài khoản AWS với các thiết lập bảo mật cơ bản.
+- Hiểu được mối quan hệ giữa Network, Compute và Database trên AWS.
+- Hoàn thành đầy đủ các bài Lab của tuần đầu tiên.

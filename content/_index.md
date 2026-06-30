@@ -1,44 +1,53 @@
----
-title: "Internship Report"
-date: 2024-01-01
-weight: 1
-chapter: false
----
-
-    
 # Internship Report
 
-{{% notice warning %}}
-⚠️ **Note:** The information below is for reference purposes only. Please **do not copy verbatim** for your report, including this warning.
-{{% /notice %}}
+<div style="text-align:center; margin-top: 20px;">
 
-### Student Information:
-&emsp; **Full Name:** Nguyen Van A
+<img src="/images/avatar.jpg" width="160" height="160" style="border-radius: 50%; object-fit: cover; border: 4px solid #ff9900;" />
 
-&emsp; **Phone Number:** 0989888999 
+<h2 style="margin-bottom: 4px;">Phan Thư Kỳ</h2>
 
-&emsp; **Email:** Anguyenvan@gmail.com
+<p style="font-size: 18px; margin-top: 0;">
+Backend Developer @ AWS Study Group
+</p>
 
-&emsp; **University:** Ho Chi Minh City University of Technology and Education
+<p>
+<a href="mailto:phanthuky12@gmail.com">phanthuky12@gmail.com</a> · 0975350932
+</p>
 
-&emsp; **Major:** Information Technology
+</div>
 
-&emsp; **Class:** AWS082025
+---
 
-&emsp; **Internship Company:** Amazon Web Services Viet Nam Company Limited
+### Student Information
 
-&emsp; **Internship Position:** Workforce Bootcamp - First Cloud AI Journey
+| Item | Information |
+|------|-------------|
+| **Full Name** | Phan Thư Kỳ |
+| **Student ID** | 2280601672 |
+| **Email** | phanthuky12@gmail.com |
+| **Phone Number** | 0975350932 |
+| **University** | Trường Đại học Công nghệ Thành phố Hồ Chí Minh - HUTECH |
+| **Group** | KATT |
+| **Birth Date** | 03/02/2004 |
+| **Joined** | 03/05/2026 |
+| **Status** | Active |
+| **LinkedIn** | https://www.linkedin.com/in/ky-phan-thu-552962245/ |
 
-&emsp; **Internship Duration:** From 12/08/2025 to 12/11/2025
+### Internship Information
 
-![Your profile picture](/images/avatar.png)
+| Item | Information |
+|------|-------------|
+| **Internship Company** | Amazon Web Services Vietnam Company Limited |
+| **Program** | First Cloud AI Journey |
+| **Role** | Backend Developer |
+| **Project** | AWS Event Management Platform |
 
 ### Report Content
 
-1.  [Worklog](1-Worklog/)
-2.  [Proposal](2-Proposal/)
-3.  [BlogsPosted](3-BlogsPosted/)
-4.  [Events Participated](4-EventParticipated/)
-5.  [Workshop](5-Workshop/)
-6.  [Self-evaluation](6-Self-evaluation/)
-7.  [Sharing and Feedback](7-Feedback/)
+1. [Worklog](/1-worklog/)
+2. [Proposal](/2-proposal/)
+3. [Blogs Posted](/3-blogsposted/)
+4. [Events Participated](/4-eventparticipated/)
+5. [Workshop](/5-workshop/)
+6. [Self-evaluation](/6-self-evaluation/)
+7. [Sharing and Feedback](/7-feedback/)

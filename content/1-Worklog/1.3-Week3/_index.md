@@ -1,57 +1,67 @@
 ---
 title: "Week 3 Worklog"
-date: 2024-01-01
-weight: 1
+date: 2026-05-04
+weight: 3
 chapter: false
 pre: " <b> 1.3. </b> "
 ---
-{{% notice warning %}} 
-⚠️ **Note:** The following information is for reference purposes only. Please **do not copy verbatim** for your own report, including this warning.
+
+{{% notice info %}}
+This worklog summarizes the EC2 administration, monitoring and scaling services studied during the third week.
 {{% /notice %}}
 
+### Week 3 Objectives
 
-### Week 3 Objectives:
+- Learn Amazon EC2 administration.
+- Monitor AWS resources using Amazon CloudWatch.
+- Deploy scalable infrastructure with Auto Scaling.
+- Complete compute-related laboratory exercises.
 
-* Connect and get acquainted with members of First Cloud AI Journey.
-* Understand basic AWS services, how to use the console & CLI.
+---
 
-### Tasks to be carried out this week:
-| Day | Task                                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
-| 2   | - Get acquainted with FCAJ members <br> - Read and take note of internship unit rules and regulations                                                                                                   | 08/11/2025 | 08/11/2025      |
-| 3   | - Learn about AWS and its types of services <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                              | 08/12/2025 | 08/12/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Create AWS Free Tier account <br> - Learn about AWS Console & AWS CLI <br> - **Practice:** <br>&emsp; + Create AWS account <br>&emsp; + Install & configure AWS CLI <br> &emsp; + How to use AWS CLI | 08/13/2025 | 08/13/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Learn basic EC2: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - SSH connection methods to EC2 <br> - Learn about Elastic IP   <br>                            | 08/14/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Practice:** <br>&emsp; + Launch an EC2 instance <br>&emsp; + Connect via SSH <br>&emsp; + Attach an EBS volume                                                                                     | 08/15/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
+### Daily Activities
 
+| Day | Activities |
+|-----|------------|
+| Monday | Practiced Amazon EC2 administration, including creating snapshots, installing applications and organizing resources using Tags and Resource Groups. |
+| Tuesday | Installed and configured Amazon CloudWatch Agent to collect CPU, memory and disk metrics from EC2 instances. |
+| Wednesday | Created CloudWatch Dashboards to monitor EC2 performance and system health. |
+| Thursday | Learned Auto Scaling concepts and created Launch Templates for EC2 instances. |
+| Friday | Configured an Application Load Balancer (ALB), Target Group and deployed an Auto Scaling Group. |
+| Saturday | Explored Amazon Lightsail, including Lightsail Load Balancer and Lightsail Database, and compared it with Amazon EC2. |
+| Sunday | Reviewed the week's content and completed the remaining hands-on laboratories. |
 
-### Week 3 Achievements:
+---
 
-* Understood what AWS is and mastered the basic service groups: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+### Hands-on Practice
 
-* Successfully created and configured an AWS Free Tier account.
+- Created Amazon EC2 Snapshots.
+- Managed AWS resources using Tags and Resource Groups.
+- Installed Amazon CloudWatch Agent.
+- Built CloudWatch Dashboards.
+- Created Launch Templates.
+- Configured Target Groups.
+- Configured an Application Load Balancer.
+- Deployed an Auto Scaling Group.
+- Explored Amazon Lightsail.
 
-* Became familiar with the AWS Management Console and learned how to find, access, and use services via the web interface.
+---
 
-* Installed and configured AWS CLI on the computer, including:
-  * Access Key
-  * Secret Key
-  * Default Region
-  * ...
+### Knowledge Gained
 
-* Used AWS CLI to perform basic operations such as:
+- Amazon EC2 Administration.
+- Amazon CloudWatch.
+- CloudWatch Agent.
+- CloudWatch Dashboard.
+- Launch Template.
+- Auto Scaling Group.
+- Application Load Balancer.
+- Amazon Lightsail.
 
-  * Check account & configuration information
-  * Retrieve the list of regions
-  * View EC2 service
-  * Create and manage key pairs
-  * Check information about running services
-  * ...
+---
 
-* Acquired the ability to connect between the web interface and CLI to manage AWS resources in parallel.
-* ...
+### Results Achieved
+
+- Learned how to monitor EC2 instances using CloudWatch.
+- Successfully deployed scalable infrastructure with Auto Scaling.
+- Understood the relationship between Launch Templates, Load Balancers and Auto Scaling Groups.

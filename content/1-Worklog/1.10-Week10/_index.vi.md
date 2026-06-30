@@ -1,59 +1,67 @@
 ---
-title: "Worklog Tuần 10"
-date: 2024-01-01
-weight: 2
+title: "Nhật ký tuần 10"
+date: 2026-06-22
+weight: 10
 chapter: false
 pre: " <b> 1.10. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
+
+{{% notice info %}}
+Báo cáo này tóm tắt quá trình hoàn thiện chức năng QR Check-in và xây dựng module Certificate cho hệ thống AWS Event Management Platform.
 {{% /notice %}}
 
+### Mục tiêu tuần 10
 
-### Mục tiêu tuần 10:
+- Hoàn thiện quy trình Check-in bằng mã QR.
+- Xây dựng chức năng tạo Certificate dưới dạng PDF.
+- Lưu trữ Certificate trên Amazon S3.
+- Hoàn thiện quá trình tích hợp giữa Frontend và Backend.
 
-* Kết nối, làm quen với các thành viên trong First Cloud AI Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+---
 
-### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCAJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
+### Công việc theo từng ngày
 
+| Ngày | Nội dung |
+|------|----------|
+| Thứ 2 | Hoàn thiện quy trình QR Check-in, cập nhật trạng thái điểm danh trên Amazon DynamoDB và kiểm tra lại toàn bộ luồng điểm danh. |
+| Thứ 3 | Tích hợp Amazon API Gateway với AWS Lambda và kiểm thử quá trình giao tiếp giữa Frontend và Backend. |
+| Thứ 4 | Thiết kế mẫu Certificate và xây dựng chức năng tạo Certificate PDF sau khi người tham gia hoàn thành sự kiện. |
+| Thứ 5 | Lưu trữ Certificate trên Amazon S3 và kiểm tra khả năng truy cập phục vụ tải xuống trong các bước tiếp theo. |
+| Thứ 6 | Tích hợp quy trình tạo Certificate vào hệ thống và chuẩn bị cho chức năng gửi Email trong giai đoạn tiếp theo. |
+| Thứ 7 | Kiểm thử toàn bộ chức năng Check-in và Certificate, sửa các lỗi phát sinh và tối ưu thời gian xử lý của AWS Lambda. |
+| Chủ nhật | Cập nhật tài liệu API, rà soát toàn bộ luồng hoạt động của hệ thống và chuẩn bị các công việc cho tuần tiếp theo. |
 
-### Kết quả đạt được tuần 10:
+---
 
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+### Thực hành
 
-* Đã tạo và cấu hình AWS Free Tier account thành công.
+- Cập nhật trạng thái điểm danh trên Amazon DynamoDB.
+- Tích hợp Amazon API Gateway với AWS Lambda.
+- Xây dựng chức năng tạo Certificate dưới dạng PDF.
+- Lưu trữ Certificate trên Amazon S3.
+- Kiểm thử quy trình QR Check-in.
+- Khắc phục các lỗi tích hợp giữa React và AWS Lambda.
+- Sử dụng AWS SAM CLI và Docker để kiểm thử trên môi trường cục bộ.
 
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
+---
 
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
+### Kiến thức đạt được
 
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
+- Amazon S3.
+- Tạo tài liệu PDF.
+- Tích hợp AWS Lambda.
+- Amazon API Gateway.
+- Amazon DynamoDB.
+- AWS SAM CLI.
+- Docker.
+- Tích hợp ứng dụng Serverless.
 
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
+---
 
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
+### Kết quả đạt được
 
-
+- Hoàn thiện quy trình Check-in bằng mã QR.
+- Xây dựng thành công chức năng tạo Certificate dưới dạng PDF.
+- Lưu trữ Certificate trên Amazon S3.
+- Cải thiện quá trình tích hợp giữa Frontend và Backend.
+- Hoàn thành kiểm thử và khắc phục các lỗi chính trước khi tiếp tục phát triển các chức năng còn lại của hệ thống.

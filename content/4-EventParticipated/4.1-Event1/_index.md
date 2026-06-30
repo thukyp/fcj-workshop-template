@@ -1,126 +1,65 @@
 ---
 title: "Event 1"
-date: 2024-01-01
+date: 2026-05-09
 weight: 1
 chapter: false
 pre: " <b> 4.1. </b> "
 ---
 
-{{% notice warning %}}
-⚠️ **Note:** The information below is for reference purposes only. Please **do not copy it verbatim** into your report, including this warning.
-{{% /notice %}}
+# GenAI-powered App-DB Modernization Workshop
 
-# Summary Report: “GenAI-powered App-DB Modernization workshop”
+## Event Information
 
-### Event Objectives
+| Item | Details |
+|------|---------|
+| Event | GenAI-powered App-DB Modernization Workshop |
+| Organizer | AWS First Cloud Journey Community |
+| Topic | Modern Application Architecture, DDD, Event-Driven Architecture and AI-assisted Development |
 
-- Share best practices in modern application design
-- Introduce Domain-Driven Design (DDD) and event-driven architecture
-- Provide guidance on selecting the right compute services
-- Present AI tools to support the development lifecycle
+---
 
-### Speakers
+## My Experience
 
-- **Jignesh Shah** – Director, Open Source Databases
-- **Erica Liu** – Sr. GTM Specialist, AppMod
-- **Fabrianne Effendi** – Assc. Specialist SA, Serverless Amazon Web Services
+This workshop provided me with a broader understanding of how modern applications are designed and modernized on AWS. Instead of introducing individual AWS services, the speakers focused on software architecture, system design and how Artificial Intelligence can support the software development lifecycle.
 
-### Key Highlights
+One of the topics that impressed me the most was **Domain-Driven Design (DDD)**. Before attending the workshop, I mainly designed systems by thinking about databases and APIs first. After learning about DDD, I realized that software should start from understanding business requirements and identifying domain events before writing any code. This approach makes the system easier to maintain and expand.
 
-#### Identifying the drawbacks of legacy application architecture
+Another interesting topic was **Event-Driven Architecture**. Through practical examples, I understood why asynchronous communication helps reduce coupling between services while improving scalability and system reliability. I also learned when synchronous communication is still necessary and how to choose the appropriate integration pattern for different business scenarios.
 
-- Long product release cycles → Lost revenue/missed opportunities  
-- Inefficient operations → Reduced productivity, higher costs  
-- Non-compliance with security regulations → Security breaches, loss of reputation  
+The session about **Serverless Computing** helped me better understand the evolution from EC2 to containers and finally to AWS Lambda. Instead of focusing on server management, developers can spend more time building business logic while AWS handles infrastructure automatically.
 
-#### Transitioning to modern application architecture – Microservices
+Finally, the introduction of **Amazon Q Developer** showed me how Artificial Intelligence can support software development, from generating code and documentation to modernizing legacy applications. This made me realize that AI should be viewed as a productivity tool rather than a replacement for software engineers.
 
-Migrating to a modular system — each function is an **independent service** communicating via **events**, built on three core pillars:
+---
 
-- **Queue Management**: Handle asynchronous tasks  
-- **Caching Strategy**: Optimize performance  
-- **Message Handling**: Flexible inter-service communication  
+## What I Learned
 
-#### Domain-Driven Design (DDD)
+| Topic | What I Learned |
+|------|----------------|
+| Domain-Driven Design | Start system design from business domains instead of database structures. |
+| Event-Driven Architecture | Reduce coupling through asynchronous communication between services. |
+| Serverless Computing | AWS Lambda simplifies infrastructure management and improves scalability. |
+| Amazon Q Developer | AI can accelerate coding, documentation and modernization tasks. |
+| Modernization Strategy | Modernization should follow a clear roadmap instead of rebuilding everything at once. |
 
-- **Four-step method**: Identify domain events → arrange timeline → identify actors → define bounded contexts  
-- **Bookstore case study**: Demonstrates real-world DDD application  
-- **Context mapping**: 7 patterns for integrating bounded contexts  
+---
 
-#### Event-Driven Architecture
+## Applying to My Project
 
-- **3 integration patterns**: Publish/Subscribe, Point-to-point, Streaming  
-- **Benefits**: Loose coupling, scalability, resilience  
-- **Sync vs async comparison**: Understanding the trade-offs  
+The workshop provided many ideas that I can apply to my **AWS Event Management Platform**.
 
-#### Compute Evolution
+Instead of designing APIs directly, I started identifying the business flow of event registration, ticket generation, attendance tracking and certificate issuance before implementing backend services.
 
-- **Shared Responsibility Model**: EC2 → ECS → Fargate → Lambda  
-- **Serverless benefits**: No server management, auto-scaling, pay-for-value  
-- **Functions vs Containers**: Criteria for appropriate choice  
+The Event-Driven Architecture session also reinforced my decision to build the project using a serverless architecture with AWS Lambda, API Gateway and DynamoDB. This architecture is more scalable and easier to maintain compared to a traditional monolithic application.
 
-#### Amazon Q Developer
+I also plan to continue using AI tools to assist with coding, documentation and troubleshooting while ensuring that I fully understand the generated solutions before applying them.
 
-- **SDLC automation**: From planning to maintenance  
-- **Code transformation**: Java upgrade, .NET modernization  
-- **AWS Transform agents**: VMware, Mainframe, .NET migration  
+---
 
-### Key Takeaways
+## Personal Reflection
 
-#### Design Mindset
+Among all the sessions, the discussion about Domain-Driven Design changed the way I think about software development the most. I realized that technology is only a tool, while understanding business requirements is the foundation of every successful software project.
 
-- **Business-first approach**: Always start from the business domain, not the technology  
-- **Ubiquitous language**: Importance of a shared vocabulary between business and tech teams  
-- **Bounded contexts**: Identifying and managing complexity in large systems  
+The workshop also helped me understand why many modern systems are moving toward serverless and event-driven architectures. These concepts are directly related to my current AWS project and will be valuable for my future career as a cloud engineer.
 
-#### Technical Architecture
-
-- **Event storming technique**: Practical method for modeling business processes  
-- Use **event-driven communication** instead of synchronous calls  
-- **Integration patterns**: When to use sync, async, pub/sub, streaming  
-- **Compute spectrum**: Criteria for choosing between VM, containers, and serverless  
-
-#### Modernization Strategy
-
-- **Phased approach**: No rushing — follow a clear roadmap  
-- **7Rs framework**: Multiple modernization paths depending on the application  
-- **ROI measurement**: Cost reduction + business agility  
-
-### Applying to Work
-
-- **Apply DDD** to current projects: Event storming sessions with business teams  
-- **Refactor microservices**: Use bounded contexts to define service boundaries  
-- **Implement event-driven patterns**: Replace some sync calls with async messaging  
-- **Adopt serverless**: Pilot AWS Lambda for suitable use cases  
-- **Try Amazon Q Developer**: Integrate into the dev workflow to boost productivity  
-
-### Event Experience
-
-Attending the **“GenAI-powered App-DB Modernization”** workshop was extremely valuable, giving me a comprehensive view of modernizing applications and databases using advanced methods and tools. Key experiences included:
-
-#### Learning from highly skilled speakers
-- Experts from AWS and major tech organizations shared **best practices** in modern application design.  
-- Through real-world case studies, I gained a deeper understanding of applying **DDD** and **Event-Driven Architecture** to large projects.  
-
-#### Hands-on technical exposure
-- Participating in **event storming** sessions helped me visualize how to **model business processes** into domain events.  
-- Learned how to **split microservices** and define **bounded contexts** to manage large-system complexity.  
-- Understood trade-offs between **synchronous and asynchronous communication** and integration patterns like **pub/sub, point-to-point, streaming**.  
-
-#### Leveraging modern tools
-- Explored **Amazon Q Developer**, an AI tool for SDLC support from planning to maintenance.  
-- Learned to **automate code transformation** and pilot serverless with **AWS Lambda** to improve productivity.  
-
-#### Networking and discussions
-- The workshop offered opportunities to exchange ideas with experts, peers, and business teams, enhancing the **ubiquitous language** between business and tech.  
-- Real-world examples reinforced the importance of the **business-first approach** rather than focusing solely on technology.  
-
-#### Lessons learned
-- Applying DDD and event-driven patterns reduces **coupling** while improving **scalability** and **resilience**.  
-- Modernization requires a **phased approach** with **ROI measurement**; rushing the process can be risky.  
-- AI tools like Amazon Q Developer can significantly **boost productivity** when integrated into the current workflow.  
-
-#### Some event photos
-*Add your event photos here*  
-
-> Overall, the event not only provided technical knowledge but also helped me reshape my thinking about application design, system modernization, and cross-team collaboration.
+Overall, this workshop not only expanded my technical knowledge but also improved my software architecture mindset. It encouraged me to focus more on system design, business analysis and continuous learning throughout my development journey.

@@ -1,59 +1,66 @@
 ---
-title: "Worklog Tuần 9"
-date: 2024-01-01
-weight: 1
+title: "Nhật ký tuần 9"
+date: 2026-06-15
+weight: 9
 chapter: false
 pre: " <b> 1.9. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
+
+{{% notice info %}}
+Báo cáo này tóm tắt quá trình phát triển module Attendance của hệ thống AWS Event Management Platform theo kiến trúc Serverless.
 {{% /notice %}}
 
+### Mục tiêu tuần 9
 
-### Mục tiêu tuần 9:
+- Thiết kế module quản lý điểm danh.
+- Xây dựng quy trình Check-in bằng mã QR.
+- Phát triển Backend bằng AWS Lambda.
+- Tích hợp Frontend với các dịch vụ Serverless.
 
-* Kết nối, làm quen với các thành viên trong First Cloud AI Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+---
 
-### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCAJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
+### Công việc theo từng ngày
 
+| Ngày | Nội dung |
+|------|----------|
+| Thứ 2 | Phân tích yêu cầu của module Attendance, thống nhất cấu trúc API với các thành viên trong nhóm và hoàn thiện quy trình điểm danh. |
+| Thứ 3 | Thiết kế Attendance Table trên Amazon DynamoDB, xác định Partition Key, các thuộc tính và cấu trúc lưu trữ dữ liệu điểm danh. |
+| Thứ 4 | Phát triển hàm Check-in bằng AWS Lambda sử dụng AWS SAM, xây dựng logic kiểm tra và xác thực mã QR. |
+| Thứ 5 | Cấu hình Amazon API Gateway và tích hợp với AWS Lambda để cung cấp API cho Frontend. |
+| Thứ 6 | Xây dựng giao diện QR Check-in dành cho quản trị viên bằng React và tích hợp với các API đã triển khai. |
+| Thứ 7 | Kiểm thử toàn bộ luồng React → API Gateway → Lambda → DynamoDB, đồng thời sửa các lỗi phát sinh trong quá trình kiểm thử. |
+| Chủ nhật | Rà soát quy trình điểm danh, tối ưu xử lý trong Lambda và cập nhật tài liệu thiết kế của dự án. |
 
-### Kết quả đạt được tuần 9:
+---
 
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+### Thực hành
 
-* Đã tạo và cấu hình AWS Free Tier account thành công.
+- Thiết kế Attendance Table trên Amazon DynamoDB.
+- Phát triển AWS Lambda bằng AWS SAM CLI.
+- Cấu hình Amazon API Gateway.
+- Tích hợp React với các dịch vụ Serverless.
+- Sử dụng Docker để kiểm thử Lambda trên môi trường cục bộ.
+- Lưu dữ liệu điểm danh trên Amazon DynamoDB.
+- Kiểm thử toàn bộ quy trình Check-in bằng QR Code.
 
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
+---
 
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
+### Kiến thức đạt được
 
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
+- AWS Lambda.
+- Amazon API Gateway.
+- Amazon DynamoDB.
+- AWS SAM CLI.
+- Docker.
+- Tích hợp REST API.
+- Quy trình xác thực QR Code.
 
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
+---
 
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
+### Kết quả đạt được
 
-
+- Hoàn thành phiên bản đầu tiên của module Attendance.
+- Kết nối thành công React với API Gateway và AWS Lambda.
+- Xây dựng được quy trình Check-in bằng mã QR hoạt động ổn định.
+- Lưu trữ dữ liệu điểm danh trên Amazon DynamoDB.
+- Tạo nền tảng để triển khai chức năng Certificate trong tuần tiếp theo.

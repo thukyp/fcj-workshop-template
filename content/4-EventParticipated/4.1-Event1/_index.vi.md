@@ -1,125 +1,65 @@
 ---
-title: "Event 1"
-date: 2024-01-01
+title: "Sự kiện 1"
+date: 2026-05-09
 weight: 1
 chapter: false
 pre: " <b> 4.1. </b> "
 ---
 
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
+# Workshop GenAI-powered App-DB Modernization
 
-# Bài thu hoạch “GenAI-powered App-DB Modernization workshop”
+## Thông tin sự kiện
 
-### Mục Đích Của Sự Kiện
+| Nội dung | Chi tiết |
+|----------|----------|
+| Sự kiện | GenAI-powered App-DB Modernization Workshop |
+| Đơn vị tổ chức | AWS First Cloud Journey Community |
+| Chủ đề | Kiến trúc ứng dụng hiện đại, Domain-Driven Design, Event-Driven Architecture và AI hỗ trợ phát triển phần mềm |
 
-- Chia sẻ best practices trong thiết kế ứng dụng hiện đại
-- Giới thiệu phương pháp DDD và event-driven architecture
-- Hướng dẫn lựa chọn compute services phù hợp
-- Giới thiệu công cụ AI hỗ trợ development lifecycle
+---
 
-### Danh Sách Diễn Giả
+## Cảm nhận của tôi
 
-- **Jignesh Shah** - Director, Open Source Databases
-- **Erica Liu** - Sr. GTM Specialist, AppMod
-- **Fabrianne Effendi** - Assc. Specialist SA, Serverless Amazon Web Services
+Buổi Workshop mang đến cho tôi một góc nhìn rõ ràng hơn về cách xây dựng và hiện đại hóa các hệ thống phần mềm trên AWS. Thay vì chỉ giới thiệu từng dịch vụ AWS riêng lẻ, các diễn giả tập trung vào tư duy thiết kế hệ thống, kiến trúc phần mềm và cách AI hỗ trợ toàn bộ vòng đời phát triển ứng dụng.
 
-### Nội Dung Nổi Bật
+Điều khiến tôi ấn tượng nhất là phần chia sẻ về **Domain-Driven Design (DDD)**. Trước đây khi xây dựng một hệ thống, tôi thường bắt đầu từ cơ sở dữ liệu hoặc API. Sau buổi Workshop, tôi hiểu rằng việc phân tích bài toán nghiệp vụ và xác định các Domain trước sẽ giúp hệ thống dễ mở rộng và dễ bảo trì hơn trong tương lai.
 
-#### Đưa ra các ảnh hưởng tiêu cực của kiến trúc ứng dụng cũ
+Một nội dung khác cũng rất hữu ích là **Event-Driven Architecture**. Qua các ví dụ thực tế, tôi hiểu vì sao giao tiếp bất đồng bộ giúp giảm sự phụ thuộc giữa các dịch vụ, đồng thời tăng khả năng mở rộng và tính ổn định của hệ thống. Tôi cũng hiểu rõ hơn khi nào nên sử dụng giao tiếp đồng bộ và khi nào nên sử dụng bất đồng bộ.
 
-- Thời gian release sản phẩm lâu → Mất doanh thu/bỏ lỡ cơ hội
-- Hoạt động kém hiệu quả → Mất năng suất, tốn kém chi phí
-- Không tuân thủ các quy định về bảo mật → Mất an ninh, uy tín
+Phần chia sẻ về **Serverless Computing** giúp tôi hiểu rõ hơn quá trình phát triển từ EC2, Containers đến AWS Lambda. Thay vì dành nhiều thời gian quản lý máy chủ, lập trình viên có thể tập trung xây dựng chức năng của hệ thống trong khi AWS đảm nhận việc vận hành hạ tầng.
 
-#### Chuyển đổi sang kiến trúc ứng dụng mới - Microservice Architecture
+Cuối cùng, phần giới thiệu **Amazon Q Developer** cho tôi thấy AI không chỉ hỗ trợ viết mã mà còn có thể hỗ trợ tạo tài liệu, phân tích hệ thống và hiện đại hóa các ứng dụng cũ. Điều này giúp tôi nhận ra AI nên được xem là một công cụ hỗ trợ nâng cao năng suất làm việc.
 
-Chuyển đổi thành hệ thống modular – từng chức năng là một **dịch vụ độc lập** giao tiếp với nhau qua **sự kiện** với 3 trụ cột cốt lõi:
+---
 
-- **Queue Management**: Xử lý tác vụ bất đồng bộ
-- **Caching Strategy:** Tối ưu performance
-- **Message Handling:** Giao tiếp linh hoạt giữa services
+## Những điều tôi học được
 
-#### Domain-Driven Design (DDD)
+| Chủ đề | Điều tôi học được |
+|--------|-------------------|
+| Domain-Driven Design | Thiết kế hệ thống bắt đầu từ nghiệp vụ thay vì cơ sở dữ liệu. |
+| Event-Driven Architecture | Giảm sự phụ thuộc giữa các dịch vụ bằng giao tiếp bất đồng bộ. |
+| Serverless Computing | AWS Lambda giúp đơn giản hóa việc quản lý hạ tầng và dễ mở rộng hệ thống. |
+| Amazon Q Developer | AI hỗ trợ lập trình, tạo tài liệu và hiện đại hóa ứng dụng. |
+| Modernization Strategy | Hiện đại hóa hệ thống cần có lộ trình thay vì thay đổi toàn bộ cùng lúc. |
 
-- **Phương pháp 4 bước**: Xác định domain events → sắp xếp timeline → identify actors → xác định bounded contexts
-- **Case study bookstore**: Minh họa cách áp dụng DDD thực tế
-- **Context mapping**: 7 patterns tích hợp bounded contexts
+---
 
-#### Event-Driven Architecture
+## Áp dụng vào dự án
 
-- **3 patterns tích hợp**: Publish/Subscribe, Point-to-point, Streaming
-- **Lợi ích**: Loose coupling, scalability, resilience
-- **So sánh sync vs async**: Hiểu rõ trade-offs (sự đánh đổi)
+Sau buổi Workshop, tôi đã áp dụng nhiều ý tưởng vào dự án **AWS Event Management Platform**.
 
-#### Compute Evolution
+Trước khi xây dựng API, tôi dành nhiều thời gian hơn để phân tích quy trình đăng ký sự kiện, phát hành vé, điểm danh và cấp chứng nhận nhằm xác định đúng luồng nghiệp vụ của hệ thống.
 
-- **Shared Responsibility Model**: Từ EC2 → ECS → Fargate → Lambda
-- **Serverless benefits**: No server management, auto-scaling, pay-for-value
-- **Functions vs Containers**: Criteria lựa chọn phù hợp
+Kiến thức về Event-Driven Architecture cũng giúp tôi tự tin hơn với quyết định xây dựng dự án theo kiến trúc Serverless sử dụng AWS Lambda, Amazon API Gateway và Amazon DynamoDB. Mô hình này giúp hệ thống dễ mở rộng và giảm chi phí vận hành.
 
-#### Amazon Q Developer
+Ngoài ra, tôi cũng tận dụng AI để hỗ trợ lập trình, viết tài liệu và phân tích lỗi, nhưng luôn kiểm tra và hiểu rõ kết quả trước khi áp dụng vào dự án.
 
-- **SDLC automation**: Từ planning đến maintenance
-- **Code transformation**: Java upgrade, .NET modernization
-- **AWS Transform agents**: VMware, Mainframe, .NET migration
+---
 
-### Những Gì Học Được
+## Cảm nhận sau sự kiện
 
-#### Tư Duy Thiết Kế
+Đối với tôi, phần chia sẻ về Domain-Driven Design là nội dung giá trị nhất của Workshop vì đã thay đổi cách tôi suy nghĩ khi phát triển phần mềm. Tôi nhận ra rằng công nghệ chỉ là công cụ, còn việc hiểu đúng bài toán nghiệp vụ mới là nền tảng để xây dựng một hệ thống chất lượng.
 
-- **Business-first approach**: Luôn bắt đầu từ business domain, không phải technology
-- **Ubiquitous language**: Importance của common vocabulary giữa business và tech teams
-- **Bounded contexts**: Cách identify và manage complexity trong large systems
+Buổi Workshop cũng giúp tôi hiểu rõ hơn vì sao nhiều doanh nghiệp hiện nay đang chuyển sang kiến trúc Serverless và Event-Driven. Đây cũng chính là định hướng mà tôi đang áp dụng trong dự án AWS Event Management Platform.
 
-#### Kiến Trúc Kỹ Thuật
-
-- **Event storming technique**: Phương pháp thực tế để mô hình hóa quy trình kinh doanh
-- Sử dụng **Event-driven communication** thay vì synchronous calls
-- **Integration patterns**: Hiểu khi nào dùng sync, async, pub/sub, streaming
-- **Compute spectrum**: Criteria chọn từ VM → containers → serverless
-
-#### Chiến Lược Hiện Đại Hóa
-
-- **Phased approach**: Không rush, phải có roadmap rõ ràng
-- **7Rs framework**: Nhiều con đường khác nhau tùy thuộc vào đặc điểm của mỗi ứng dụng
-- **ROI measurement**: Cost reduction + business agility
-
-### Ứng Dụng Vào Công Việc
-
-- **Áp dụng DDD** cho project hiện tại: Event storming sessions với business team
-- **Refactor microservices**: Sử dụng bounded contexts để identify service boundaries
-- **Implement event-driven patterns**: Thay thế một số sync calls bằng async messaging
-- **Serverless adoption**: Pilot AWS Lambda cho một số use cases phù hợp
-- **Try Amazon Q Developer**: Integrate vào development workflow để boost productivity
-
-### Trải nghiệm trong event
-
-Tham gia workshop **“GenAI-powered App-DB Modernization”** là một trải nghiệm rất bổ ích, giúp tôi có cái nhìn toàn diện về cách hiện đại hóa ứng dụng và cơ sở dữ liệu bằng các phương pháp và công cụ hiện đại. Một số trải nghiệm nổi bật:
-
-#### Học hỏi từ các diễn giả có chuyên môn cao
-- Các diễn giả đến từ AWS và các tổ chức công nghệ lớn đã chia sẻ **best practices** trong thiết kế ứng dụng hiện đại.
-- Qua các case study thực tế, tôi hiểu rõ hơn cách áp dụng **Domain-Driven Design (DDD)** và **Event-Driven Architecture** vào các project lớn.
-
-#### Trải nghiệm kỹ thuật thực tế
-- Tham gia các phiên trình bày về **event storming** giúp tôi hình dung cách **mô hình hóa quy trình kinh doanh** thành các domain events.
-- Học cách **phân tách microservices** và xác định **bounded contexts** để quản lý sự phức tạp của hệ thống lớn.
-- Hiểu rõ trade-offs giữa **synchronous và asynchronous communication** cũng như các pattern tích hợp như **pub/sub, point-to-point, streaming**.
-
-#### Ứng dụng công cụ hiện đại
-- Trực tiếp tìm hiểu về **Amazon Q Developer**, công cụ AI hỗ trợ SDLC từ lập kế hoạch đến maintenance.
-- Học cách **tự động hóa code transformation** và pilot serverless với **AWS Lambda**, từ đó nâng cao năng suất phát triển.
-
-#### Kết nối và trao đổi
-- Workshop tạo cơ hội trao đổi trực tiếp với các chuyên gia, đồng nghiệp và team business, giúp **nâng cao ngôn ngữ chung (ubiquitous language)** giữa business và tech.
-- Qua các ví dụ thực tế, tôi nhận ra tầm quan trọng của **business-first approach**, luôn bắt đầu từ nhu cầu kinh doanh thay vì chỉ tập trung vào công nghệ.
-
-#### Bài học rút ra
-- Việc áp dụng DDD và event-driven patterns giúp giảm **coupling**, tăng **scalability** và **resilience** cho hệ thống.
-- Chiến lược hiện đại hóa cần **phased approach** và đo lường **ROI**, không nên vội vàng chuyển đổi toàn bộ hệ thống.
-- Các công cụ AI như Amazon Q Developer có thể **boost productivity** nếu được tích hợp vào workflow phát triển hiện tại.
-
-#### Một số hình ảnh khi tham gia sự kiện
-* Thêm các hình ảnh của các bạn tại đây
-> Tổng thể, sự kiện không chỉ cung cấp kiến thức kỹ thuật mà còn giúp tôi thay đổi cách tư duy về thiết kế ứng dụng, hiện đại hóa hệ thống và phối hợp hiệu quả hơn giữa các team.
+Nhìn chung, Workshop không chỉ giúp tôi bổ sung kiến thức chuyên môn mà còn thay đổi tư duy về thiết kế hệ thống và phát triển phần mềm hiện đại. Đây là một trải nghiệm rất hữu ích trong quá trình học tập và định hướng nghề nghiệp của tôi.

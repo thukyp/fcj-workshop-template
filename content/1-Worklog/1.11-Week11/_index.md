@@ -1,57 +1,63 @@
 ---
 title: "Week 11 Worklog"
-date: 2024-01-01
-weight: 2
+date: 2026-06-29
+weight: 11
 chapter: false
 pre: " <b> 1.11. </b> "
 ---
-{{% notice warning %}} 
-⚠️ **Note:** The following information is for reference purposes only. Please **do not copy verbatim** for your own report, including this warning.
+
+{{% notice info %}}
+This worklog summarizes the integration, testing and optimization of the Attendance and Certificate modules for the AWS Event Management Platform.
 {{% /notice %}}
 
+### Week 11 Objectives
 
-### Week 11 Objectives:
+- Improve the Attendance and Certificate modules.
+- Integrate remaining backend services.
+- Optimize serverless APIs.
+- Prepare the system for final testing.
 
-* Connect and get acquainted with members of First Cloud AI Journey.
-* Understand basic AWS services, how to use the console & CLI.
+---
 
-### Tasks to be carried out this week:
-| Day | Task                                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
-| 2   | - Get acquainted with FCAJ members <br> - Read and take note of internship unit rules and regulations                                                                                                   | 08/11/2025 | 08/11/2025      |
-| 3   | - Learn about AWS and its types of services <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                              | 08/12/2025 | 08/12/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Create AWS Free Tier account <br> - Learn about AWS Console & AWS CLI <br> - **Practice:** <br>&emsp; + Create AWS account <br>&emsp; + Install & configure AWS CLI <br> &emsp; + How to use AWS CLI | 08/13/2025 | 08/13/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Learn basic EC2: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - SSH connection methods to EC2 <br> - Learn about Elastic IP   <br>                            | 08/14/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Practice:** <br>&emsp; + Launch an EC2 instance <br>&emsp; + Connect via SSH <br>&emsp; + Attach an EBS volume                                                                                     | 08/15/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
+### Daily Activities
 
+| Day | Activities |
+|-----|------------|
+| Monday | Reviewed the Attendance and Certificate modules, identified issues and planned improvements for the remaining development tasks. |
+| Tuesday | Improved AWS Lambda functions and optimized API responses to reduce processing time and improve error handling. |
+| Wednesday | Enhanced the Certificate generation workflow and verified PDF generation and download functionality. |
+| Thursday | Improved the integration between React frontend, API Gateway and AWS Lambda, and fixed synchronization issues. |
+| Friday | Performed end-to-end testing for Event Registration, QR Check-in and Certificate generation workflows. |
+| Saturday | Fixed bugs discovered during integration testing and optimized project documentation and API descriptions. |
+| Sunday | Reviewed the overall project progress, updated technical documents and prepared the system for the final implementation stage. |
 
-### Week 11 Achievements:
+---
 
-* Understood what AWS is and mastered the basic service groups: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+### Hands-on Practice
 
-* Successfully created and configured an AWS Free Tier account.
+- Optimized AWS Lambda functions.
+- Improved REST API responses.
+- Verified Certificate PDF generation.
+- Tested Amazon S3 file storage and download.
+- Performed integration testing between React and backend services.
+- Updated project documentation and API specifications.
 
-* Became familiar with the AWS Management Console and learned how to find, access, and use services via the web interface.
+---
 
-* Installed and configured AWS CLI on the computer, including:
-  * Access Key
-  * Secret Key
-  * Default Region
-  * ...
+### Knowledge Gained
 
-* Used AWS CLI to perform basic operations such as:
+- Serverless application integration.
+- REST API optimization.
+- AWS Lambda best practices.
+- Amazon S3 file management.
+- End-to-end testing.
+- API documentation.
 
-  * Check account & configuration information
-  * Retrieve the list of regions
-  * View EC2 service
-  * Create and manage key pairs
-  * Check information about running services
-  * ...
+---
 
-* Acquired the ability to connect between the web interface and CLI to manage AWS resources in parallel.
-* ...
+### Results Achieved
+
+- Improved the stability of the Attendance and Certificate modules.
+- Reduced API processing issues through backend optimization.
+- Successfully completed integration testing across major system modules.
+- Prepared the project for final deployment and demonstration.

@@ -1,59 +1,66 @@
 ---
-title: "Worklog Tuần 7"
-date: 2024-01-01
-weight: 1
+title: "Nhật ký tuần 7"
+date: 2026-06-01
+weight: 7
 chapter: false
 pre: " <b> 1.7. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
+
+{{% notice info %}}
+Báo cáo này tóm tắt các nội dung về xử lý và phân tích dữ liệu trên AWS trong tuần thứ bảy.
 {{% /notice %}}
 
+### Mục tiêu tuần 7
 
-### Mục tiêu tuần 7:
+- Tìm hiểu các dịch vụ phân tích dữ liệu trên AWS.
+- Xây dựng quy trình xử lý dữ liệu cơ bản.
+- Làm quen với công cụ trực quan hóa dữ liệu.
+- Hoàn thành các bài Lab về phân tích dữ liệu.
 
-* Kết nối, làm quen với các thành viên trong First Cloud AI Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+---
 
-### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCAJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
+### Công việc theo từng ngày
 
+| Ngày | Nội dung |
+|------|----------|
+| Thứ 2 | Tìm hiểu cách sử dụng Amazon S3 làm Data Lake và nghiên cứu Amazon Kinesis Data Firehose để thu thập dữ liệu. |
+| Thứ 3 | Tìm hiểu AWS Glue, Glue Crawler, Data Catalog và quy trình ETL để xử lý dữ liệu. |
+| Thứ 4 | Thực hành nạp dữ liệu và truy vấn dữ liệu trên Amazon Redshift phục vụ phân tích. |
+| Thứ 5 | Xây dựng Dashboard và báo cáo trực quan bằng Amazon QuickSight. |
+| Thứ 6 | Thực hành Amazon DynamoDB, tạo bảng và thực hiện các thao tác cơ bản với dữ liệu. |
+| Thứ 7 | Hoàn thành các bài Lab về AWS Glue, Amazon Redshift và Amazon QuickSight. |
+| Chủ nhật | Ôn tập kiến thức và tổng hợp quy trình xử lý dữ liệu trên nền tảng AWS. |
 
-### Kết quả đạt được tuần 7:
+---
 
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+### Thực hành
 
-* Đã tạo và cấu hình AWS Free Tier account thành công.
+- Lưu trữ dữ liệu trên Amazon S3.
+- Thực hành thu thập dữ liệu bằng Amazon Kinesis Data Firehose.
+- Tạo Glue Crawler và Data Catalog bằng AWS Glue.
+- Nạp dữ liệu vào Amazon Redshift.
+- Thiết kế Dashboard trực quan bằng Amazon QuickSight.
+- Thực hiện các thao tác CRUD với Amazon DynamoDB.
+- Hoàn thành các bài Lab về phân tích dữ liệu trên AWS.
 
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
+---
 
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
+### Kiến thức đạt được
 
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
+- Amazon S3 Data Lake.
+- Amazon Kinesis Data Firehose.
+- AWS Glue.
+- AWS Glue Crawlers.
+- AWS Glue Data Catalog.
+- Amazon Redshift.
+- Amazon QuickSight.
+- Amazon DynamoDB.
 
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
+---
 
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
+### Kết quả đạt được
 
-
+- Hiểu quy trình xử lý và phân tích dữ liệu trên AWS từ khâu thu thập đến trực quan hóa.
+- Nắm được cách AWS Glue hỗ trợ quản lý dữ liệu và quy trình ETL.
+- Xây dựng được Dashboard trực quan bằng Amazon QuickSight.
+- Có thêm kinh nghiệm thực hành với các dịch vụ phân tích dữ liệu và cơ sở dữ liệu NoSQL trên AWS.

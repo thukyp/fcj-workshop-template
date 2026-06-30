@@ -1,57 +1,70 @@
 ---
 title: "Week 8 Worklog"
-date: 2024-01-01
-weight: 1
+date: 2026-06-08
+weight: 8
 chapter: false
 pre: " <b> 1.8. </b> "
 ---
-{{% notice warning %}} 
-⚠️ **Note:** The following information is for reference purposes only. Please **do not copy verbatim** for your own report, including this warning.
+
+{{% notice info %}}
+This worklog summarizes the transition from AWS learning modules to the development phase of the AWS Event Management Platform.
 {{% /notice %}}
 
+### Week 8 Objectives
 
-### Week 8 Objectives:
+- Review the core AWS services learned during the training program.
+- Explore AWS WAF for web application protection.
+- Analyze project requirements.
+- Design the serverless architecture.
+- Prepare the development environment for the project.
 
-* Connect and get acquainted with members of First Cloud AI Journey.
-* Understand basic AWS services, how to use the console & CLI.
+---
 
-### Tasks to be carried out this week:
-| Day | Task                                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
-| 2   | - Get acquainted with FCAJ members <br> - Read and take note of internship unit rules and regulations                                                                                                   | 08/11/2025 | 08/11/2025      |
-| 3   | - Learn about AWS and its types of services <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                              | 08/12/2025 | 08/12/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Create AWS Free Tier account <br> - Learn about AWS Console & AWS CLI <br> - **Practice:** <br>&emsp; + Create AWS account <br>&emsp; + Install & configure AWS CLI <br> &emsp; + How to use AWS CLI | 08/13/2025 | 08/13/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Learn basic EC2: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - SSH connection methods to EC2 <br> - Learn about Elastic IP   <br>                            | 08/14/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Practice:** <br>&emsp; + Launch an EC2 instance <br>&emsp; + Connect via SSH <br>&emsp; + Attach an EBS volume                                                                                     | 08/15/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
+### Daily Activities
 
+| Day | Activities |
+|-----|------------|
+| Monday | Reviewed AWS core services including Amazon VPC, EC2, CloudWatch, Auto Scaling, Amazon S3, IAM, DynamoDB and Amazon Redshift to strengthen fundamental knowledge before starting the project. |
+| Tuesday | Studied AWS WAF, common web application attacks such as SQL Injection and Cross-Site Scripting (XSS), and learned how AWS WAF protects web applications. |
+| Wednesday | Analyzed the requirements of the AWS Event Management Platform, identified system modules and discussed the project scope with team members. |
+| Thursday | Designed the overall serverless architecture, selected appropriate AWS services and applied AWS Well-Architected Framework principles. |
+| Friday | Initialized the project repository, organized the project structure and assigned responsibilities among team members. |
+| Saturday | Installed and configured AWS SAM CLI, Docker and other development tools for local serverless development and testing. |
+| Sunday | Reviewed the overall system architecture, finalized the initial design and prepared for implementing project modules in the following weeks. |
 
-### Week 8 Achievements:
+---
 
-* Understood what AWS is and mastered the basic service groups: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+### Hands-on Practice
 
-* Successfully created and configured an AWS Free Tier account.
+- Reviewed AWS networking, compute, storage, database and security services.
+- Explored AWS WAF configuration and protection mechanisms.
+- Designed the serverless architecture for the Event Management Platform.
+- Selected AWS services including Amazon Cognito, API Gateway, AWS Lambda, Amazon DynamoDB, Amazon S3, Amazon SES and Amazon SNS.
+- Initialized the project repository.
+- Installed and configured AWS SAM CLI.
+- Configured Docker for local Lambda development.
 
-* Became familiar with the AWS Management Console and learned how to find, access, and use services via the web interface.
+---
 
-* Installed and configured AWS CLI on the computer, including:
-  * Access Key
-  * Secret Key
-  * Default Region
-  * ...
+### Knowledge Gained
 
-* Used AWS CLI to perform basic operations such as:
+- AWS Well-Architected Framework.
+- AWS WAF.
+- AWS SAM CLI.
+- Docker.
+- Serverless Architecture.
+- Amazon Cognito.
+- Amazon API Gateway.
+- AWS Lambda.
+- Amazon DynamoDB.
+- Amazon S3.
 
-  * Check account & configuration information
-  * Retrieve the list of regions
-  * View EC2 service
-  * Create and manage key pairs
-  * Check information about running services
-  * ...
+---
 
-* Acquired the ability to connect between the web interface and CLI to manage AWS resources in parallel.
-* ...
+### Results Achieved
+
+- Successfully reviewed the AWS services required for the project.
+- Completed the initial serverless architecture design for the Event Management Platform.
+- Prepared the development environment using AWS SAM CLI and Docker.
+- Defined the project structure and selected the AWS services for each system module.
+- Established a solid foundation for implementing the project in the following weeks.

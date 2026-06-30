@@ -1,57 +1,69 @@
 ---
 title: "Week 1 Worklog"
-date: 2024-01-01
+date: 2026-04-20
 weight: 1
 chapter: false
 pre: " <b> 1.1. </b> "
 ---
-{{% notice warning %}} 
-⚠️ **Note:** The following information is for reference purposes only. Please **do not copy verbatim** for your own report, including this warning.
+
+{{% notice info %}}
+This worklog summarizes the onboarding process and fundamental AWS services explored during the first week of the internship.
 {{% /notice %}}
 
+### Week 1 Objectives
 
-### Week 1 Objectives:
+- Prepare the development environment.
+- Create and secure an AWS account.
+- Learn the fundamental AWS infrastructure services.
+- Complete introductory hands-on laboratories.
 
-* Connect and get acquainted with members of First Cloud AI Journey.
-* Understand basic AWS services, how to use the console & CLI.
+---
 
-### Tasks to be carried out this week:
-| Day | Task                                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
-| 2   | - Get acquainted with FCAJ members <br> - Read and take note of internship unit rules and regulations                                                                                                   | 08/11/2025 | 08/11/2025      |
-| 3   | - Learn about AWS and its types of services <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                              | 08/12/2025 | 08/12/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Create AWS Free Tier account <br> - Learn about AWS Console & AWS CLI <br> - **Practice:** <br>&emsp; + Create AWS account <br>&emsp; + Install & configure AWS CLI <br> &emsp; + How to use AWS CLI | 08/13/2025 | 08/13/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Learn basic EC2: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - SSH connection methods to EC2 <br> - Learn about Elastic IP   <br>                            | 08/14/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Practice:** <br>&emsp; + Launch an EC2 instance <br>&emsp; + Connect via SSH <br>&emsp; + Attach an EBS volume                                                                                     | 08/15/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
+### Tasks Completed This Week
 
+| Day | Task | Date |
+|-----|------|------|
+| Monday | Installed Hugo Extended, created an AWS account, configured MFA, IAM Users and IAM Groups. | 20/04/2026 |
+| Tuesday | Studied Cloud Computing fundamentals and practiced building an Amazon VPC including Subnets, Route Tables and Internet Gateway. | 21/04/2026 |
+| Wednesday | Deployed Amazon EC2 Windows Server 2025 and Amazon Linux instances through AWS Labs. | 22/04/2026 |
+| Thursday | Learned Amazon EC2 fundamentals and created an Amazon RDS database instance. | 23/04/2026 |
+| Friday | Completed EC2 and IAM laboratory exercises. | 24/04/2026 |
+| Saturday | Configured AWS Budgets and studied IAM Policies and AWS Governance concepts. | 25/04/2026 |
+| Sunday | Reviewed Week 1 knowledge and improved the initial security configuration. | 26/04/2026 |
 
-### Week 1 Achievements:
+---
 
-* Understood what AWS is and mastered the basic service groups: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+### Hands-on Practice
 
-* Successfully created and configured an AWS Free Tier account.
+- Installed Hugo Extended.
+- Created an AWS Free Tier account.
+- Enabled Multi-Factor Authentication (MFA).
+- Created IAM Users, IAM Groups and IAM Policies.
+- Built a Virtual Private Cloud (VPC).
+- Configured Subnets, Route Tables and Internet Gateway.
+- Launched Windows Server and Amazon Linux EC2 instances.
+- Created an Amazon RDS database.
+- Configured AWS Budgets.
+- Reviewed AWS security best practices.
 
-* Became familiar with the AWS Management Console and learned how to find, access, and use services via the web interface.
+---
 
-* Installed and configured AWS CLI on the computer, including:
-  * Access Key
-  * Secret Key
-  * Default Region
-  * ...
+### Knowledge Gained
 
-* Used AWS CLI to perform basic operations such as:
+- Cloud Computing fundamentals.
+- AWS Global Infrastructure.
+- AWS IAM.
+- Amazon VPC.
+- Amazon EC2.
+- Amazon RDS.
+- AWS Budgets.
+- AWS Governance.
 
-  * Check account & configuration information
-  * Retrieve the list of regions
-  * View EC2 service
-  * Create and manage key pairs
-  * Check information about running services
-  * ...
+---
 
-* Acquired the ability to connect between the web interface and CLI to manage AWS resources in parallel.
-* ...
+### Results Achieved
+
+- Successfully prepared the AWS learning environment.
+- Built a secure AWS account with IAM and MFA.
+- Understood the relationship between networking, compute and database services.
+- Completed all introductory AWS hands-on laboratories scheduled for Week 1.

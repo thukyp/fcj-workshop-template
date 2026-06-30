@@ -1,57 +1,67 @@
 ---
 title: "Week 10 Worklog"
-date: 2024-01-01
-weight: 2
+date: 2026-06-22
+weight: 10
 chapter: false
 pre: " <b> 1.10. </b> "
 ---
-{{% notice warning %}} 
-⚠️ **Note:** The following information is for reference purposes only. Please **do not copy verbatim** for your own report, including this warning.
+
+{{% notice info %}}
+This worklog summarizes the completion of the QR Check-in workflow and the implementation of the attendance certificate module for the AWS Event Management Platform.
 {{% /notice %}}
 
+### Week 10 Objectives
 
-### Week 10 Objectives:
+- Complete the QR Check-in workflow.
+- Generate attendance certificates in PDF format.
+- Store generated certificates in Amazon S3.
+- Improve integration between frontend and backend services.
 
-* Connect and get acquainted with members of First Cloud AI Journey.
-* Understand basic AWS services, how to use the console & CLI.
+---
 
-### Tasks to be carried out this week:
-| Day | Task                                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
-| 2   | - Get acquainted with FCAJ members <br> - Read and take note of internship unit rules and regulations                                                                                                   | 08/11/2025 | 08/11/2025      |
-| 3   | - Learn about AWS and its types of services <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                              | 08/12/2025 | 08/12/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Create AWS Free Tier account <br> - Learn about AWS Console & AWS CLI <br> - **Practice:** <br>&emsp; + Create AWS account <br>&emsp; + Install & configure AWS CLI <br> &emsp; + How to use AWS CLI | 08/13/2025 | 08/13/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Learn basic EC2: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - SSH connection methods to EC2 <br> - Learn about Elastic IP   <br>                            | 08/14/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Practice:** <br>&emsp; + Launch an EC2 instance <br>&emsp; + Connect via SSH <br>&emsp; + Attach an EBS volume                                                                                     | 08/15/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
+### Daily Activities
 
+| Day | Activities |
+|-----|------------|
+| Monday | Improved the QR Check-in workflow, updated attendance status in Amazon DynamoDB and verified the attendance process. |
+| Tuesday | Integrated Amazon API Gateway with AWS Lambda and tested the communication between the frontend and backend services. |
+| Wednesday | Designed the attendance certificate template and implemented PDF generation after successful event attendance. |
+| Thursday | Stored generated certificate files in Amazon S3 and verified file accessibility for future download. |
+| Friday | Integrated the certificate generation workflow into the application and prepared the system for email delivery in the next development phase. |
+| Saturday | Performed end-to-end testing for the Check-in and Certificate modules, fixed bugs and optimized Lambda execution. |
+| Sunday | Updated API documentation, reviewed the overall workflow and prepared the next implementation tasks. |
 
-### Week 10 Achievements:
+---
 
-* Understood what AWS is and mastered the basic service groups: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+### Hands-on Practice
 
-* Successfully created and configured an AWS Free Tier account.
+- Updated attendance status in Amazon DynamoDB.
+- Integrated Amazon API Gateway with AWS Lambda.
+- Generated attendance certificates in PDF format.
+- Uploaded certificate files to Amazon S3.
+- Tested the QR Check-in workflow.
+- Fixed integration issues between React and Lambda.
+- Used AWS SAM CLI and Docker for local testing.
 
-* Became familiar with the AWS Management Console and learned how to find, access, and use services via the web interface.
+---
 
-* Installed and configured AWS CLI on the computer, including:
-  * Access Key
-  * Secret Key
-  * Default Region
-  * ...
+### Knowledge Gained
 
-* Used AWS CLI to perform basic operations such as:
+- Amazon S3.
+- PDF generation.
+- AWS Lambda integration.
+- Amazon API Gateway.
+- Amazon DynamoDB.
+- AWS SAM CLI.
+- Docker.
+- Serverless application integration.
 
-  * Check account & configuration information
-  * Retrieve the list of regions
-  * View EC2 service
-  * Create and manage key pairs
-  * Check information about running services
-  * ...
+---
 
-* Acquired the ability to connect between the web interface and CLI to manage AWS resources in parallel.
-* ...
+### Results Achieved
+
+- Successfully completed the QR Check-in workflow.
+- Generated attendance certificates in PDF format.
+- Stored certificates in Amazon S3.
+- Improved the integration between frontend and backend services.
+- Completed system testing and resolved major issues before continuing with the remaining project modules.

@@ -1,57 +1,66 @@
 ---
 title: "Week 7 Worklog"
-date: 2024-01-01
-weight: 1
+date: 2026-06-01
+weight: 7
 chapter: false
 pre: " <b> 1.7. </b> "
 ---
-{{% notice warning %}} 
-⚠️ **Note:** The following information is for reference purposes only. Please **do not copy verbatim** for your own report, including this warning.
+
+{{% notice info %}}
+This worklog summarizes the analytics and data processing services explored during the seventh week of the internship.
 {{% /notice %}}
 
+### Week 7 Objectives
 
-### Week 7 Objectives:
+- Understand AWS analytics services.
+- Learn how to build a data processing pipeline.
+- Explore data visualization using Amazon QuickSight.
+- Complete analytics-related laboratory exercises.
 
-* Connect and get acquainted with members of First Cloud AI Journey.
-* Understand basic AWS services, how to use the console & CLI.
+---
 
-### Tasks to be carried out this week:
-| Day | Task                                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
-| 2   | - Get acquainted with FCAJ members <br> - Read and take note of internship unit rules and regulations                                                                                                   | 08/11/2025 | 08/11/2025      |
-| 3   | - Learn about AWS and its types of services <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                              | 08/12/2025 | 08/12/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Create AWS Free Tier account <br> - Learn about AWS Console & AWS CLI <br> - **Practice:** <br>&emsp; + Create AWS account <br>&emsp; + Install & configure AWS CLI <br> &emsp; + How to use AWS CLI | 08/13/2025 | 08/13/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Learn basic EC2: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - SSH connection methods to EC2 <br> - Learn about Elastic IP   <br>                            | 08/14/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Practice:** <br>&emsp; + Launch an EC2 instance <br>&emsp; + Connect via SSH <br>&emsp; + Attach an EBS volume                                                                                     | 08/15/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
+### Daily Activities
 
+| Day | Activities |
+|-----|------------|
+| Monday | Learned how Amazon S3 can be used as a Data Lake and explored Amazon Kinesis Data Firehose for data ingestion. |
+| Tuesday | Studied AWS Glue, including Crawlers, Data Catalog and ETL workflows for processing datasets. |
+| Wednesday | Practiced loading and querying datasets in Amazon Redshift for analytical workloads. |
+| Thursday | Built dashboards and visual reports using Amazon QuickSight. |
+| Friday | Practiced working with Amazon DynamoDB, including creating tables and performing basic operations. |
+| Saturday | Completed hands-on laboratories involving AWS Glue, Amazon Redshift and Amazon QuickSight. |
+| Sunday | Reviewed AWS analytics services and summarized the end-to-end data processing workflow. |
 
-### Week 7 Achievements:
+---
 
-* Understood what AWS is and mastered the basic service groups: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+### Hands-on Practice
 
-* Successfully created and configured an AWS Free Tier account.
+- Stored datasets in Amazon S3.
+- Explored Amazon Kinesis Data Firehose for data ingestion.
+- Created AWS Glue Crawlers and Data Catalog.
+- Loaded datasets into Amazon Redshift.
+- Built dashboards using Amazon QuickSight.
+- Practiced CRUD operations with Amazon DynamoDB.
+- Completed AWS analytics laboratory exercises.
 
-* Became familiar with the AWS Management Console and learned how to find, access, and use services via the web interface.
+---
 
-* Installed and configured AWS CLI on the computer, including:
-  * Access Key
-  * Secret Key
-  * Default Region
-  * ...
+### Knowledge Gained
 
-* Used AWS CLI to perform basic operations such as:
+- Amazon S3 Data Lake.
+- Amazon Kinesis Data Firehose.
+- AWS Glue.
+- AWS Glue Crawlers.
+- AWS Glue Data Catalog.
+- Amazon Redshift.
+- Amazon QuickSight.
+- Amazon DynamoDB.
 
-  * Check account & configuration information
-  * Retrieve the list of regions
-  * View EC2 service
-  * Create and manage key pairs
-  * Check information about running services
-  * ...
+---
 
-* Acquired the ability to connect between the web interface and CLI to manage AWS resources in parallel.
-* ...
+### Results Achieved
+
+- Understood the end-to-end AWS analytics pipeline.
+- Learned how AWS Glue automates metadata management and ETL processes.
+- Successfully visualized analytical data using Amazon QuickSight.
+- Gained practical experience with AWS analytics and NoSQL database services.

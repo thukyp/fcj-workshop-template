@@ -1,59 +1,65 @@
 ---
-title: "Worklog Tuần 4"
-date: 2024-01-01
-weight: 1
+title: "Nhật ký tuần 4"
+date: 2026-05-11
+weight: 4
 chapter: false
 pre: " <b> 1.4. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
+
+{{% notice info %}}
+Báo cáo này tóm tắt các nội dung về lưu trữ, sao lưu và di chuyển dữ liệu trên AWS trong tuần thứ tư.
 {{% /notice %}}
 
+### Mục tiêu tuần 4
 
-### Mục tiêu tuần 4:
+- Tìm hiểu các dịch vụ lưu trữ trên AWS.
+- Nghiên cứu giải pháp sao lưu và khôi phục dữ liệu.
+- Làm quen với các dịch vụ di chuyển hệ thống lên Cloud.
 
-* Kết nối, làm quen với các thành viên trong First Cloud AI Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+---
 
-### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCAJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
+### Công việc theo từng ngày
 
+| Ngày | Nội dung |
+|------|----------|
+| Thứ 2 | Tìm hiểu Amazon S3, Object Storage, Bucket và Object Key. |
+| Thứ 3 | Nghiên cứu các S3 Storage Classes, Lifecycle Policy và tối ưu chi phí lưu trữ. |
+| Thứ 4 | Thực hành Versioning, Object Lock và các cơ chế bảo vệ dữ liệu trên Amazon S3. |
+| Thứ 5 | Tìm hiểu AWS Storage Gateway, AWS Snow Family và các giải pháp Hybrid Storage. |
+| Thứ 6 | Nghiên cứu các mô hình Disaster Recovery như Backup & Restore, Pilot Light và Warm Standby. |
+| Thứ 7 | Thực hành AWS Backup và xây dựng Backup Plan cho tài nguyên AWS. |
+| Chủ nhật | Tìm hiểu AWS Application Migration Service (MGN) và ôn tập các bài Lab trong tuần. |
 
-### Kết quả đạt được tuần 4:
+---
 
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+### Thực hành
 
-* Đã tạo và cấu hình AWS Free Tier account thành công.
+- Tạo và quản lý Amazon S3 Bucket.
+- Thiết lập Lifecycle Rule.
+- Bật Versioning.
+- Thực hành Object Lock.
+- Tìm hiểu AWS Storage Gateway.
+- Thực hành AWS Backup.
+- Nghiên cứu AWS Application Migration Service.
 
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
+---
 
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
+### Kiến thức đạt được
 
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
+- Amazon S3.
+- Storage Classes.
+- Lifecycle Policy.
+- Versioning.
+- AWS Backup.
+- Disaster Recovery.
+- AWS Storage Gateway.
+- AWS Snow Family.
+- AWS MGN.
 
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
+---
 
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
+### Kết quả đạt được
 
-
+- Hiểu kiến trúc lưu trữ dữ liệu trên AWS.
+- Nắm được các phương án sao lưu và khôi phục dữ liệu.
+- Làm quen với các giải pháp di chuyển hệ thống lên AWS.

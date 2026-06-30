@@ -1,59 +1,67 @@
 ---
-title: "Worklog Tuần 3"
-date: 2024-01-01
-weight: 1
+title: "Nhật ký tuần 3"
+date: 2026-05-04
+weight: 3
 chapter: false
 pre: " <b> 1.3. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
+
+{{% notice info %}}
+Báo cáo này tóm tắt các nội dung về quản trị EC2, giám sát hệ thống và tự động mở rộng hạ tầng trong tuần thứ ba.
 {{% /notice %}}
 
+### Mục tiêu tuần 3
 
-### Mục tiêu tuần 3:
+- Tìm hiểu quản trị Amazon EC2.
+- Giám sát tài nguyên bằng Amazon CloudWatch.
+- Xây dựng hạ tầng có khả năng tự động mở rộng.
+- Hoàn thành các bài Lab về dịch vụ Compute.
 
-* Kết nối, làm quen với các thành viên trong First Cloud AI Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+---
 
-### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCAJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
+### Công việc theo từng ngày
 
+| Ngày | Nội dung |
+|------|----------|
+| Thứ 2 | Thực hành quản trị Amazon EC2, tạo Snapshot, cài đặt ứng dụng và quản lý tài nguyên bằng Tag và Resource Group. |
+| Thứ 3 | Cài đặt và cấu hình Amazon CloudWatch Agent để thu thập các chỉ số CPU, Memory và Disk của EC2. |
+| Thứ 4 | Xây dựng CloudWatch Dashboard để theo dõi hiệu năng và trạng thái hoạt động của EC2. |
+| Thứ 5 | Tìm hiểu cơ chế Auto Scaling và tạo Launch Template cho EC2. |
+| Thứ 6 | Cấu hình Application Load Balancer (ALB), Target Group và triển khai Auto Scaling Group. |
+| Thứ 7 | Tìm hiểu Amazon Lightsail, Lightsail Load Balancer và Lightsail Database, đồng thời so sánh với Amazon EC2. |
+| Chủ nhật | Ôn tập kiến thức trong tuần và hoàn thành các bài Lab còn lại. |
 
-### Kết quả đạt được tuần 3:
+---
 
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+### Thực hành
 
-* Đã tạo và cấu hình AWS Free Tier account thành công.
+- Tạo Snapshot cho EC2.
+- Quản lý tài nguyên bằng Tag và Resource Group.
+- Cài đặt CloudWatch Agent.
+- Xây dựng CloudWatch Dashboard.
+- Tạo Launch Template.
+- Cấu hình Target Group.
+- Cấu hình Application Load Balancer.
+- Triển khai Auto Scaling Group.
+- Tìm hiểu Amazon Lightsail.
 
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
+---
 
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
+### Kiến thức đạt được
 
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
+- Quản trị Amazon EC2.
+- Amazon CloudWatch.
+- CloudWatch Agent.
+- CloudWatch Dashboard.
+- Launch Template.
+- Auto Scaling Group.
+- Application Load Balancer.
+- Amazon Lightsail.
 
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
+---
 
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
+### Kết quả đạt được
 
-
+- Biết cách giám sát tài nguyên EC2 bằng CloudWatch.
+- Triển khai thành công hạ tầng có khả năng tự động mở rộng.
+- Hiểu mối quan hệ giữa Launch Template, Load Balancer và Auto Scaling Group.

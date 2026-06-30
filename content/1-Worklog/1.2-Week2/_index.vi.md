@@ -1,59 +1,63 @@
 ---
-title: "Worklog Tuần 2"
-date: 2024-01-01
-weight: 1
+title: "Nhật ký tuần 2"
+date: 2026-04-27
+weight: 2
 chapter: false
 pre: " <b> 1.2. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
+
+{{% notice info %}}
+Báo cáo này tóm tắt các nội dung về mạng và kết nối Hybrid trên AWS trong tuần thứ hai.
 {{% /notice %}}
 
+### Mục tiêu tuần 2
 
-### Mục tiêu tuần 2:
+- Tìm hiểu các dịch vụ mạng trên AWS.
+- Nghiên cứu kết nối an toàn giữa AWS và hệ thống On-Premises.
+- Thực hành quản lý EC2 bằng AWS Systems Manager.
 
-* Kết nối, làm quen với các thành viên trong First Cloud AI Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+---
 
-### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCAJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
+### Công việc theo từng ngày
 
+| Ngày | Nội dung |
+|------|----------|
+| Thứ 2 | Tìm hiểu kiến trúc Site-to-Site VPN, Customer Gateway, Virtual Private Gateway và VPN Connection. |
+| Thứ 3 | Thực hành AWS Systems Manager, Session Manager và Port Forwarding để quản lý EC2 mà không cần SSH. |
+| Thứ 4 | Nghiên cứu Amazon VPC Peering, cấu hình Route Table và kiểm tra kết nối giữa các VPC. |
+| Thứ 5 | Tìm hiểu Cross-VPC DNS Resolution và kiểm tra khả năng phân giải tên giữa các VPC đã kết nối. |
+| Thứ 6 | Nghiên cứu kiến trúc Amazon Transit Gateway và so sánh với VPC Peering. |
+| Thứ 7 | Thực hành cấu hình Transit Gateway Route Table và kết nối nhiều VPC vào cùng một mạng trung tâm. |
+| Chủ nhật | Ôn tập kiến thức đã học và hoàn thành các bài Lab còn lại. |
 
-### Kết quả đạt được tuần 2:
+---
 
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+### Thực hành
 
-* Đã tạo và cấu hình AWS Free Tier account thành công.
+- Thiết lập Site-to-Site VPN.
+- Kết nối EC2 bằng Session Manager.
+- Thực hành Port Forwarding.
+- Cấu hình VPC Peering.
+- Thiết lập Route Table.
+- Kiểm tra Cross-VPC DNS Resolution.
+- Triển khai Amazon Transit Gateway.
 
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
+---
 
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
+### Kiến thức đạt được
 
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
+- Site-to-Site VPN.
+- AWS Systems Manager.
+- Session Manager.
+- Port Forwarding.
+- VPC Peering.
+- Transit Gateway.
+- Route Table.
 
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
+---
 
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
+### Kết quả đạt được
 
-
+- Hiểu cách thiết lập kết nối an toàn giữa AWS và hệ thống On-Premises.
+- Cấu hình thành công kết nối giữa nhiều VPC.
+- Biết cách quản lý EC2 mà không cần mở cổng SSH.

@@ -1,126 +1,67 @@
 ---
 title: "Event 2"
-date: 2024-01-01
-weight: 1
+date: 2026-05-23
+weight: 2
 chapter: false
 pre: " <b> 4.2. </b> "
 ---
 
-{{% notice warning %}}
-⚠️ **Note:** The information below is for reference purposes only. Please **do not copy it verbatim** into your report, including this warning.
-{{% /notice %}}
+# FCAJ Community Day 2026
 
-# Summary Report: “GenAI-powered App-DB Modernization workshop”
+## Event Information
 
-### Event Objectives
+| Item | Details |
+|------|---------|
+| Event | FCAJ Community Day 2026 |
+| Organizer | AWS First Cloud Journey Community |
+| Topic | Artificial Intelligence, Cloud Computing and Career Development |
 
-- Share best practices in modern application design
-- Introduce Domain-Driven Design (DDD) and event-driven architecture
-- Provide guidance on selecting the right compute services
-- Present AI tools to support the development lifecycle
+---
 
-### Speakers
+## My Experience
 
-- **Jignesh Shah** – Director, Open Source Databases
-- **Erica Liu** – Sr. GTM Specialist, AppMod
-- **Fabrianne Effendi** – Assc. Specialist SA, Serverless Amazon Web Services
+FCAJ Community Day 2026 was one of the most interesting events I attended during the AWS First Cloud Journey program. Unlike technical workshops that focus on a single AWS service, this event covered a wide range of topics including Artificial Intelligence, Cloud Computing, software engineering, and career development.
 
-### Key Highlights
+The opening session emphasized the importance of providing context when working with AI. I realized that the quality of AI-generated results depends not only on prompts but also on the context and background information provided. This changed the way I interact with AI tools during both learning and software development.
 
-#### Identifying the drawbacks of legacy application architecture
+Another session that inspired me was the story of building a product during a hackathon. Seeing how a team transformed an idea into a working solution within only 36 hours made me realize that collaboration, time management and continuous iteration are essential skills for software engineers.
 
-- Long product release cycles → Lost revenue/missed opportunities  
-- Inefficient operations → Reduced productivity, higher costs  
-- Non-compliance with security regulations → Security breaches, loss of reputation  
+The presentation about Amazon CloudFront also gave me a better understanding of how Content Delivery Networks improve application performance and user experience. I learned that CloudFront is not only about faster content delivery but also provides security features and cost optimization for web applications.
 
-#### Transitioning to modern application architecture – Microservices
+I was also interested in the sessions related to AI applications such as Amazon Quick. They demonstrated how AI can support data analysis, reporting and workflow automation, allowing organizations to improve productivity without requiring complex development.
 
-Migrating to a modular system — each function is an **independent service** communicating via **events**, built on three core pillars:
+The final presentations about Large Language Models and Multi-Agent Systems helped me understand that enterprise AI is much more than chatbots. Building reliable AI systems requires careful consideration of reasoning, security, governance and collaboration between multiple AI agents.
 
-- **Queue Management**: Handle asynchronous tasks  
-- **Caching Strategy**: Optimize performance  
-- **Message Handling**: Flexible inter-service communication  
+---
 
-#### Domain-Driven Design (DDD)
+## What I Learned
 
-- **Four-step method**: Identify domain events → arrange timeline → identify actors → define bounded contexts  
-- **Bookstore case study**: Demonstrates real-world DDD application  
-- **Context mapping**: 7 patterns for integrating bounded contexts  
+| Topic | What I Learned |
+|------|----------------|
+| Artificial Intelligence | Context is essential for obtaining accurate AI responses. |
+| Amazon CloudFront | CDN improves performance, availability and application security. |
+| Amazon Quick | AI can simplify reporting, analytics and workflow automation. |
+| LLM | AI responses are influenced by inference mechanisms, not only model parameters. |
+| Multi-Agent Systems | Multiple AI agents can collaborate to solve complex business problems efficiently. |
 
-#### Event-Driven Architecture
+---
 
-- **3 integration patterns**: Publish/Subscribe, Point-to-point, Streaming  
-- **Benefits**: Loose coupling, scalability, resilience  
-- **Sync vs async comparison**: Understanding the trade-offs  
+## Applying to My Project
 
-#### Compute Evolution
+After attending this event, I found several ideas that can be applied to my **AWS Event Management Platform**.
 
-- **Shared Responsibility Model**: EC2 → ECS → Fargate → Lambda  
-- **Serverless benefits**: No server management, auto-scaling, pay-for-value  
-- **Functions vs Containers**: Criteria for appropriate choice  
+I plan to continue using Amazon CloudFront to improve frontend performance and reduce latency for end users. I also realized the importance of designing applications that are scalable, secure and easy to maintain instead of focusing only on feature implementation.
 
-#### Amazon Q Developer
+The sessions about AI also encouraged me to use AI tools more effectively for coding, documentation and debugging while ensuring that I fully understand the generated results before applying them.
 
-- **SDLC automation**: From planning to maintenance  
-- **Code transformation**: Java upgrade, .NET modernization  
-- **AWS Transform agents**: VMware, Mainframe, .NET migration  
+Finally, the discussions about teamwork and hackathons reminded me that successful software projects require not only technical knowledge but also communication, planning and collaboration among team members.
 
-### Key Takeaways
+---
 
-#### Design Mindset
+## Personal Reflection
 
-- **Business-first approach**: Always start from the business domain, not the technology  
-- **Ubiquitous language**: Importance of a shared vocabulary between business and tech teams  
-- **Bounded contexts**: Identifying and managing complexity in large systems  
+This event broadened my perspective on both cloud technologies and Artificial Intelligence. Instead of learning individual AWS services, I gained a better understanding of how modern technologies work together to solve real business problems.
 
-#### Technical Architecture
+Among all the sessions, I was most impressed by the discussions about AI and Amazon CloudFront because both topics are closely related to the project I am currently developing. The event motivated me to continue improving my cloud knowledge while developing practical software engineering skills.
 
-- **Event storming technique**: Practical method for modeling business processes  
-- Use **event-driven communication** instead of synchronous calls  
-- **Integration patterns**: When to use sync, async, pub/sub, streaming  
-- **Compute spectrum**: Criteria for choosing between VM, containers, and serverless  
-
-#### Modernization Strategy
-
-- **Phased approach**: No rushing — follow a clear roadmap  
-- **7Rs framework**: Multiple modernization paths depending on the application  
-- **ROI measurement**: Cost reduction + business agility  
-
-### Applying to Work
-
-- **Apply DDD** to current projects: Event storming sessions with business teams  
-- **Refactor microservices**: Use bounded contexts to define service boundaries  
-- **Implement event-driven patterns**: Replace some sync calls with async messaging  
-- **Adopt serverless**: Pilot AWS Lambda for suitable use cases  
-- **Try Amazon Q Developer**: Integrate into the dev workflow to boost productivity  
-
-### Event Experience
-
-Attending the **“GenAI-powered App-DB Modernization”** workshop was extremely valuable, giving me a comprehensive view of modernizing applications and databases using advanced methods and tools. Key experiences included:
-
-#### Learning from highly skilled speakers
-- Experts from AWS and major tech organizations shared **best practices** in modern application design.  
-- Through real-world case studies, I gained a deeper understanding of applying **DDD** and **Event-Driven Architecture** to large projects.  
-
-#### Hands-on technical exposure
-- Participating in **event storming** sessions helped me visualize how to **model business processes** into domain events.  
-- Learned how to **split microservices** and define **bounded contexts** to manage large-system complexity.  
-- Understood trade-offs between **synchronous and asynchronous communication** and integration patterns like **pub/sub, point-to-point, streaming**.  
-
-#### Leveraging modern tools
-- Explored **Amazon Q Developer**, an AI tool for SDLC support from planning to maintenance.  
-- Learned to **automate code transformation** and pilot serverless with **AWS Lambda** to improve productivity.  
-
-#### Networking and discussions
-- The workshop offered opportunities to exchange ideas with experts, peers, and business teams, enhancing the **ubiquitous language** between business and tech.  
-- Real-world examples reinforced the importance of the **business-first approach** rather than focusing solely on technology.  
-
-#### Lessons learned
-- Applying DDD and event-driven patterns reduces **coupling** while improving **scalability** and **resilience**.  
-- Modernization requires a **phased approach** with **ROI measurement**; rushing the process can be risky.  
-- AI tools like Amazon Q Developer can significantly **boost productivity** when integrated into the current workflow.  
-
-#### Some event photos
-*Add your event photos here*  
-
-> Overall, the event not only provided technical knowledge but also helped me reshape my thinking about application design, system modernization, and cross-team collaboration.
+Overall, FCAJ Community Day 2026 was a valuable learning experience that strengthened both my technical knowledge and my career direction.
