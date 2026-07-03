@@ -1,19 +1,47 @@
 ---
 title : "Giới thiệu"
-date : 2024-01-01 
+date : 2024-01-01
 weight : 1
 chapter : false
 pre : " <b> 5.1. </b> "
 ---
 
-#### Giới thiệu về VPC Endpoint
+#### Tổng quan dự án
 
-+ Điểm cuối VPC (endpoint) là thiết bị ảo. Chúng là các thành phần VPC có thể mở rộng theo chiều ngang, dự phòng và có tính sẵn sàng cao. Chúng cho phép giao tiếp giữa tài nguyên điện toán của bạn và dịch vụ AWS mà không gây ra rủi ro về tính sẵn sàng.
-+ Tài nguyên điện toán đang chạy trong VPC có thể truy cập Amazon S3 bằng cách sử dụng điểm cuối Gateway. Interface Endpoint  PrivateLink có thể được sử dụng bởi tài nguyên chạy trong VPC hoặc tại TTDL.
+**AWS Event Management Platform** là hệ thống quản lý sự kiện được phát triển trên nền tảng điện toán đám mây Amazon Web Services (AWS), nhằm tự động hóa toàn bộ quy trình tổ chức sự kiện. Hệ thống cho phép ban tổ chức tạo và quản lý sự kiện, trong khi người tham gia có thể đăng ký trực tuyến, nhận vé điện tử QR, thực hiện điểm danh bằng mã QR và nhận chứng nhận tham gia sau khi hoàn thành sự kiện.
 
-#### Tổng quan về workshop
-Trong workshop này, bạn sẽ sử dụng hai VPC.
-+ **"VPC Cloud"** dành cho các tài nguyên cloud như Gateway endpoint và EC2 instance để kiểm tra.
-+ **"VPC On-Prem"** mô phỏng môi trường truyền thống như nhà máy hoặc trung tâm dữ liệu của công ty. Một EC2 Instance chạy phần mềm StrongSwan VPN đã được triển khai trong "VPC On-prem" và được cấu hình tự động để thiết lập đường hầm VPN Site-to-Site với AWS Transit Gateway. VPN này mô phỏng kết nối từ một vị trí tại TTDL (on-prem) với AWS cloud. Để giảm thiểu chi phí, chỉ một phiên bản VPN được cung cấp để hỗ trợ workshop này. Khi lập kế hoạch kết nối VPN cho production workloads của bạn, AWS khuyên bạn nên sử dụng nhiều thiết bị VPN để có tính sẵn sàng cao.
+Dự án được xây dựng theo kiến trúc **Serverless**, giúp giảm chi phí vận hành, hạn chế việc quản lý máy chủ và tận dụng khả năng tự động mở rộng của các dịch vụ AWS. Nhờ đó, hệ thống có thể đáp ứng số lượng người dùng lớn mà vẫn đảm bảo hiệu năng, tính ổn định và khả năng mở rộng trong tương lai.
 
-![overview](/images/5-Workshop/5.1-Workshop-overview/diagram1.png)
+#### Tổng quan giải pháp
+
+Giải pháp được xây dựng từ nhiều dịch vụ AWS kết hợp với nhau để tạo thành một hệ thống quản lý sự kiện hoàn chỉnh.
+
+- **Amazon S3** dùng để lưu trữ và triển khai giao diện người dùng (React).
+- **Amazon CloudFront** phân phối nội dung thông qua mạng CDN nhằm tăng tốc độ truy cập.
+- **Amazon Cognito** quản lý xác thực và phân quyền người dùng.
+- **Amazon API Gateway** cung cấp các REST API cho ứng dụng.
+- **AWS Lambda** xử lý toàn bộ nghiệp vụ theo mô hình Serverless.
+- **Amazon DynamoDB** lưu trữ dữ liệu về sự kiện, người tham gia, vé và thông tin điểm danh.
+- **Amazon SES** gửi email xác nhận đăng ký và các thông báo liên quan đến sự kiện.
+- **Amazon CloudWatch** giám sát hoạt động của hệ thống và lưu trữ nhật ký (Logs).
+
+Việc sử dụng các dịch vụ quản lý của AWS giúp các thành phần trong hệ thống hoạt động độc lập, dễ bảo trì, dễ mở rộng và tối ưu chi phí vận hành.
+
+#### Tổng quan Workshop
+
+Workshop này sẽ hướng dẫn từng bước xây dựng hệ thống **AWS Event Management Platform** bằng các dịch vụ Serverless trên AWS.
+
+Các nội dung chính bao gồm:
+
+- Xây dựng giao diện người dùng.
+- Thiết lập xác thực người dùng với Amazon Cognito.
+- Xây dựng REST API bằng Amazon API Gateway.
+- Phát triển các chức năng Backend bằng AWS Lambda.
+- Thiết kế cơ sở dữ liệu trên Amazon DynamoDB.
+- Gửi email tự động bằng Amazon SES.
+- Giám sát hệ thống với Amazon CloudWatch.
+- Triển khai ứng dụng bằng AWS SAM CLI.
+
+Sau khi hoàn thành Workshop, người thực hiện sẽ hiểu cách kết hợp nhiều dịch vụ AWS để xây dựng một hệ thống quản lý sự kiện theo kiến trúc Serverless, đồng thời nắm được quy trình triển khai, vận hành và giám sát một ứng dụng Cloud theo các khuyến nghị của AWS.
+
+![Kiến trúc AWS Event Management Platform](/images/5-Workshop/5.1-Introduction/aws-event-architecture.png)

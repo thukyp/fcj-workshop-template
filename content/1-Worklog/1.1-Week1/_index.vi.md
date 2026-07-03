@@ -1,69 +1,36 @@
 ---
-title: "Nhật ký tuần 1"
+title: "Worklog Tuần 1"
 date: 2026-04-20
 weight: 1
 chapter: false
 pre: " <b> 1.1. </b> "
 ---
 
-{{% notice info %}}
-Báo cáo này tóm tắt các hoạt động đã thực hiện trong tuần đầu tiên của chương trình thực tập AWS.
-{{% /notice %}}
-
 ### Mục tiêu tuần 1
 
-- Chuẩn bị môi trường học tập và phát triển.
-- Tạo và bảo mật tài khoản AWS.
-- Làm quen với các dịch vụ nền tảng của AWS.
-- Hoàn thành các bài Lab cơ bản.
+- Làm quen với chương trình AWS First Cloud Journey và các thành viên.
+- Hiểu các khái niệm nền tảng về Cloud Computing và Amazon Web Services.
+- Thiết lập môi trường học tập và thực hành các dịch vụ AWS cơ bản.
 
----
+### Các công việc thực hiện trong tuần
 
-### Công việc đã thực hiện
+| Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
+| ---- | --------- | ------------ | ---------------- | -------------- |
+| 2 | - Làm quen với mentor và các thành viên First Cloud Journey.<br>- Đọc nội quy chương trình và thành lập nhóm Furious Five.<br>- Cài đặt Hugo Extended phục vụ viết Workshop và Blog. | 20/04/2026 | 20/04/2026 | https://cloudjourney.awsstudygroup.com/ |
+| 3 | - Đăng ký AWS Free Tier Account.<br>- Tìm hiểu Cloud Computing và mô hình Shared Responsibility Model.<br>- Thực hành tạo IAM User, Group và Policy cơ bản. | 21/04/2026 | 21/04/2026 | https://cloudjourney.awsstudygroup.com/ |
+| 4 | - Tìm hiểu Amazon VPC, Subnet, Route Table, Internet Gateway và Security Group.<br>- Thực hành xây dựng mạng VPC cơ bản. | 22/04/2026 | 22/04/2026 | https://cloudjourney.awsstudygroup.com/ |
+| 5 | - Tìm hiểu Amazon EC2, AMI, Instance Type, EBS và Elastic IP.<br>- Thực hành tạo EC2 Instance, kết nối SSH và quản lý máy chủ Linux. | 23/04/2026 | 24/04/2026 | https://cloudjourney.awsstudygroup.com/ |
+| 6 | - Tìm hiểu Amazon RDS, Auto Scaling Group và Elastic Load Balancer.<br>- Nghiên cứu AWS Budgets và IAM nâng cao.<br>- Hoàn thành các bài Lab tổng hợp của tuần. | 25/04/2026 | 26/04/2026 | https://cloudjourney.awsstudygroup.com/ |
 
-| Ngày | Nội dung | Thời gian |
-|------|----------|-----------|
-| Thứ 2 | Cài đặt Hugo Extended, đăng ký tài khoản AWS, cấu hình MFA, IAM User và IAM Group. | 20/04/2026 |
-| Thứ 3 | Tìm hiểu Cloud Computing và thực hành xây dựng Amazon VPC gồm Subnet, Route Table và Internet Gateway. | 21/04/2026 |
-| Thứ 4 | Thực hành khởi tạo Amazon EC2 Windows Server 2025 và Amazon Linux Instance. | 22/04/2026 |
-| Thứ 5 | Tìm hiểu Amazon EC2 và thực hành tạo cơ sở dữ liệu Amazon RDS. | 23/04/2026 |
-| Thứ 6 | Hoàn thành các bài Lab về Amazon EC2 và IAM. | 24/04/2026 |
-| Thứ 7 | Thiết lập AWS Budgets và nghiên cứu IAM Policy, AWS Governance. | 25/04/2026 |
-| Chủ nhật | Ôn tập kiến thức tuần 1 và tối ưu các thiết lập bảo mật ban đầu. | 26/04/2026 |
+### Kết quả đạt được tuần 1
 
----
-
-### Thực hành
-
-- Cài đặt Hugo Extended.
-- Đăng ký tài khoản AWS Free Tier.
-- Kích hoạt xác thực đa yếu tố (MFA).
-- Tạo IAM User, IAM Group và IAM Policy.
-- Xây dựng Amazon VPC.
-- Cấu hình Subnet, Route Table và Internet Gateway.
-- Khởi tạo EC2 Windows Server và Amazon Linux.
-- Tạo cơ sở dữ liệu Amazon RDS.
-- Thiết lập AWS Budgets để theo dõi chi phí.
-- Ôn tập và củng cố các kiến thức bảo mật cơ bản.
-
----
-
-### Kiến thức đạt được
-
-- Cloud Computing.
-- AWS Global Infrastructure.
-- AWS IAM.
-- Amazon VPC.
-- Amazon EC2.
-- Amazon RDS.
-- AWS Budgets.
-- AWS Governance.
-
----
-
-### Kết quả đạt được
-
-- Chuẩn bị thành công môi trường học tập AWS.
-- Xây dựng tài khoản AWS với các thiết lập bảo mật cơ bản.
-- Hiểu được mối quan hệ giữa Network, Compute và Database trên AWS.
-- Hoàn thành đầy đủ các bài Lab của tuần đầu tiên.
+- Cài đặt thành công Hugo Extended và thiết lập môi trường phục vụ quá trình học tập.
+- Đăng ký thành công AWS Free Tier Account và làm quen với AWS Management Console.
+- Hiểu các khái niệm cơ bản về Cloud Computing và mô hình Shared Responsibility Model.
+- Thực hành tạo IAM User, Group và Policy để quản lý quyền truy cập trên AWS.
+- Hiểu kiến trúc mạng cơ bản trên AWS gồm VPC, Subnet, Route Table, Internet Gateway và Security Group.
+- Tạo và cấu hình thành công EC2 Instance, kết nối SSH từ máy tính cá nhân và thực hiện các thao tác quản trị cơ bản.
+- Tìm hiểu cơ chế lưu trữ của Amazon EBS và dịch vụ cơ sở dữ liệu Amazon RDS.
+- Hiểu nguyên lý hoạt động của Auto Scaling Group và Elastic Load Balancer trong việc xây dựng hệ thống có khả năng mở rộng.
+- Tìm hiểu AWS Budgets để theo dõi và kiểm soát chi phí sử dụng dịch vụ.
+- Hoàn thành các bài Lab thực hành của tuần và ghi chép lại kiến thức phục vụ cho các nội dung học tiếp theo.

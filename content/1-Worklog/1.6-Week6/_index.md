@@ -7,60 +7,36 @@ pre: " <b> 1.6. </b> "
 ---
 
 {{% notice info %}}
-This worklog summarizes the database, caching and migration services explored during the sixth week of the internship.
+This report summarizes the data warehousing, caching, and database migration topics covered during the sixth week of the AWS First Cloud Journey program.
 {{% /notice %}}
 
-### Week 6 Objectives
+## Week 6 Objectives
 
-- Understand AWS database and analytics services.
-- Learn caching techniques to improve application performance.
-- Explore database migration services on AWS.
-- Complete hands-on database laboratories.
-
----
-
-### Daily Activities
-
-| Day | Activities |
-|-----|------------|
-| Monday | Studied Amazon Redshift architecture, Massively Parallel Processing (MPP) and columnar storage concepts for data warehousing. |
-| Tuesday | Learned Redshift Spectrum and Concurrency Scaling to optimize analytical workloads and query data stored in Amazon S3. |
-| Wednesday | Explored Amazon ElastiCache, including Redis and Memcached, and understood how caching improves application performance. |
-| Thursday | Practiced AWS Database Migration Service (DMS) to migrate databases from on-premises environments to AWS. |
-| Friday | Learned AWS Schema Conversion Tool (SCT) and converted database schemas for migration to Amazon Aurora PostgreSQL. |
-| Saturday | Completed hands-on laboratories for Amazon Redshift, ElastiCache and Database Migration Service. |
-| Sunday | Reviewed the week's topics and summarized key concepts related to AWS database and migration services. |
+- Learn AWS data analytics services.
+- Explore Amazon Redshift and Amazon ElastiCache.
+- Practice database migration using AWS Database Migration Service.
 
 ---
 
-### Hands-on Practice
+## Tasks Completed This Week
 
-- Explored Amazon Redshift clusters and analytical workloads.
-- Practiced querying data using Redshift Spectrum.
-- Learned caching concepts with Redis and Memcached on Amazon ElastiCache.
-- Migrated sample databases using AWS Database Migration Service (DMS).
-- Converted database schemas using AWS Schema Conversion Tool (SCT).
-- Reviewed best practices for AWS database migration.
-
----
-
-### Knowledge Gained
-
-- Amazon Redshift.
-- Columnar Storage.
-- Massively Parallel Processing (MPP).
-- Redshift Spectrum.
-- Amazon ElastiCache.
-- Redis.
-- Memcached.
-- AWS Database Migration Service (DMS).
-- AWS Schema Conversion Tool (SCT).
+| Day | Tasks | Start Date | End Date | Reference |
+|---|---|---|---|---|
+| Monday | - Studied the architecture of Amazon Redshift.<br>- Learned about Massively Parallel Processing (MPP) and Columnar Storage. | 25/05/2026 | 25/05/2026 | https://cloudjourney.awsstudygroup.com/ |
+| Tuesday | - Practiced querying data with Amazon Redshift.<br>- Explored Concurrency Scaling and Redshift Spectrum for performance and cost optimization. | 26/05/2026 | 26/05/2026 | https://cloudjourney.awsstudygroup.com/ |
+| Wednesday | - Learned Amazon ElastiCache.<br>- Compared Redis and Memcached.<br>- Practiced implementing caching for applications. | 27/05/2026 | 27/05/2026 | https://cloudjourney.awsstudygroup.com/ |
+| Thursday | - Studied the database migration process.<br>- Explored AWS Database Migration Service (DMS).<br>- Learned AWS Schema Conversion Tool (SCT). | 28/05/2026 | 29/05/2026 | https://cloudjourney.awsstudygroup.com/ |
+| Friday | - Practiced migrating schemas and data from Oracle to Amazon Aurora PostgreSQL.<br>- Completed the hands-on labs related to Amazon Redshift, ElastiCache, and AWS DMS. | 30/05/2026 | 31/05/2026 | https://cloudjourney.awsstudygroup.com/ |
 
 ---
 
-### Results Achieved
+## Week 6 Achievements
 
-- Understood the architecture and use cases of Amazon Redshift.
-- Learned how caching improves application performance and reduces database workload.
-- Successfully completed database migration laboratories using AWS DMS and SCT.
-- Gained practical experience with AWS database and migration services.
+- Gained a solid understanding of Amazon Redshift as a cloud data warehouse solution.
+- Learned how Massively Parallel Processing (MPP) and Columnar Storage improve analytical query performance.
+- Explored Concurrency Scaling and Redshift Spectrum for better performance and cost efficiency.
+- Understood how Amazon ElastiCache improves application performance by reducing database workload.
+- Learned the differences between Redis and Memcached and their common use cases.
+- Explored the database migration workflow using AWS Database Migration Service (AWS DMS).
+- Learned how AWS Schema Conversion Tool (AWS SCT) assists in schema conversion during database migration.
+- Successfully completed all hands-on labs related to Amazon Redshift, Amazon ElastiCache, AWS DMS, and AWS SCT.

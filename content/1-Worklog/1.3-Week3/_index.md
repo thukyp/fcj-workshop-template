@@ -6,62 +6,35 @@ chapter: false
 pre: " <b> 1.3. </b> "
 ---
 
-{{% notice info %}}
-This worklog summarizes the EC2 administration, monitoring and scaling services studied during the third week.
-{{% /notice %}}
+## Week 3 Objectives
 
-### Week 3 Objectives
-
-- Learn Amazon EC2 administration.
-- Monitor AWS resources using Amazon CloudWatch.
-- Deploy scalable infrastructure with Auto Scaling.
-- Complete compute-related laboratory exercises.
+- Practice Amazon EC2 resource management and organize resources using Tags.
+- Learn how to monitor systems with Amazon CloudWatch.
+- Practice Auto Scaling Group, Load Balancer, and Launch Template.
+- Explore Amazon Lightsail and compare it with Amazon EC2.
 
 ---
 
-### Daily Activities
+## Tasks Completed This Week
 
-| Day | Activities |
-|-----|------------|
-| Monday | Practiced Amazon EC2 administration, including creating snapshots, installing applications and organizing resources using Tags and Resource Groups. |
-| Tuesday | Installed and configured Amazon CloudWatch Agent to collect CPU, memory and disk metrics from EC2 instances. |
-| Wednesday | Created CloudWatch Dashboards to monitor EC2 performance and system health. |
-| Thursday | Learned Auto Scaling concepts and created Launch Templates for EC2 instances. |
-| Friday | Configured an Application Load Balancer (ALB), Target Group and deployed an Auto Scaling Group. |
-| Saturday | Explored Amazon Lightsail, including Lightsail Load Balancer and Lightsail Database, and compared it with Amazon EC2. |
-| Sunday | Reviewed the week's content and completed the remaining hands-on laboratories. |
+| Day | Tasks | Start Date | End Date | Reference |
+|---|---|---|---|---|
+| Monday | - Reviewed and practiced Amazon EC2 administration.<br>- Created Snapshots and installed basic applications on EC2.<br>- Learned how to use Tags and Resource Groups for better resource management. | 04/05/2026 | 04/05/2026 | https://cloudjourney.awsstudygroup.com/ |
+| Tuesday | - Studied Amazon CloudWatch.<br>- Installed CloudWatch Agent to collect logs and metrics from EC2.<br>- Created a dashboard to monitor system health. | 05/05/2026 | 05/05/2026 | https://cloudjourney.awsstudygroup.com/ |
+| Wednesday | - Learned about Launch Template, Target Group, and Application Load Balancer.<br>- Practiced configuring a Load Balancer to distribute traffic to EC2 instances. | 06/05/2026 | 06/05/2026 | https://cloudjourney.awsstudygroup.com/ |
+| Thursday | - Created an Auto Scaling Group.<br>- Tested automatic scaling based on workload changes.<br>- Monitored scaling activities using Amazon CloudWatch. | 07/05/2026 | 08/05/2026 | https://cloudjourney.awsstudygroup.com/ |
+| Friday | - Explored Amazon Lightsail, Lightsail Load Balancer, and Lightsail Database.<br>- Compared Lightsail with EC2 for small application deployments.<br>- Studied how to migrate an application from Lightsail to EC2 when scaling is required. | 09/05/2026 | 10/05/2026 | https://cloudjourney.awsstudygroup.com/ |
 
 ---
 
-### Hands-on Practice
+## Week 3 Achievements
 
-- Created Amazon EC2 Snapshots.
-- Managed AWS resources using Tags and Resource Groups.
-- Installed Amazon CloudWatch Agent.
-- Built CloudWatch Dashboards.
-- Created Launch Templates.
-- Configured Target Groups.
-- Configured an Application Load Balancer.
-- Deployed an Auto Scaling Group.
-- Explored Amazon Lightsail.
-
----
-
-### Knowledge Gained
-
-- Amazon EC2 Administration.
-- Amazon CloudWatch.
-- CloudWatch Agent.
-- CloudWatch Dashboard.
-- Launch Template.
-- Auto Scaling Group.
-- Application Load Balancer.
-- Amazon Lightsail.
-
----
-
-### Results Achieved
-
-- Learned how to monitor EC2 instances using CloudWatch.
-- Successfully deployed scalable infrastructure with Auto Scaling.
-- Understood the relationship between Launch Templates, Load Balancers and Auto Scaling Groups.
+- Gained more hands-on experience in managing Amazon EC2 resources.
+- Learned how to create Snapshots to back up server states and important data.
+- Used Tags and Resource Groups to organize and manage AWS resources more effectively.
+- Installed and configured CloudWatch Agent to collect EC2 metrics and logs.
+- Built a CloudWatch Dashboard for centralized system monitoring.
+- Understood the role of Launch Template, Target Group, Load Balancer, and Auto Scaling Group.
+- Practiced building an application architecture that can automatically scale based on demand.
+- Explored Amazon Lightsail and understood when to use Lightsail and when to move to EC2.
+- Completed the hands-on labs related to EC2, CloudWatch, Auto Scaling Group, and Lightsail.

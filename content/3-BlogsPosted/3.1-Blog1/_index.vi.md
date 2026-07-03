@@ -1,31 +1,94 @@
 ---
 title: "Blog 1"
-date: 2024-01-01
+date: 2026-06-20
 weight: 1
 chapter: false
 pre: " <b> 3.1. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
 
-# SESSION POLICIES TRONG AMAZON EKS POD IDENTITY
+# Xây dựng kiến trúc Notification và Analytics theo mô hình Serverless trên AWS
 
-Amazon EKS Pod Identity vừa bổ sung tính năng session policies, cho phép bạn thu hẹp quyền IAM một cách linh hoạt và chính xác cho từng pod mà không cần tạo thêm nhiều IAM roles riêng biệt. Đây là bước tiến quan trọng giúp áp dụng nguyên tắc least privilege hiệu quả hơn trong môi trường Kubernetes quy mô lớn.
+Trong quá trình phát triển **AWS Event Management Platform**, mình được giao phụ trách các module **Notification**, **Analytics** và **Deployment**. Ban đầu mình nghĩ đây chỉ là những chức năng hỗ trợ, tuy nhiên khi bắt đầu triển khai mới nhận ra chúng đóng vai trò rất quan trọng trong khả năng vận hành và mở rộng của toàn bộ hệ thống.
 
-Các điểm chính cần nắm:
+Thay vì triển khai theo mô hình máy chủ truyền thống, nhóm mình lựa chọn **kiến trúc Serverless** trên AWS nhằm giảm chi phí hạ tầng, hạn chế việc quản lý máy chủ và tận dụng khả năng tự động mở rộng của các dịch vụ AWS.
 
-* Session policy là một IAM policy inline được chỉ định khi tạo hoặc cập nhật Pod Identity association.
-* Quyền hiệu quả = intersection (giao) giữa permissions của IAM role và session policy → session policy chỉ có thể thu hẹp, không thể mở rộng quyền.
-* Giúp tránh tình trạng over-permissioning khi reuse chung một IAM role cho nhiều workloads có nhu cầu khác nhau.
-* Hỗ trợ cả same-account và cross-account (qua IAM role chaining).
-* Giảm đáng kể số lượng IAM roles cần quản lý, tránh chạm giới hạn quota IAM trong cluster lớn.
-* Cấu hình dễ dàng qua AWS Management Console, AWS CLI hoặc AWS SDK khi tạo association giữa Kubernetes ServiceAccount và IAM role.
+## Kiến trúc Event-Driven
 
-Tính năng này đặc biệt hữu ích khi bạn có nhiều ứng dụng chạy trên cùng một IAM role nhưng cần giới hạn quyền khác nhau (ví dụ: một pod chỉ đọc S3 bucket cụ thể, pod khác chỉ gọi một số API nhất định).
+Một trong những mục tiêu khi thiết kế hệ thống là giảm sự phụ thuộc giữa các module.
 
-...Hình ảnh...
+Thay vì để các chức năng gọi trực tiếp lẫn nhau, hệ thống xử lý theo mô hình **Event-Driven**. Khi một sự kiện như đăng ký thành công hoặc tạo vé hoàn tất xảy ra, hệ thống sẽ phát sinh một sự kiện để các thành phần liên quan tiếp tục xử lý.
 
-...Link...
+Cách tiếp cận này giúp việc mở rộng chức năng trong tương lai trở nên đơn giản hơn mà không cần thay đổi các module hiện có.
 
-...Hướng dẫn...
+---
+
+## Notification Service
+
+Module Notification chịu trách nhiệm gửi email tự động cho người tham gia.
+
+Giải pháp sử dụng:
+
+- AWS Lambda
+- Amazon SES
+- Amazon EventBridge Scheduler
+
+Lambda xử lý nội dung email, Amazon SES thực hiện việc gửi email, còn EventBridge Scheduler giúp tự động gửi email nhắc lịch đúng thời điểm mà không cần một máy chủ chạy liên tục.
+
+Toàn bộ trạng thái gửi email đều được lưu lại trong DynamoDB để phục vụ việc theo dõi và xử lý sự cố khi cần.
+
+---
+
+## Analytics Dashboard
+
+Hệ thống cũng cung cấp Dashboard giúp quản trị viên theo dõi tình trạng hoạt động của sự kiện.
+
+Lambda sẽ tổng hợp dữ liệu từ DynamoDB để tạo các chỉ số như:
+
+- Tổng số sự kiện
+- Tổng số lượt đăng ký
+- Số vé đã xác nhận
+- Danh sách chờ
+- Tỷ lệ tham dự
+
+Cách triển khai này phù hợp với quy mô hiện tại của dự án và vẫn đảm bảo khả năng mở rộng trong tương lai.
+
+---
+
+## Monitoring và Deployment
+
+Tất cả các hàm Lambda đều được cấu hình ghi log lên **Amazon CloudWatch** để theo dõi:
+
+- Thời gian thực thi
+- Số lượng request
+- Tỷ lệ lỗi
+- Exception phát sinh
+
+CloudWatch Alarm có thể kết hợp với Amazon SNS để gửi cảnh báo khi hệ thống gặp sự cố.
+
+Đối với Frontend, nhóm triển khai trên **Amazon S3** kết hợp với **Amazon CloudFront** nhằm tăng tốc độ truy cập và giảm chi phí vận hành so với mô hình sử dụng máy chủ truyền thống.
+
+---
+
+## Những điều mình học được
+
+Qua quá trình thực hiện module này, mình nhận ra rằng phát triển ứng dụng Serverless không chỉ đơn giản là viết Lambda.
+
+Việc thiết kế kiến trúc Event-Driven, xây dựng hệ thống giám sát, tự động hóa quy trình gửi thông báo và triển khai ứng dụng cũng quan trọng không kém để tạo nên một hệ thống Cloud hoạt động ổn định.
+
+Đây cũng là cơ hội giúp mình hiểu rõ hơn cách các dịch vụ AWS phối hợp với nhau để xây dựng một hệ thống có khả năng mở rộng, dễ bảo trì và tối ưu chi phí.
+
+---
+
+## Kiến trúc hệ thống
+
+![Notification & Analytics Architecture](/images/3-Blogs/blog1-architecture.jpg)
+
+---
+
+## Tài liệu tham khảo
+
+- https://aws.amazon.com/lambda/
+- https://aws.amazon.com/eventbridge/
+- https://aws.amazon.com/ses/
+- https://aws.amazon.com/cloudwatch/
+- https://aws.amazon.com/serverless/

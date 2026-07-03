@@ -7,64 +7,36 @@ pre: " <b> 1.8. </b> "
 ---
 
 {{% notice info %}}
-This worklog summarizes the transition from AWS learning modules to the development phase of the AWS Event Management Platform.
+This report summarizes the AWS review sessions and the initial development phase of the AWS Event Management Platform during the eighth week.
 {{% /notice %}}
 
-### Week 8 Objectives
+## Week 8 Objectives
 
-- Review the core AWS services learned during the training program.
-- Explore AWS WAF for web application protection.
-- Analyze project requirements.
-- Design the serverless architecture.
-- Prepare the development environment for the project.
-
----
-
-### Daily Activities
-
-| Day | Activities |
-|-----|------------|
-| Monday | Reviewed AWS core services including Amazon VPC, EC2, CloudWatch, Auto Scaling, Amazon S3, IAM, DynamoDB and Amazon Redshift to strengthen fundamental knowledge before starting the project. |
-| Tuesday | Studied AWS WAF, common web application attacks such as SQL Injection and Cross-Site Scripting (XSS), and learned how AWS WAF protects web applications. |
-| Wednesday | Analyzed the requirements of the AWS Event Management Platform, identified system modules and discussed the project scope with team members. |
-| Thursday | Designed the overall serverless architecture, selected appropriate AWS services and applied AWS Well-Architected Framework principles. |
-| Friday | Initialized the project repository, organized the project structure and assigned responsibilities among team members. |
-| Saturday | Installed and configured AWS SAM CLI, Docker and other development tools for local serverless development and testing. |
-| Sunday | Reviewed the overall system architecture, finalized the initial design and prepared for implementing project modules in the following weeks. |
+- Review the core AWS services learned in previous weeks.
+- Finalize the team project topic.
+- Design the overall AWS architecture.
+- Prepare the development environment and start the project implementation.
 
 ---
 
-### Hands-on Practice
+## Tasks Completed This Week
 
-- Reviewed AWS networking, compute, storage, database and security services.
-- Explored AWS WAF configuration and protection mechanisms.
-- Designed the serverless architecture for the Event Management Platform.
-- Selected AWS services including Amazon Cognito, API Gateway, AWS Lambda, Amazon DynamoDB, Amazon S3, Amazon SES and Amazon SNS.
-- Initialized the project repository.
-- Installed and configured AWS SAM CLI.
-- Configured Docker for local Lambda development.
-
----
-
-### Knowledge Gained
-
-- AWS Well-Architected Framework.
-- AWS WAF.
-- AWS SAM CLI.
-- Docker.
-- Serverless Architecture.
-- Amazon Cognito.
-- Amazon API Gateway.
-- AWS Lambda.
-- Amazon DynamoDB.
-- Amazon S3.
+| Day | Tasks | Start Date | End Date | Reference |
+|---|---|---|---|---|
+| Monday | - Reviewed AWS core services including VPC, EC2, S3, IAM, RDS, and DynamoDB.<br>- Consolidated previous knowledge for project development. | 08/06/2026 | 08/06/2026 | https://cloudjourney.awsstudygroup.com/ |
+| Tuesday | - Explored AWS WAF and web application protection mechanisms.<br>- Discussed and selected the team project topic. | 09/06/2026 | 09/06/2026 | https://cloudjourney.awsstudygroup.com/ |
+| Wednesday | - Analyzed the requirements of the Event Management Platform.<br>- Assigned responsibilities to team members.<br>- Designed the initial AWS architecture. | 10/06/2026 | 10/06/2026 | https://cloudjourney.awsstudygroup.com/ |
+| Thursday | - Designed the serverless architecture for the project.<br>- Selected suitable AWS services based on project requirements.<br>- Prepared the initial architecture documentation. | 11/06/2026 | 12/06/2026 | https://cloudjourney.awsstudygroup.com/ |
+| Friday | - Created the Git repository for the project.<br>- Set up the development environment and project structure.<br>- Started implementing the project's core modules. | 13/06/2026 | 14/06/2026 | https://cloudjourney.awsstudygroup.com/ |
 
 ---
 
-### Results Achieved
+## Week 8 Achievements
 
-- Successfully reviewed the AWS services required for the project.
-- Completed the initial serverless architecture design for the Event Management Platform.
-- Prepared the development environment using AWS SAM CLI and Docker.
-- Defined the project structure and selected the AWS services for each system module.
-- Established a solid foundation for implementing the project in the following weeks.
+- Reviewed and reinforced the AWS knowledge learned in previous weeks.
+- Gained a better understanding of AWS WAF and its role in protecting web applications.
+- Finalized the team project topic: **AWS Event Management Platform**.
+- Assigned responsibilities and established the project development plan.
+- Designed the overall serverless architecture on AWS.
+- Initialized the Git repository and prepared the development environment.
+- Successfully started implementing the foundation modules of the project.

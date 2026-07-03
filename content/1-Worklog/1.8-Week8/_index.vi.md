@@ -1,5 +1,5 @@
 ---
-title: "Nhật ký tuần 8"
+title: "Worklog Tuần 8"
 date: 2026-06-08
 weight: 8
 chapter: false
@@ -7,64 +7,36 @@ pre: " <b> 1.8. </b> "
 ---
 
 {{% notice info %}}
-Báo cáo này tóm tắt quá trình ôn tập kiến thức AWS và chuẩn bị triển khai dự án AWS Event Management Platform.
+Báo cáo này tổng hợp quá trình ôn tập kiến thức AWS và bắt đầu triển khai dự án AWS Event Management Platform trong tuần thứ tám.
 {{% /notice %}}
 
-### Mục tiêu tuần 8
+## Mục tiêu tuần 8
 
-- Ôn tập các dịch vụ AWS đã học.
-- Tìm hiểu AWS WAF để bảo vệ ứng dụng web.
-- Phân tích yêu cầu của dự án.
-- Thiết kế kiến trúc Serverless.
-- Chuẩn bị môi trường phát triển.
-
----
-
-### Công việc theo từng ngày
-
-| Ngày | Nội dung |
-|------|----------|
-| Thứ 2 | Ôn tập các dịch vụ AWS đã học gồm Amazon VPC, EC2, CloudWatch, Auto Scaling, Amazon S3, IAM, DynamoDB và Amazon Redshift nhằm củng cố kiến thức trước khi bắt đầu dự án. |
-| Thứ 3 | Tìm hiểu AWS WAF, nghiên cứu các hình thức tấn công ứng dụng web như SQL Injection và Cross-Site Scripting (XSS), đồng thời tìm hiểu cơ chế bảo vệ của AWS WAF. |
-| Thứ 4 | Phân tích yêu cầu của hệ thống AWS Event Management Platform, xác định các module chức năng và thảo luận phạm vi dự án với các thành viên trong nhóm. |
-| Thứ 5 | Thiết kế kiến trúc tổng thể theo mô hình Serverless, lựa chọn các dịch vụ AWS phù hợp và áp dụng các nguyên tắc của AWS Well-Architected Framework. |
-| Thứ 6 | Khởi tạo Git Repository, xây dựng cấu trúc dự án và phân chia công việc giữa các thành viên trong nhóm. |
-| Thứ 7 | Cài đặt và cấu hình AWS SAM CLI, Docker cùng các công cụ cần thiết để phát triển và kiểm thử AWS Lambda trên môi trường cục bộ. |
-| Chủ nhật | Rà soát kiến trúc hệ thống, hoàn thiện bản thiết kế ban đầu và chuẩn bị triển khai các module của dự án trong những tuần tiếp theo. |
+- Ôn tập các dịch vụ AWS đã học trong những tuần trước.
+- Khảo sát và thống nhất đề tài dự án nhóm.
+- Thiết kế kiến trúc tổng thể của hệ thống trên AWS.
+- Chuẩn bị môi trường phát triển và bắt đầu triển khai dự án.
 
 ---
 
-### Thực hành
+## Các công việc thực hiện trong tuần
 
-- Ôn tập các dịch vụ Network, Compute, Storage, Database và Security trên AWS.
-- Nghiên cứu và tìm hiểu cách cấu hình AWS WAF.
-- Thiết kế kiến trúc Serverless cho hệ thống Event Management Platform.
-- Lựa chọn các dịch vụ AWS gồm Amazon Cognito, API Gateway, AWS Lambda, Amazon DynamoDB, Amazon S3, Amazon SES và Amazon SNS.
-- Khởi tạo Git Repository của dự án.
-- Cài đặt AWS SAM CLI.
-- Cấu hình Docker để phát triển và kiểm thử Lambda trên máy cục bộ.
-
----
-
-### Kiến thức đạt được
-
-- AWS Well-Architected Framework.
-- AWS WAF.
-- AWS SAM CLI.
-- Docker.
-- Serverless Architecture.
-- Amazon Cognito.
-- Amazon API Gateway.
-- AWS Lambda.
-- Amazon DynamoDB.
-- Amazon S3.
+| Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
+|---|---|---|---|---|
+| 2 | - Ôn tập các dịch vụ AWS đã học như VPC, EC2, S3, IAM, RDS và DynamoDB.<br>- Hệ thống lại kiến thức phục vụ cho quá trình phát triển dự án. | 08/06/2026 | 08/06/2026 | https://cloudjourney.awsstudygroup.com/ |
+| 3 | - Tìm hiểu AWS WAF và các cơ chế bảo vệ ứng dụng Web.<br>- Thảo luận ý tưởng và lựa chọn đề tài dự án nhóm. | 09/06/2026 | 09/06/2026 | https://cloudjourney.awsstudygroup.com/ |
+| 4 | - Phân tích yêu cầu của hệ thống quản lý sự kiện.<br>- Phân chia nhiệm vụ cho từng thành viên trong nhóm.<br>- Thiết kế sơ bộ kiến trúc triển khai trên AWS. | 10/06/2026 | 10/06/2026 | https://cloudjourney.awsstudygroup.com/ |
+| 5 | - Thiết kế kiến trúc Serverless cho dự án.<br>- Lựa chọn các dịch vụ AWS phù hợp với yêu cầu hệ thống.<br>- Chuẩn bị tài liệu thiết kế ban đầu. | 11/06/2026 | 12/06/2026 | https://cloudjourney.awsstudygroup.com/ |
+| 6 | - Khởi tạo Git Repository cho dự án.<br>- Thiết lập môi trường phát triển và cấu trúc thư mục.<br>- Bắt đầu xây dựng các module nền tảng của hệ thống. | 13/06/2026 | 14/06/2026 | https://cloudjourney.awsstudygroup.com/ |
 
 ---
 
-### Kết quả đạt được
+## Kết quả đạt được tuần 8
 
-- Ôn tập và hệ thống hóa các dịch vụ AWS cần thiết cho dự án.
-- Hoàn thành thiết kế kiến trúc Serverless ban đầu của hệ thống Event Management Platform.
-- Chuẩn bị đầy đủ môi trường phát triển bằng AWS SAM CLI và Docker.
-- Xác định được các dịch vụ AWS phù hợp cho từng chức năng của hệ thống.
-- Sẵn sàng triển khai các module chính của dự án trong các tuần tiếp theo.
+- Ôn tập và củng cố các kiến thức AWS đã học trong giai đoạn trước.
+- Hiểu rõ hơn về vai trò của AWS WAF trong việc bảo vệ hệ thống trước các cuộc tấn công từ Internet.
+- Hoàn thành việc khảo sát và thống nhất đề tài **AWS Event Management Platform**.
+- Phân chia nhiệm vụ cho các thành viên và xây dựng kế hoạch phát triển dự án.
+- Thiết kế kiến trúc tổng thể của hệ thống theo mô hình Serverless trên AWS.
+- Khởi tạo kho mã nguồn Git và chuẩn bị môi trường phát triển cho toàn bộ nhóm.
+- Bắt đầu triển khai các module đầu tiên của dự án theo đúng kế hoạch.

@@ -1,40 +1,55 @@
 ---
 title: "Tự đánh giá"
-date: 2024-01-01
+date: 2026-07-04
 weight: 6
 chapter: false
 pre: " <b> 6. </b> "
 ---
 
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
+# Tự đánh giá
 
-Trong suốt thời gian thực tập tại **[Tên công ty/tổ chức]** từ **[ngày bắt đầu]** đến **[ngày kết thúc]**, tôi đã có cơ hội học hỏi, rèn luyện và áp dụng kiến thức đã được trang bị tại trường vào môi trường làm việc thực tế.  
-Tôi đã tham gia **[mô tả ngắn gọn dự án hoặc công việc chính]**, qua đó cải thiện kỹ năng **[liệt kê kỹ năng: lập trình, phân tích, viết báo cáo, giao tiếp…]**.  
+Trong quá trình tham gia chương trình **AWS First Cloud AI Journey (FCAJ)**, tôi có cơ hội áp dụng những kiến thức đã học vào một dự án thực tế trên nền tảng AWS. Xuyên suốt thời gian thực tập, tôi tham gia phát triển dự án **AWS Event Management Platform**, đảm nhận các chức năng Backend, Notification, Analytics, Deployment và Monitoring theo kiến trúc Serverless.
 
-Về tác phong, tôi luôn cố gắng hoàn thành tốt nhiệm vụ, tuân thủ nội quy, và tích cực trao đổi với đồng nghiệp để nâng cao hiệu quả công việc.
+# Tự đánh giá
 
-Để phản ánh một cách khách quan quá trình thực tập, tôi xin tự đánh giá bản thân dựa trên các tiêu chí dưới đây:
+Trong thời gian tham gia chương trình **AWS First Cloud AI Journey (FCAJ)**, tôi có cơ hội tham gia phát triển dự án **AWS Event Management Platform** theo mô hình Serverless trên nền tảng Amazon Web Services.
+
+Trong nhóm, tôi được phân công phụ trách các nội dung liên quan đến  module **Attendance** và **Certificate**, đồng thời phối hợp với các thành viên để hoàn thiện kiến trúc tổng thể của hệ thống. 
+
+Thông qua các nhiệm vụ được giao, tôi đã tìm hiểu và áp dụng nhiều dịch vụ AWS như Amazon CloudFront, Amazon SES, Amazon SNS, Amazon CloudWatch, Amazon EventBridge, Amazon S3, AWS Lambda, Amazon DynamoDB, Amazon Cognito và AWS SAM. Bên cạnh việc hoàn thành các chức năng kỹ thuật, tôi còn tham gia xây dựng tài liệu Workshop, viết Blog kỹ thuật, tham gia các buổi Meetup của FCAJ và hoàn thiện tài liệu triển khai dự án.
+
+Quá trình thực hiện dự án giúp tôi hiểu rõ hơn về quy trình phát triển một ứng dụng Cloud theo kiến trúc Serverless, cách thiết kế hệ thống theo hướng Module, cũng như cách phối hợp giữa Frontend, Backend và các dịch vụ AWS. Đồng thời, tôi cũng rèn luyện được kỹ năng làm việc nhóm, sử dụng Git/GitHub để quản lý mã nguồn, trao đổi kỹ thuật với các thành viên và chủ động nghiên cứu tài liệu AWS để giải quyết các vấn đề phát sinh.
 
 
-| STT | Tiêu chí                            | Mô tả                                                                                            | Tốt | Khá | Trung bình |
-| --- | ----------------------------------- | ------------------------------------------------------------------------------------------------ | --- | --- | ---------- |
-| 1   | **Kiến thức và kỹ năng chuyên môn** | Hiểu biết về ngành, áp dụng kiến thức vào thực tế, kỹ năng sử dụng công cụ, chất lượng công việc | ✅   | ☐   | ☐          |
-| 2   | **Khả năng học hỏi**                | Tiếp thu kiến thức mới, học hỏi nhanh                                                            | ☐   | ✅   | ☐          |
-| 3   | **Chủ động**                        | Tự tìm hiểu, nhận nhiệm vụ mà không chờ chỉ dẫn                                                  | ✅   | ☐   | ☐          |
-| 4   | **Tinh thần trách nhiệm**           | Hoàn thành công việc đúng hạn, đảm bảo chất lượng                                                | ✅   | ☐   | ☐          |
-| 5   | **Kỷ luật**                         | Tuân thủ giờ giấc, nội quy, quy trình làm việc                                                   | ☐   | ☐   | ✅          |
-| 6   | **Tính cầu tiến**                   | Sẵn sàng nhận feedback và cải thiện bản thân                                                     | ☐   | ✅   | ☐          |
-| 7   | **Giao tiếp**                       | Trình bày ý tưởng, báo cáo công việc rõ ràng                                                     | ☐   | ✅   | ☐          |
-| 8   | **Hợp tác nhóm**                    | Làm việc hiệu quả với đồng nghiệp, tham gia nhóm                                                 | ✅   | ☐   | ☐          |
-| 9   | **Ứng xử chuyên nghiệp**            | Tôn trọng đồng nghiệp, đối tác, môi trường làm việc                                              | ✅   | ☐   | ☐          |
-| 10  | **Tư duy giải quyết vấn đề**        | Nhận diện vấn đề, đề xuất giải pháp, sáng tạo                                                    | ☐   | ✅   | ☐          |
-| 11  | **Đóng góp vào dự án/tổ chức**      | Hiệu quả công việc, sáng kiến cải tiến, ghi nhận từ team                                         | ✅   | ☐   | ☐          |
-| 12  | **Tổng thể**                        | Đánh giá chung về toàn bộ quá trình thực tập                                                     | ✅   | ☐   | ☐          |
+Việc tham gia một dự án thực tế giúp tôi hiểu rõ hơn về quy trình phát triển phần mềm, cách phối hợp với các thành viên trong nhóm, cũng như tầm quan trọng của việc kiểm thử, theo dõi và cải tiến hệ thống sau khi triển khai.
 
-### Cần cải thiện
+Nhìn chung, chương trình thực tập đã giúp tôi tích lũy nhiều kiến thức và kinh nghiệm thực tế, đồng thời tạo nền tảng vững chắc cho định hướng trở thành Backend Developer và Cloud Engineer trong tương lai.
 
-* Nâng cao tính kỹ luật, chấp hành nghiêm chỉnh nội quy của công ty hoặc bất kỳ trong một tổ chức nào
-* Cải thiện trong cách tư duy giải quyết vấn đề
-* Học cách giao tiếp tốt hơn trong giao tiếp hằng ngày và trong công việc, xử lý tình huống
+## Tự đánh giá
+
+| STT | Tiêu chí | Mô tả | Xuất sắc | Tốt | Khá |
+|----|----------|-------|:--------:|:---:|:---:|
+| 1 | **Kiến thức chuyên môn** | Áp dụng các dịch vụ AWS, phát triển Backend và thiết kế hệ thống | ✅ | ☐ | ☐ |
+| 2 | **Khả năng học hỏi** | Tiếp thu nhanh các dịch vụ AWS và công nghệ mới | ✅ | ☐ | ☐ |
+| 3 | **Tinh thần chủ động** | Chủ động nghiên cứu và đề xuất giải pháp | ✅ | ☐ | ☐ |
+| 4 | **Tinh thần trách nhiệm** | Hoàn thành công việc đúng tiến độ và đảm bảo chất lượng | ✅ | ☐ | ☐ |
+| 5 | **Ý thức kỷ luật** | Tuân thủ quy trình làm việc và kế hoạch của nhóm | ☐ | ✅ | ☐ |
+| 6 | **Tinh thần cầu tiến** | Luôn tiếp thu góp ý và cải thiện bản thân | ✅ | ☐ | ☐ |
+| 7 | **Kỹ năng giao tiếp** | Báo cáo tiến độ và trao đổi với các thành viên trong nhóm | ☐ | ✅ | ☐ |
+| 8 | **Làm việc nhóm** | Phối hợp hiệu quả thông qua GitHub và thảo luận nhóm | ✅ | ☐ | ☐ |
+| 9 | **Tác phong chuyên nghiệp** | Có trách nhiệm, tôn trọng đồng đội và môi trường làm việc | ✅ | ☐ | ☐ |
+| 10 | **Khả năng giải quyết vấn đề** | Tự tìm hiểu, phân tích và khắc phục lỗi trong quá trình phát triển | ☐ | ✅ | ☐ |
+| 11 | **Đóng góp cho dự án** | Hoàn thành các module Backend và triển khai hệ thống trên AWS | ✅ | ☐ | ☐ |
+| 12 | **Đánh giá chung** | Kết quả tổng thể trong suốt quá trình thực tập | ✅ | ☐ | ☐ |
+
+## Những điểm cần cải thiện
+
+Mặc dù đã đạt được nhiều kết quả tích cực trong quá trình thực tập, tôi vẫn nhận thấy bản thân cần tiếp tục cải thiện ở một số nội dung:
+
+- Nâng cao kỹ năng thiết kế kiến trúc Cloud cho các hệ thống quy mô lớn.
+- Tìm hiểu sâu hơn về tự động hóa triển khai và quy trình CI/CD.
+- Bổ sung kiến thức về bảo mật và tối ưu chi phí trên AWS.
+- Cải thiện kỹ năng trình bày và trao đổi các giải pháp kỹ thuật.
+- Tiếp tục học tập các dịch vụ AWS nâng cao và hướng tới các chứng chỉ AWS trong tương lai.
+
+Chương trình FCAJ không chỉ giúp tôi nâng cao kiến thức chuyên môn mà còn giúp tôi rèn luyện tư duy làm việc chuyên nghiệp, kỹ năng làm việc nhóm và khả năng xây dựng các ứng dụng Cloud theo kiến trúc hiện đại. Đây sẽ là nền tảng quan trọng để tôi tiếp tục phát triển sự nghiệp trong lĩnh vực Backend và Cloud Computing.

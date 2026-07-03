@@ -7,59 +7,37 @@ pre: " <b> 1.5. </b> "
 ---
 
 {{% notice info %}}
-This worklog summarizes the AWS security and identity management services explored during the fifth week.
+This report summarizes the identity management, access control, and security services covered during the fifth week of the AWS First Cloud Journey program.
 {{% /notice %}}
 
-### Week 5 Objectives
+## Week 5 Objectives
 
-- Understand AWS security best practices.
-- Learn identity and access management services.
-- Explore authentication and encryption services.
-- Complete security-related laboratory exercises.
-
----
-
-### Daily Activities
-
-| Day | Activities |
-|-----|------------|
-| Monday | Learned the AWS Shared Responsibility Model and security best practices. |
-| Tuesday | Practiced IAM Users, Groups, Policies and Roles. |
-| Wednesday | Studied AWS Organizations, Organizational Units and Service Control Policies (SCPs). |
-| Thursday | Explored Amazon Cognito and AWS Key Management Service (KMS). |
-| Friday | Practiced AWS IAM Identity Center (AWS SSO) for centralized access management. |
-| Saturday | Used AWS Security Hub to review and analyze security findings. |
-| Sunday | Reviewed the week's topics and completed the remaining security laboratories. |
+- Understand the AWS security model.
+- Practice identity and access management using AWS IAM.
+- Explore AWS services for multi-account management and data protection.
 
 ---
 
-### Hands-on Practice
+## Tasks Completed This Week
 
-- Created IAM Users, Groups and Roles.
-- Configured IAM Policies following the least privilege principle.
-- Practiced Assume Role between AWS accounts.
-- Explored AWS Organizations and Organizational Units.
-- Created an Amazon Cognito User Pool.
-- Tested AWS Key Management Service (KMS).
-- Used AWS Security Hub to analyze security findings.
-
----
-
-### Knowledge Gained
-
-- AWS Shared Responsibility Model.
-- AWS Identity and Access Management (IAM).
-- AWS Organizations.
-- IAM Identity Center (AWS SSO).
-- Amazon Cognito.
-- AWS Key Management Service (KMS).
-- AWS Security Hub.
+| Day | Tasks | Start Date | End Date | Reference |
+|---|---|---|---|---|
+| Monday | - Studied the **AWS Shared Responsibility Model**.<br>- Reviewed IAM Users, Groups, and Policies.<br>- Practiced implementing the Principle of Least Privilege. | 18/05/2026 | 18/05/2026 | https://cloudjourney.awsstudygroup.com/ |
+| Tuesday | - Practiced IAM Roles, AssumeRole, and Permission Boundaries.<br>- Compared IAM Users and Roles in different use cases. | 19/05/2026 | 19/05/2026 | https://cloudjourney.awsstudygroup.com/ |
+| Wednesday | - Learned AWS Organizations.<br>- Practiced Organizational Units (OU), Service Control Policies (SCP), and AWS IAM Identity Center (AWS SSO). | 20/05/2026 | 20/05/2026 | https://cloudjourney.awsstudygroup.com/ |
+| Thursday | - Explored Amazon Cognito and AWS Key Management Service (AWS KMS).<br>- Practiced user authentication and data encryption on AWS. | 21/05/2026 | 22/05/2026 | https://cloudjourney.awsstudygroup.com/ |
+| Friday | - Studied AWS Security Hub.<br>- Performed security posture assessments.<br>- Completed the hands-on labs related to IAM, KMS, and Security Hub. | 23/05/2026 | 24/05/2026 | https://cloudjourney.awsstudygroup.com/ |
 
 ---
 
-### Results Achieved
+## Week 5 Achievements
 
-- Understood AWS security best practices and identity management.
-- Successfully configured IAM resources following the least privilege principle.
-- Learned how Amazon Cognito provides authentication for web applications.
-- Completed all security-related laboratory exercises.
+- Developed a solid understanding of the AWS Shared Responsibility Model.
+- Improved practical skills in managing IAM Users, Groups, Policies, and Roles.
+- Practiced using AssumeRole and Permission Boundaries for secure access management.
+- Learned how AWS Organizations and Organizational Units simplify multi-account management.
+- Understood how Service Control Policies (SCPs) provide centralized governance across AWS accounts.
+- Explored Amazon Cognito for user authentication and identity management.
+- Learned how AWS KMS protects sensitive data through encryption.
+- Used AWS Security Hub to evaluate security findings and improve the security posture of AWS resources.
+- Successfully completed all hands-on labs related to IAM, Organizations, Cognito, AWS KMS, and Security Hub.

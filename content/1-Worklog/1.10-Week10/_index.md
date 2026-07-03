@@ -7,61 +7,35 @@ pre: " <b> 1.10. </b> "
 ---
 
 {{% notice info %}}
-This worklog summarizes the completion of the QR Check-in workflow and the implementation of the attendance certificate module for the AWS Event Management Platform.
+This report summarizes the completion of the Attendance & Certificate module for the AWS Event Management Platform during the tenth week.
 {{% /notice %}}
 
-### Week 10 Objectives
+## Week 10 Objectives
 
-- Complete the QR Check-in workflow.
-- Generate attendance certificates in PDF format.
+- Complete the QR Code check-in feature.
+- Develop the Certificate PDF generation function.
 - Store generated certificates in Amazon S3.
-- Improve integration between frontend and backend services.
+- Test and optimize the attendance workflow.
 
 ---
 
-### Daily Activities
+## Tasks Completed This Week
 
-| Day | Activities |
-|-----|------------|
-| Monday | Improved the QR Check-in workflow, updated attendance status in Amazon DynamoDB and verified the attendance process. |
-| Tuesday | Integrated Amazon API Gateway with AWS Lambda and tested the communication between the frontend and backend services. |
-| Wednesday | Designed the attendance certificate template and implemented PDF generation after successful event attendance. |
-| Thursday | Stored generated certificate files in Amazon S3 and verified file accessibility for future download. |
-| Friday | Integrated the certificate generation workflow into the application and prepared the system for email delivery in the next development phase. |
-| Saturday | Performed end-to-end testing for the Check-in and Certificate modules, fixed bugs and optimized Lambda execution. |
-| Sunday | Updated API documentation, reviewed the overall workflow and prepared the next implementation tasks. |
+| Day | Tasks | Start Date | End Date | Reference |
+|---|---|---|---|---|
+| Monday | - Completed the AWS Lambda function for QR Code check-in.<br>- Updated attendance status in Amazon DynamoDB.<br>- Tested multiple check-in scenarios. | 22/06/2026 | 22/06/2026 | AWS Event Management Project |
+| Tuesday | - Integrated Amazon API Gateway with AWS Lambda.<br>- Finalized the communication flow between the frontend and backend.<br>- Verified API responses after successful check-in. | 23/06/2026 | 23/06/2026 | AWS Event Management Project |
+| Wednesday | - Designed and implemented the Certificate PDF generation feature.<br>- Created the certificate template for completed participants.<br>- Tested the PDF generation workflow. | 24/06/2026 | 24/06/2026 | AWS Event Management Project |
+| Thursday | - Stored generated certificates in Amazon S3.<br>- Prepared files for download and email distribution.<br>- Verified file accessibility and permissions. | 25/06/2026 | 26/06/2026 | AWS Event Management Project |
+| Friday | - Performed end-to-end testing of the Attendance & Certificate module.<br>- Fixed issues found during integration testing.<br>- Updated the API documentation and module design documents. | 27/06/2026 | 28/06/2026 | AWS Event Management Project |
 
 ---
 
-### Hands-on Practice
+## Week 10 Achievements
 
-- Updated attendance status in Amazon DynamoDB.
-- Integrated Amazon API Gateway with AWS Lambda.
-- Generated attendance certificates in PDF format.
-- Uploaded certificate files to Amazon S3.
-- Tested the QR Check-in workflow.
-- Fixed integration issues between React and Lambda.
-- Used AWS SAM CLI and Docker for local testing.
-
----
-
-### Knowledge Gained
-
-- Amazon S3.
-- PDF generation.
-- AWS Lambda integration.
-- Amazon API Gateway.
-- Amazon DynamoDB.
-- AWS SAM CLI.
-- Docker.
-- Serverless application integration.
-
----
-
-### Results Achieved
-
-- Successfully completed the QR Check-in workflow.
-- Generated attendance certificates in PDF format.
-- Stored certificates in Amazon S3.
-- Improved the integration between frontend and backend services.
-- Completed system testing and resolved major issues before continuing with the remaining project modules.
+- Successfully completed the QR Code check-in workflow with attendance status updates stored in Amazon DynamoDB.
+- Integrated Amazon API Gateway with AWS Lambda to support the complete attendance process.
+- Developed a Certificate PDF generation feature for participants who completed the event.
+- Stored generated certificates in Amazon S3 for downloading or future email delivery.
+- Improved the stability of the attendance workflow through integration testing and bug fixing.
+- Updated the API documentation and technical design documents for the Attendance & Certificate module.

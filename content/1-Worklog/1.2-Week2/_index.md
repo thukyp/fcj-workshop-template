@@ -6,58 +6,31 @@ chapter: false
 pre: " <b> 1.2. </b> "
 ---
 
-{{% notice info %}}
-This worklog summarizes the networking services and hybrid connectivity topics studied during the second week.
-{{% /notice %}}
+## Week 2 Objectives
 
-### Week 2 Objectives
-
-- Understand AWS networking services.
-- Learn secure connectivity between AWS and on-premises environments.
-- Practice managing EC2 instances using AWS Systems Manager.
+- Gain a deeper understanding of AWS networking services.
+- Practice different approaches for connecting AWS networks securely.
+- Learn how to manage Amazon EC2 instances using AWS Systems Manager.
 
 ---
 
-### Daily Activities
+## Tasks Completed This Week
 
-| Day | Activities |
-|-----|------------|
-| Monday | Studied Site-to-Site VPN architecture, including Customer Gateway, Virtual Private Gateway and VPN Connection. |
-| Tuesday | Practiced AWS Systems Manager, Session Manager and Port Forwarding to securely access EC2 instances without SSH. |
-| Wednesday | Learned Amazon VPC Peering, configured Route Tables and verified communication between VPCs. |
-| Thursday | Studied Cross-VPC DNS Resolution and tested name resolution across peered VPCs. |
-| Friday | Learned Amazon Transit Gateway architecture and compared it with VPC Peering. |
-| Saturday | Configured Transit Gateway Route Tables and connected multiple VPCs to a centralized network. |
-| Sunday | Reviewed networking concepts and completed the remaining laboratory exercises. |
+| Day | Tasks | Start Date | End Date | Reference |
+| ---- | ----- | ---------- | -------- | --------- |
+| Monday | - Reviewed the core concepts of Amazon VPC.<br>- Learned the architecture of Site-to-Site VPN and its networking components. | 27/04/2026 | 27/04/2026 | https://cloudjourney.awsstudygroup.com/ |
+| Tuesday | - Practiced configuring a Site-to-Site VPN in the lab environment.<br>- Learned about Customer Gateway and Virtual Private Gateway. | 28/04/2026 | 28/04/2026 | https://cloudjourney.awsstudygroup.com/ |
+| Wednesday | - Explored AWS Systems Manager.<br>- Practiced using Session Manager to access EC2 instances without SSH keys.<br>- Learned Port Forwarding and Session Logging features. | 29/04/2026 | 29/04/2026 | https://cloudjourney.awsstudygroup.com/ |
+| Thursday | - Configured VPC Peering between two Amazon VPCs.<br>- Updated Route Tables and verified network connectivity. | 30/04/2026 | 01/05/2026 | https://cloudjourney.awsstudygroup.com/ |
+| Friday | - Studied AWS Transit Gateway.<br>- Compared Transit Gateway with VPC Peering.<br>- Completed the networking hands-on labs for the week. | 02/05/2026 | 03/05/2026 | https://cloudjourney.awsstudygroup.com/ |
 
 ---
 
-### Hands-on Practice
+## Week 2 Achievements
 
-- Configured Site-to-Site VPN.
-- Connected EC2 instances using Session Manager.
-- Practiced Port Forwarding.
-- Configured VPC Peering.
-- Updated Route Tables.
-- Tested Cross-VPC DNS Resolution.
-- Deployed Transit Gateway.
-
----
-
-### Knowledge Gained
-
-- Site-to-Site VPN.
-- AWS Systems Manager.
-- Session Manager.
-- Port Forwarding.
-- VPC Peering.
-- Transit Gateway.
-- Route Tables.
-
----
-
-### Results Achieved
-
-- Understood secure networking between AWS and on-premises environments.
-- Successfully configured communication between multiple VPCs.
-- Learned how to manage EC2 instances without opening SSH ports.
+- Developed a stronger understanding of AWS networking architecture and Amazon VPC.
+- Learned how Site-to-Site VPN enables secure connectivity between on-premises infrastructure and AWS.
+- Successfully managed EC2 instances using AWS Systems Manager and Session Manager without relying on SSH access.
+- Configured and tested VPC Peering between multiple VPCs.
+- Understood the differences between VPC Peering and AWS Transit Gateway for large-scale network architectures.
+- Completed all networking labs and documented the implementation steps for future reference.

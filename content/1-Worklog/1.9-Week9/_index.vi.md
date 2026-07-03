@@ -1,5 +1,5 @@
 ---
-title: "Nhật ký tuần 9"
+title: "Worklog Tuần 9"
 date: 2026-06-15
 weight: 9
 chapter: false
@@ -7,60 +7,36 @@ pre: " <b> 1.9. </b> "
 ---
 
 {{% notice info %}}
-Báo cáo này tóm tắt quá trình phát triển module Attendance của hệ thống AWS Event Management Platform theo kiến trúc Serverless.
+Báo cáo này tổng hợp quá trình phát triển module Attendance & Certificate của dự án AWS Event Management Platform trong tuần thứ chín.
 {{% /notice %}}
 
-### Mục tiêu tuần 9
+## Mục tiêu tuần 9
 
-- Thiết kế module quản lý điểm danh.
-- Xây dựng quy trình Check-in bằng mã QR.
-- Phát triển Backend bằng AWS Lambda.
-- Tích hợp Frontend với các dịch vụ Serverless.
-
----
-
-### Công việc theo từng ngày
-
-| Ngày | Nội dung |
-|------|----------|
-| Thứ 2 | Phân tích yêu cầu của module Attendance, thống nhất cấu trúc API với các thành viên trong nhóm và hoàn thiện quy trình điểm danh. |
-| Thứ 3 | Thiết kế Attendance Table trên Amazon DynamoDB, xác định Partition Key, các thuộc tính và cấu trúc lưu trữ dữ liệu điểm danh. |
-| Thứ 4 | Phát triển hàm Check-in bằng AWS Lambda sử dụng AWS SAM, xây dựng logic kiểm tra và xác thực mã QR. |
-| Thứ 5 | Cấu hình Amazon API Gateway và tích hợp với AWS Lambda để cung cấp API cho Frontend. |
-| Thứ 6 | Xây dựng giao diện QR Check-in dành cho quản trị viên bằng React và tích hợp với các API đã triển khai. |
-| Thứ 7 | Kiểm thử toàn bộ luồng React → API Gateway → Lambda → DynamoDB, đồng thời sửa các lỗi phát sinh trong quá trình kiểm thử. |
-| Chủ nhật | Rà soát quy trình điểm danh, tối ưu xử lý trong Lambda và cập nhật tài liệu thiết kế của dự án. |
+- Xây dựng chức năng điểm danh bằng QR Code.
+- Thiết kế cơ sở dữ liệu phục vụ Attendance.
+- Kết nối Frontend với Backend thông qua API Gateway.
+- Hoàn thiện phiên bản đầu tiên của quy trình Check-in.
 
 ---
 
-### Thực hành
+## Các công việc thực hiện trong tuần
 
-- Thiết kế Attendance Table trên Amazon DynamoDB.
-- Phát triển AWS Lambda bằng AWS SAM CLI.
-- Cấu hình Amazon API Gateway.
-- Tích hợp React với các dịch vụ Serverless.
-- Sử dụng Docker để kiểm thử Lambda trên môi trường cục bộ.
-- Lưu dữ liệu điểm danh trên Amazon DynamoDB.
-- Kiểm thử toàn bộ quy trình Check-in bằng QR Code.
-
----
-
-### Kiến thức đạt được
-
-- AWS Lambda.
-- Amazon API Gateway.
-- Amazon DynamoDB.
-- AWS SAM CLI.
-- Docker.
-- Tích hợp REST API.
-- Quy trình xác thực QR Code.
+| Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
+|---|---|---|---|---|
+| 2 | - Phân tích yêu cầu module Attendance & Certificate.<br>- Thảo luận API và mô hình dữ liệu với các thành viên trong nhóm.<br>- Thiết kế AttendanceTable trên Amazon DynamoDB. | 15/06/2026 | 15/06/2026 | Dự án AWS Event Management |
+| 3 | - Khởi tạo Check-in Lambda.<br>- Xây dựng luồng xử lý kiểm tra QR Code bằng Ticket ID.<br>- Kiểm thử với dữ liệu mẫu trên DynamoDB. | 16/06/2026 | 16/06/2026 | Dự án AWS Event Management |
+| 4 | - Thiết kế giao diện QR Check-in dành cho quản trị viên.<br>- Tích hợp thư viện quét QR và xử lý kết quả trả về.<br>- Kiểm thử luồng Check-in cơ bản. | 17/06/2026 | 17/06/2026 | Dự án AWS Event Management |
+| 5 | - Kết nối API Gateway với AWS Lambda.<br>- Kiểm thử API từ Frontend.<br>- Điều chỉnh cấu trúc dữ liệu trả về giữa Backend và Frontend. | 18/06/2026 | 19/06/2026 | Dự án AWS Event Management |
+| 6 | - Kiểm thử toàn bộ quy trình điểm danh.<br>- Ghi nhận các lỗi phát sinh và cập nhật tài liệu thiết kế module.<br>- Hoàn thiện phiên bản đầu tiên của chức năng Check-in. | 20/06/2026 | 21/06/2026 | Dự án AWS Event Management |
 
 ---
 
-### Kết quả đạt được
+## Kết quả đạt được tuần 9
 
-- Hoàn thành phiên bản đầu tiên của module Attendance.
-- Kết nối thành công React với API Gateway và AWS Lambda.
-- Xây dựng được quy trình Check-in bằng mã QR hoạt động ổn định.
-- Lưu trữ dữ liệu điểm danh trên Amazon DynamoDB.
-- Tạo nền tảng để triển khai chức năng Certificate trong tuần tiếp theo.
+- Hoàn thành thiết kế AttendanceTable trên Amazon DynamoDB phục vụ chức năng điểm danh.
+- Xây dựng thành công Lambda xử lý Check-in bằng QR Code.
+- Hoàn thiện luồng xác thực Ticket ID và cập nhật trạng thái điểm danh.
+- Thiết kế giao diện QR Check-in dành cho quản trị viên và tích hợp chức năng quét mã.
+- Kết nối Frontend với AWS Lambda thông qua Amazon API Gateway.
+- Kiểm thử thành công quy trình Check-in với dữ liệu mẫu và ghi nhận các lỗi cần tiếp tục cải thiện.
+- Cập nhật tài liệu thiết kế và chuẩn bị cho việc phát triển chức năng Certificate ở tuần tiếp theo.

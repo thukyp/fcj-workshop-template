@@ -1,63 +1,36 @@
 ---
-title: "Nhật ký tuần 2"
+title: "Worklog Tuần 2"
 date: 2026-04-27
 weight: 2
 chapter: false
 pre: " <b> 1.2. </b> "
 ---
 
-{{% notice info %}}
-Báo cáo này tóm tắt các nội dung về mạng và kết nối Hybrid trên AWS trong tuần thứ hai.
-{{% /notice %}}
+## Mục tiêu tuần 2
 
-### Mục tiêu tuần 2
-
-- Tìm hiểu các dịch vụ mạng trên AWS.
-- Nghiên cứu kết nối an toàn giữa AWS và hệ thống On-Premises.
-- Thực hành quản lý EC2 bằng AWS Systems Manager.
+- Tìm hiểu chuyên sâu hơn về hạ tầng mạng trên AWS.
+- Thực hành các phương pháp kết nối giữa nhiều hệ thống mạng.
+- Làm quen với AWS Systems Manager để quản lý máy chủ EC2 an toàn và hiệu quả hơn.
 
 ---
 
-### Công việc theo từng ngày
+## Các công việc thực hiện trong tuần
 
-| Ngày | Nội dung |
-|------|----------|
-| Thứ 2 | Tìm hiểu kiến trúc Site-to-Site VPN, Customer Gateway, Virtual Private Gateway và VPN Connection. |
-| Thứ 3 | Thực hành AWS Systems Manager, Session Manager và Port Forwarding để quản lý EC2 mà không cần SSH. |
-| Thứ 4 | Nghiên cứu Amazon VPC Peering, cấu hình Route Table và kiểm tra kết nối giữa các VPC. |
-| Thứ 5 | Tìm hiểu Cross-VPC DNS Resolution và kiểm tra khả năng phân giải tên giữa các VPC đã kết nối. |
-| Thứ 6 | Nghiên cứu kiến trúc Amazon Transit Gateway và so sánh với VPC Peering. |
-| Thứ 7 | Thực hành cấu hình Transit Gateway Route Table và kết nối nhiều VPC vào cùng một mạng trung tâm. |
-| Chủ nhật | Ôn tập kiến thức đã học và hoàn thành các bài Lab còn lại. |
+| Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
+| ---- | --------- | ------------ | ---------------- | -------------- |
+| 2 | - Ôn tập kiến thức về Amazon VPC.<br>- Tìm hiểu kiến trúc Site-to-Site VPN và các thành phần cần thiết để kết nối mạng nội bộ với AWS. | 27/04/2026 | 27/04/2026 | https://cloudjourney.awsstudygroup.com/ |
+| 3 | - Thực hành cấu hình Site-to-Site VPN trong môi trường Lab.<br>- Tìm hiểu Customer Gateway và Virtual Private Gateway. | 28/04/2026 | 28/04/2026 | https://cloudjourney.awsstudygroup.com/ |
+| 4 | - Nghiên cứu AWS Systems Manager.<br>- Thực hành Session Manager để truy cập EC2 mà không cần SSH Key.<br>- Tìm hiểu Port Forwarding và Session Logs. | 29/04/2026 | 29/04/2026 | https://cloudjourney.awsstudygroup.com/ |
+| 5 | - Thực hành kết nối hai VPC bằng VPC Peering.<br>- Cấu hình Route Table và kiểm tra khả năng giao tiếp giữa các VPC. | 30/04/2026 | 01/05/2026 | https://cloudjourney.awsstudygroup.com/ |
+| 6 | - Tìm hiểu AWS Transit Gateway.<br>- So sánh Transit Gateway với VPC Peering.<br>- Hoàn thành Lab tổng hợp về kết nối mạng trên AWS. | 02/05/2026 | 03/05/2026 | https://cloudjourney.awsstudygroup.com/ |
 
 ---
 
-### Thực hành
+## Kết quả đạt được tuần 2
 
-- Thiết lập Site-to-Site VPN.
-- Kết nối EC2 bằng Session Manager.
-- Thực hành Port Forwarding.
-- Cấu hình VPC Peering.
-- Thiết lập Route Table.
-- Kiểm tra Cross-VPC DNS Resolution.
-- Triển khai Amazon Transit Gateway.
-
----
-
-### Kiến thức đạt được
-
-- Site-to-Site VPN.
-- AWS Systems Manager.
-- Session Manager.
-- Port Forwarding.
-- VPC Peering.
-- Transit Gateway.
-- Route Table.
-
----
-
-### Kết quả đạt được
-
-- Hiểu cách thiết lập kết nối an toàn giữa AWS và hệ thống On-Premises.
-- Cấu hình thành công kết nối giữa nhiều VPC.
-- Biết cách quản lý EC2 mà không cần mở cổng SSH.
+- Hiểu rõ hơn về mô hình mạng trong AWS và vai trò của Amazon VPC.
+- Nắm được nguyên lý hoạt động của Site-to-Site VPN trong việc kết nối hệ thống On-Premises với AWS.
+- Thực hành quản lý EC2 thông qua AWS Systems Manager và Session Manager mà không cần sử dụng SSH trực tiếp.
+- Hiểu cách cấu hình và sử dụng VPC Peering để kết nối giữa nhiều VPC.
+- Biết sự khác biệt giữa VPC Peering và AWS Transit Gateway trong các mô hình mạng quy mô lớn.
+- Hoàn thành các bài Lab thực hành về Networking và ghi lại các bước triển khai để phục vụ cho việc học các module tiếp theo.

@@ -1,5 +1,5 @@
 ---
-title: "Nhật ký tuần 4"
+title: "Worklog Tuần 4"
 date: 2026-05-11
 weight: 4
 chapter: false
@@ -7,59 +7,37 @@ pre: " <b> 1.4. </b> "
 ---
 
 {{% notice info %}}
-Báo cáo này tóm tắt các nội dung về lưu trữ, sao lưu và di chuyển dữ liệu trên AWS trong tuần thứ tư.
+Báo cáo này tổng hợp các nội dung về dịch vụ lưu trữ, sao lưu dữ liệu và di chuyển hệ thống trên nền tảng AWS trong tuần thứ tư.
 {{% /notice %}}
 
-### Mục tiêu tuần 4
+## Mục tiêu tuần 4
 
-- Tìm hiểu các dịch vụ lưu trữ trên AWS.
-- Nghiên cứu giải pháp sao lưu và khôi phục dữ liệu.
-- Làm quen với các dịch vụ di chuyển hệ thống lên Cloud.
-
----
-
-### Công việc theo từng ngày
-
-| Ngày | Nội dung |
-|------|----------|
-| Thứ 2 | Tìm hiểu Amazon S3, Object Storage, Bucket và Object Key. |
-| Thứ 3 | Nghiên cứu các S3 Storage Classes, Lifecycle Policy và tối ưu chi phí lưu trữ. |
-| Thứ 4 | Thực hành Versioning, Object Lock và các cơ chế bảo vệ dữ liệu trên Amazon S3. |
-| Thứ 5 | Tìm hiểu AWS Storage Gateway, AWS Snow Family và các giải pháp Hybrid Storage. |
-| Thứ 6 | Nghiên cứu các mô hình Disaster Recovery như Backup & Restore, Pilot Light và Warm Standby. |
-| Thứ 7 | Thực hành AWS Backup và xây dựng Backup Plan cho tài nguyên AWS. |
-| Chủ nhật | Tìm hiểu AWS Application Migration Service (MGN) và ôn tập các bài Lab trong tuần. |
+- Tìm hiểu các dịch vụ lưu trữ dữ liệu trên AWS.
+- Thực hành quản lý dữ liệu với Amazon S3.
+- Nghiên cứu các giải pháp sao lưu, khôi phục và di chuyển hệ thống lên AWS.
 
 ---
 
-### Thực hành
+## Các công việc thực hiện trong tuần
 
-- Tạo và quản lý Amazon S3 Bucket.
-- Thiết lập Lifecycle Rule.
-- Bật Versioning.
-- Thực hành Object Lock.
-- Tìm hiểu AWS Storage Gateway.
-- Thực hành AWS Backup.
-- Nghiên cứu AWS Application Migration Service.
-
----
-
-### Kiến thức đạt được
-
-- Amazon S3.
-- Storage Classes.
-- Lifecycle Policy.
-- Versioning.
-- AWS Backup.
-- Disaster Recovery.
-- AWS Storage Gateway.
-- AWS Snow Family.
-- AWS MGN.
+| Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
+|---|---|---|---|---|
+| 2 | - Tìm hiểu Amazon S3 và mô hình Object Storage.<br>- Thực hành tạo Bucket, upload và quản lý Object.<br>- Tìm hiểu Bucket Policy và quyền truy cập. | 11/05/2026 | 11/05/2026 | https://cloudjourney.awsstudygroup.com/ |
+| 3 | - Nghiên cứu các lớp lưu trữ của Amazon S3.<br>- Thực hành Lifecycle Rule để tự động chuyển đổi Storage Class.<br>- Tìm hiểu cách tối ưu chi phí lưu trữ. | 12/05/2026 | 12/05/2026 | https://cloudjourney.awsstudygroup.com/ |
+| 4 | - Thực hành Versioning và Object Lock trên Amazon S3.<br>- Tìm hiểu cơ chế bảo vệ dữ liệu và phòng chống xóa nhầm dữ liệu. | 13/05/2026 | 13/05/2026 | https://cloudjourney.awsstudygroup.com/ |
+| 5 | - Nghiên cứu AWS Storage Gateway và AWS Snow Family.<br>- Tìm hiểu các giải pháp Hybrid Storage trong doanh nghiệp. | 14/05/2026 | 15/05/2026 | https://cloudjourney.awsstudygroup.com/ |
+| 6 | - Tìm hiểu AWS Backup và Disaster Recovery.<br>- Nghiên cứu AWS Application Migration Service (MGN).<br>- Hoàn thành các bài Lab của tuần. | 16/05/2026 | 17/05/2026 | https://cloudjourney.awsstudygroup.com/ |
 
 ---
 
-### Kết quả đạt được
+## Kết quả đạt được tuần 4
 
-- Hiểu kiến trúc lưu trữ dữ liệu trên AWS.
-- Nắm được các phương án sao lưu và khôi phục dữ liệu.
-- Làm quen với các giải pháp di chuyển hệ thống lên AWS.
+- Hiểu nguyên lý lưu trữ dữ liệu theo mô hình Object Storage của Amazon S3.
+- Thực hành tạo và quản lý S3 Bucket, upload và quản lý dữ liệu.
+- Biết cách lựa chọn Storage Class phù hợp để tối ưu hiệu năng và chi phí.
+- Thực hành Versioning và Object Lock nhằm bảo vệ dữ liệu trước các thao tác xóa hoặc ghi đè ngoài ý muốn.
+- Tìm hiểu vai trò của AWS Storage Gateway trong mô hình Hybrid Cloud.
+- Hiểu cách AWS Snow Family hỗ trợ di chuyển lượng dữ liệu lớn lên AWS.
+- Làm quen với AWS Backup và các mô hình Disaster Recovery như Backup & Restore, Pilot Light và Warm Standby.
+- Tìm hiểu quy trình di chuyển máy chủ bằng AWS Application Migration Service (MGN).
+- Hoàn thành các bài Lab về Storage, Backup và Migration theo nội dung của chương trình AWS First Cloud Journey.
