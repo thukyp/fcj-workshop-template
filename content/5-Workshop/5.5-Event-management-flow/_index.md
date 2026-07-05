@@ -66,7 +66,7 @@ Alongside events, the Admin manages categories through separate routes:
 3. Create a new event: enter title, description, location, time, select category, upload banner, enter the maximum number of slots.
 4. Save the event, then check that it appears in the admin list.
 
-![Event](/images/5-Workshop/5.5-Event-management-flow/Event.jpg)
+![Event](../../images/5-Workshop/5.5-Event-management-flow/Event.jpg)
 
 
 ---
@@ -75,7 +75,7 @@ Alongside events, the Admin manages categories through separate routes:
 
 `Open DynamoDB > Tables > EventManagementEvents > Explore table items`, and check that the newly created item has all the fields: EventId, Title, Status, BannerUrl, MaxSlots, RegisteredCount (initialized to 0), IsVisible.
 
-![Dynamo](/images/5-Workshop/5.5-Event-management-flow/Dynamo.jpg)
+![Dynamo](../../images/5-Workshop/5.5-Event-management-flow/Dynamo.jpg)
 ---
 
 ## Step 3: Test Toggling Event Visibility
@@ -84,7 +84,7 @@ Alongside events, the Admin manages categories through separate routes:
 2. Confirm that the event no longer appears on the public list page (GET /events) but is still present in the admin list (GET /admin/events).
 3. Re-enable visibility and confirm the event reappears on the public page.
 
-| ![Image 1](/images/5-Workshop/5.5-Event-management-flow/EventUnHiden.jpg) | ![Image 2](/images/5-Workshop/5.5-Event-management-flow/EventHiden.jpg) |
+| ![Image 1](../../images/5-Workshop/5.5-Event-management-flow/EventUnHiden.jpg) | ![Image 2](../../images/5-Workshop/5.5-Event-management-flow/EventHiden.jpg) |
 |---|---|
 
 ---

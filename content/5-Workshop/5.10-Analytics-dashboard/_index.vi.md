@@ -66,7 +66,7 @@ Response mong đợi:
 }
 ```
 
-![Dashboard](/images/5-Workshop/5.10-Analytics-dashboard/Dashboard.jpg)
+![Dashboard](../../images/5-Workshop/5.10-Analytics-dashboard/Dashboard.jpg)
 
 ---
 
@@ -90,7 +90,7 @@ Response mong đợi:
 }
 ```
 
-![DashboardEvent](/images/5-Workshop/5.10-Analytics-dashboard/DashboardEvent.jpg)
+![DashboardEvent](../../images/5-Workshop/5.10-Analytics-dashboard/DashboardEvent.jpg)
 
 ---
 

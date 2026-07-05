@@ -16,7 +16,7 @@ Thông qua bài viết của AWS Architecture Blog, mình tìm hiểu về mô h
 
 ## Kiến trúc tổng quan
 
-![Hybrid Multi-Tenant SaaS Architecture](/images/3-Blogs/hybrid-multitenant.jpg)
+![Hybrid Multi-Tenant SaaS Architecture](../../images/3-Blogs/hybrid-multitenant.jpg)
 
 Kiến trúc được chia thành ba phần chính:
 

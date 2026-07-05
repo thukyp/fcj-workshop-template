@@ -68,7 +68,7 @@ VITE_COGNITO_REDIRECT_SIGN_IN=<callback URL after login, e.g. http://localhost:5
 VITE_COGNITO_REDIRECT_SIGN_OUT=<URL after logout>
 ```
 
-| ![Image 1](/images/5-Workshop/5.4-Configure-authentication/Login.jpg) | ![Image 2](/images/5-Workshop/5.4-Configure-authentication/Logingg.jpg) |
+| ![Image 1](../../images/5-Workshop/5.4-Configure-authentication/Login.jpg) | ![Image 2](../../images/5-Workshop/5.4-Configure-authentication/Logingg.jpg) |
 |---|---|
 
 ---
@@ -104,13 +104,13 @@ Open AWS Management Console → Amazon Cognito → User pools and select the Use
 
 Open Amazon Cognito → User pools → Sign-in experience → Federated identity provider sign-in and verify that the Google provider is configured with the Client ID and Client Secret obtained from Google Cloud Console (OAuth Consent Screen + Credentials).
 
-![Google sign-in configuration](/images/5-Workshop/5.4-Configure-authentication/sign-inGoogle.jpg)
+![Google sign-in configuration](../../images/5-Workshop/5.4-Configure-authentication/sign-inGoogle.jpg)
 
 Then check App integration → App client → Hosted UI to ensure:
 - Google is enabled for the App Client being used.
 - Allowed callback URLs and Allowed sign-out URLs match the frontend values of VITE_COGNITO_REDIRECT_SIGN_IN and VITE_COGNITO_REDIRECT_SIGN_OUT.
 
-![Google sign-in configuration details](/images/5-Workshop/5.4-Configure-authentication/sign-inGoogle1.jpg)
+![Google sign-in configuration details](../../images/5-Workshop/5.4-Configure-authentication/sign-inGoogle1.jpg)
 
 ---
 
@@ -120,7 +120,7 @@ The Event Management Platform uses the Cognito group Admins to distinguish Admin
 
 Open Amazon Cognito → User pools → Groups and verify the Admins group exists. Users belonging to this group will have a cognito:groups claim containing "Admins" when they sign in, for both email/password and Google sign-in.
 
-![User Pool Admin group](/images/5-Workshop/5.4-Configure-authentication/UserPoolAdmin.jpg)
+![User Pool Admin group](../../images/5-Workshop/5.4-Configure-authentication/UserPoolAdmin.jpg)
 
 ---
 
@@ -150,7 +150,7 @@ The role (IsAdmin) is synchronized into DynamoDB in the EventManagementUsers tab
 3. Open DevTools (Network tab) and verify that API requests carry the Authorization: Bearer <idToken> header for both authentication methods.
 4. In the Cognito Console, add one of the users to the Admins group, sign out and sign in again, and call GET /profile/me to confirm the role is returned as Admin.
 
-![Profile view](/images/5-Workshop/5.4-Configure-authentication/Profileme.jpg)
+![Profile view](../../images/5-Workshop/5.4-Configure-authentication/Profileme.jpg)
 
 ---
 

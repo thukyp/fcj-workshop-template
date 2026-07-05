@@ -33,7 +33,7 @@ Dự án được deploy tại AWS Region:
 ```text
 ap-southeast-1
 ```
-!["AWS Singapore Region](/images/5-Workshop/5.2-Prerequisite/Region.jpg)
+!["AWS Singapore Region](../../images/5-Workshop/5.2-Prerequisite/Region.jpg)
 ---
 
 ## Công cụ cần cài đặt

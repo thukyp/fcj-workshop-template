@@ -48,7 +48,7 @@ dotnet restore EventManagement.Serverless.sln
 
 This restores the required NuGet packages for all 6 Lambda functions and the Shared project.
 
-![restore](/images/5-Workshop/5.3-Deploy-backend/restore.jpg)
+![restore](../../images/5-Workshop/5.3-Deploy-backend/restore.jpg)
 
 ---
 
@@ -130,7 +130,7 @@ sam deploy --no-confirm-changeset --no-fail-on-empty-changeset
 
 Check that the stack status is CREATE_COMPLETE or UPDATE_COMPLETE.
 
-![CloudFormation stack](/images/5-Workshop/5.3-Deploy-backend/CloudFormation.jpg)
+![CloudFormation stack](../../images/5-Workshop/5.3-Deploy-backend/CloudFormation.jpg)
 
 If the stack fails, open the Events tab to see which resource failed during deployment.
 
@@ -173,7 +173,7 @@ EventManagementNotificationLog
 
 All of them use BillingMode: PAY_PER_REQUEST (on-demand), which is suitable for workshop/demo environments because it avoids pre-sizing capacity and reduces cost when there is little or no traffic.
 
-![DynamoDB tables](/images/5-Workshop/5.3-Deploy-backend/DynamoDB.jpg)
+![DynamoDB tables](../../images/5-Workshop/5.3-Deploy-backend/DynamoDB.jpg)
 
 ---
 
@@ -190,7 +190,7 @@ Open `Amazon S3 → Buckets` and verify the 4 buckets created by the stack:
 
 The FrontendBucket is configured with full public access blocking (BlockPublicAcls/BlockPublicPolicy/IgnorePublicAcls/RestrictPublicBuckets: true) so only CloudFront can access it through Origin Access Control, not directly through the S3 URL.
 
-![S3 buckets](/images/5-Workshop/5.3-Deploy-backend/Buckets.jpg)
+![S3 buckets](../../images/5-Workshop/5.3-Deploy-backend/Buckets.jpg)
 
 ---
 
@@ -200,7 +200,7 @@ Open Amazon Cognito → User pools and check that the correct User Pool was used
 
 Note: this User Pool is not created by this stack; the backend only references its ARN to configure the CognitoAuthorizer for API Gateway.
 
-![User Pool](/images/5-Workshop/5.3-Deploy-backend/UserPool.jpg)
+![User Pool](../../images/5-Workshop/5.3-Deploy-backend/UserPool.jpg)
 
 ---
 
@@ -208,7 +208,7 @@ Note: this User Pool is not created by this stack; the backend only references i
 
 Open `AWS Lambda → Function`s and verify that the 6 functions were created: EventLambda, UserProfileLambda, TicketLambda, AttendanceCertificateLambda, NotificationLambda, AnalyticsLambda.
 
-![Lambda functions](/images/5-Workshop/5.3-Deploy-backend/Functions.jpg)
+![Lambda functions](../../images/5-Workshop/5.3-Deploy-backend/Functions.jpg)
 
 Then open CloudWatch → Log groups and look for log groups named /aws/lambda/<function-name>. These logs are useful when debugging API, authentication, or business logic errors.
 
@@ -220,7 +220,7 @@ Open `Amazon CloudFront → Distributions` and verify the distribution created f
 
 Try accessing the CloudFront domain (in the form <id>.cloudfront.net). If the frontend has not yet been built and uploaded to the FrontendBucket, this step will not display the UI yet (this is covered in section 5.11).
 
-![CloudFront distribution](/images/5-Workshop/5.3-Deploy-backend/CloudFront.jpg)
+![CloudFront distribution](../../images/5-Workshop/5.3-Deploy-backend/CloudFront.jpg)
 
 ---
 

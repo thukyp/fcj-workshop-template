@@ -58,7 +58,7 @@ This workshop uses the following AWS services and tools:
 | AWS SAM | Builds and deploys the serverless backend |
 | AWS CloudFormation | Manages AWS resources via stack deployment |
 
-![Serverless Event Platform Architecture Diagram](/images/5-Workshop/5.1-Workshop-overview/system-architecture.jpg)
+![Serverless Event Platform Architecture Diagram](../../images/5-Workshop/5.1-Workshop-overview/system-architecture.jpg)
 
 ---
 
@@ -83,7 +83,7 @@ The project source code is divided into two main parts:
 - Backend (BE): serverless architecture on AWS Lambda (.NET 8/C#), using AWS SAM (template.yaml) as Infrastructure as Code, organized into src/Functions (6 Lambda functions) and src/Shared (shared services, repositories, DTOs, validators, constants).
 - Frontend (FE): React 18+ with TypeScript, built with Vite, organized by feature folders such as components/events, components/tickets, components/certificates, components/notifications, and uses Axios for API calls and Cognito for authentication.
 
-| ![Image 1](/images/5-Workshop/5.1-Workshop-overview/BE.jpg) | ![Image 2](/images/5-Workshop/5.1-Workshop-overview/FE.jpg) |
+| ![Image 1](../../images/5-Workshop/5.1-Workshop-overview/BE.jpg) | ![Image 2](/images/5-Workshop/5.1-Workshop-overview/FE.jpg) |
 |---|---|
 
 ---

@@ -18,7 +18,7 @@ In this AWS Architecture Blog, I learned about the **Hybrid Multi-Tenant Archite
 
 ## Architecture Overview
 
-![Hybrid Multi-Tenant SaaS Architecture](/images/3-Blogs/hybrid-multitenant.jpg)
+![Hybrid Multi-Tenant SaaS Architecture](../../images/3-Blogs/hybrid-multitenant.jpg)
 
 The architecture consists of three main layers:
 

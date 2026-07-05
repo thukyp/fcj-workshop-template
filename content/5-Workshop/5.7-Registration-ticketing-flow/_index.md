@@ -128,9 +128,9 @@ Open DynamoDB → Tables → the Tickets table → Explore table items, and chec
 
 Next, open DynamoDB → Tables → the Events table, and check that the event's registered count has increased correctly to match the number of successful ticket registrations, and that it reaches the maximum slot count at the point when the UI shows "Registration slots full".
 
-![FullFe](/images/5-Workshop/5.7-Registration-ticketing-flow/FullSlotFe.jpg)
+![FullFe](../../images/5-Workshop/5.7-Registration-ticketing-flow/FullSlotFe.jpg)
 
-![FullAWS](/images/5-Workshop/5.7-Registration-ticketing-flow/FullSlot.jpg)
+![FullAWS](../../images/5-Workshop/5.7-Registration-ticketing-flow/FullSlot.jpg)
 
 ---
 
@@ -138,7 +138,7 @@ Next, open DynamoDB → Tables → the Events table, and check that the event's 
 
 Open Amazon EventBridge → Rules, and find the rule that listens for the ticket registration event (on the default event bus). Go to the rule's Monitoring tab and check that the Invocations chart has increased by the exact number of ticket registrations just tested.
 
-![Event](/images/5-Workshop/5.7-Registration-ticketing-flow/Rule.jpg)
+![Event](../../images/5-Workshop/5.7-Registration-ticketing-flow/Rule.jpg)
 
 ---
 
@@ -150,7 +150,7 @@ Invoke-RestMethod -Uri "$baseUrl/my-tickets" -Method Get -Headers $headers
 
 Confirm the response returns the list of tickets, including the ticket registered in Step 2 — this is the same data displayed when clicking the "View my ticket" button in the UI.
 
-![Tikcet](/images/5-Workshop/5.7-Registration-ticketing-flow/MyTicket.jpg)
+![Tikcet](../../images/5-Workshop/5.7-Registration-ticketing-flow/MyTicket.jpg)
 
 ---
 

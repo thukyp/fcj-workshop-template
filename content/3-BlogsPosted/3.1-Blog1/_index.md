@@ -83,7 +83,7 @@ This experience also strengthened my understanding of how AWS managed services c
 
 ## Architecture
 
-![Notification & Analytics Architecture](/images/3-Blogs/blog1-architecture.jpg)
+![Notification & Analytics Architecture](../../images/3-Blogs/blog1-architecture.jpg)
 
 ---
 

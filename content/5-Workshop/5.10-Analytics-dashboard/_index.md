@@ -66,7 +66,7 @@ Expected response:
 }
 ```
 
-![Dashboard](/images/5-Workshop/5.10-Analytics-dashboard/Dashboard.jpg)
+![Dashboard](../../images/5-Workshop/5.10-Analytics-dashboard/Dashboard.jpg)
 
 ---
 
@@ -90,7 +90,7 @@ Expected response:
 }
 ```
 
-![DashboardEvent](/images/5-Workshop/5.10-Analytics-dashboard/DashboardEvent.jpg)
+![DashboardEvent](../../images/5-Workshop/5.10-Analytics-dashboard/DashboardEvent.jpg)
 
 ---
 

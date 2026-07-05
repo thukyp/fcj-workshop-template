@@ -81,7 +81,7 @@ Việc thiết kế kiến trúc Event-Driven, xây dựng hệ thống giám s�
 
 ## Kiến trúc hệ thống
 
-![Notification & Analytics Architecture](/images/3-Blogs/blog1-architecture.jpg)
+![Notification & Analytics Architecture](../../images/3-Blogs/blog1-architecture.jpg)
 
 ---
 

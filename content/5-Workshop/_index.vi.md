@@ -52,7 +52,7 @@ Luồng thông báo được thiết kế theo hai nhánh riêng biệt, đều 
 
 Ở phần frontend, Frontend React sau khi build được upload lên một S3 bucket chặn public hoàn toàn, và được CloudFront đọc thông qua Origin Access Control (OAC) — không truy cập S3 trực tiếp. CloudFront xử lý lỗi 403/404 bằng cách trả về `index.html` để React Router tự xử lý routing phía client. Hiện CloudFront đang dùng domain mặc định do AWS cấp (`*.cloudfront.net`), chưa cấu hình Custom Domain riêng hay chứng chỉ ACM.
 
-![Sơ đồ kiến trúc Serverless Event Platform](/images/5-Workshop/5.1-Workshop-overview/system-architecture.jpg)
+![Sơ đồ kiến trúc Serverless Event Platform](../../images/5-Workshop/5.1-Workshop-overview/system-architecture.jpg)
 <p style="text-align: center;"><i>Hình 5: Sơ đồ kiến trúc và luồng tương tác dữ liệu Serverless trên AWS.</i></p>
 
 ---

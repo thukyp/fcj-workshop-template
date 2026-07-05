@@ -34,7 +34,7 @@ The project is deployed in the AWS region:
 ap-southeast-1
 ```
 
-![AWS Singapore Region](/images/5-Workshop/5.2-Prerequisite/Region.jpg)
+![AWS Singapore Region](../../images/5-Workshop/5.2-Prerequisite/Region.jpg)
 
 ---
 

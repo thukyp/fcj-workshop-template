@@ -1,9 +1,9 @@
 ---
 title: "Tuần 12"
-date: 2026-07-06
+date: 2026-07-05
 weight: 12
 chapter: false
-pre: " <b> 1.12 </b> "
+pre: " <b> 1.12. </b> "
 ---
 
 {{% notice info %}}

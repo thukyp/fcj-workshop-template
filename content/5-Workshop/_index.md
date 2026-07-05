@@ -51,7 +51,7 @@ The notification flow is designed with two separate branches routed through Amaz
 
 On the frontend side, the built React app is uploaded to a completely public-blocked S3 bucket, and CloudFront reads it through Origin Access Control (OAC) rather than direct S3 access. CloudFront handles 403/404 errors by returning index.html so React Router can manage client-side routing. The current setup uses the default AWS-provided domain (*.cloudfront.net) and does not yet use a custom domain or ACM certificate.
 
-![Serverless Event Platform Architecture Diagram](/images/5-Workshop/5.1-Workshop-overview/system-architecture.jpg)
+![Serverless Event Platform Architecture Diagram](../../images/5-Workshop/5.1-Workshop-overview/system-architecture.jpg)
 <p style="text-align: center;"><i>Figure 5: Architecture diagram and serverless data-flow on AWS.</i></p>
 
 ---

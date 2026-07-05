@@ -6,8 +6,6 @@ chapter: false
 pre: " <b> 7. </b> "
 ---
 
-# Sharing and Feedback
-
 After completing the **AWS First Cloud Journey** program, I can say that it has been a valuable learning experience. Before joining the program, I had almost no experience using AWS. Most cloud computing concepts and AWS services were completely new to me.
 
 Throughout the program, I learned both fundamental and advanced AWS topics through lectures, hands-on labs, workshops, technical blogs, and a real-world project. These activities helped me understand not only individual AWS services but also how they work together in a complete cloud-native application.

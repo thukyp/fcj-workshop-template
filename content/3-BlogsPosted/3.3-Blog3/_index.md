@@ -20,7 +20,7 @@ This article summarizes what I learned about how Lambda processes thousands of c
 
 The following diagram illustrates the complete lifecycle of a request when invoking an AWS Lambda function.
 
-![AWS Lambda Request Flow](/images/3-Blogs/lambda-how-it-works.jpg)
+![AWS Lambda Request Flow](../../images/3-Blogs/lambda-how-it-works.jpg)
 
 A typical request follows these steps:
 
@@ -62,7 +62,7 @@ When more concurrent requests arrive, AWS creates additional execution environme
 
 The following illustration demonstrates how concurrent requests are distributed among multiple execution environments.
 
-![AWS Lambda Concurrency](/images/3-Blogs/lambda-concurrency.jpg)
+![AWS Lambda Concurrency](../../images/3-Blogs/lambda-concurrency.jpg)
 
 This design isolates requests from each other and allows Lambda to scale horizontally without requiring developers to manage infrastructure.
 

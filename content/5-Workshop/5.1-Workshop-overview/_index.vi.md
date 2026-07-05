@@ -59,7 +59,7 @@ Workshop này sử dụng các dịch vụ và công cụ AWS sau:
 | AWS SAM | Build và deploy backend serverless |
 | AWS CloudFormation | Quản lý tài nguyên AWS thông qua stack |
 
-![Sơ đồ kiến trúc Serverless Event Platform](/images/5-Workshop/5.1-Workshop-overview/system-architecture.jpg)
+![Sơ đồ kiến trúc Serverless Event Platform](../../images/5-Workshop/5.1-Workshop-overview/system-architecture.jpg)
 
 ---
 
@@ -85,7 +85,7 @@ Source code dự án được chia thành hai phần chính:
 - **Frontend (FE):** React 18+ với TypeScript, build bằng Vite, tổ chức theo feature (components/events, components/tickets, components/certificates, components/notifications...), gọi API qua Axios và xác thực qua Cognito.
 
 
-| ![Ảnh 1](/images/5-Workshop/5.1-Workshop-overview/BE.jpg) | ![Ảnh 2](/images/5-Workshop/5.1-Workshop-overview/FE.jpg) |
+| ![Ảnh 1](../../images/5-Workshop/5.1-Workshop-overview/BE.jpg) | ![Ảnh 2](/images/5-Workshop/5.1-Workshop-overview/FE.jpg) |
 |---|---|
 
 ---

@@ -6,8 +6,6 @@ chapter: false
 pre: " <b> 7. </b> "
 ---
 
-# Chia sẻ và Đánh giá
-
 Sau khi hoàn thành chương trình **AWS First Cloud Journey**, mình cảm thấy đây là một hành trình học tập rất ý nghĩa. Trước khi tham gia, mình gần như chưa từng sử dụng AWS nên mọi khái niệm về Cloud Computing, Serverless hay các dịch vụ của AWS đều khá mới mẻ.
 
 Trong suốt chương trình, mình được tiếp cận từ những kiến thức cơ bản đến các nội dung chuyên sâu hơn thông qua bài học, workshop, bài thực hành và đặc biệt là dự án thực tế. Nhờ đó, mình không chỉ hiểu được cách sử dụng các dịch vụ AWS mà còn biết cách kết hợp chúng để xây dựng một hệ thống hoàn chỉnh.
