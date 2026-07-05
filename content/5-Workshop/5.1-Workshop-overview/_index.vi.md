@@ -20,9 +20,6 @@ Event Management Platform được thiết kế cho hai vai trò chính:
 - **Admin**: quản lý sự kiện (tạo/sửa/xóa), quản lý danh mục, upload banner, theo dõi số lượng đăng ký/check-in theo thời gian thực và xem dashboard phân tích hiệu quả sự kiện.
 
 Workshop tập trung vào việc deploy toàn bộ hạ tầng backend serverless (6 Lambda function) bằng AWS SAM, deploy frontend qua CloudFront, và chạy demo ứng dụng thật.
-
-> 📌 **Gợi ý hình ảnh:** Chèn 1 ảnh chụp giao diện trang danh sách sự kiện (hoặc trang đăng ký vé) của Frontend thật để người đọc hình dung ngay sản phẩm cuối, tăng điểm phần 4.1 (bối cảnh & bài toán) vì giám khảo thấy được output cụ thể ngay từ đầu.
-
 ---
 
 ## Mục tiêu workshop

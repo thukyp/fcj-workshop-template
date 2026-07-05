@@ -1,23 +1,18 @@
 ---
-title: "Automated Notifications, Reminders & Data Analytics"
+title: "Automated Notifications, Reminders"
 date: 2026-06-29
 weight: 9
 chapter: false
 pre: " <b> 5.9. </b> "
 ---
 
----
+This section presents the **NotificationFunction** module, which is responsible for sending registration confirmation emails and automated event reminders using Amazon SES.
 
-This section covers two modules built by the same team member:
-
-- **NotificationFunction** — sends registration confirmation emails and automated reminders via Amazon SES
-- **AnalyticsFunction** — provides system-wide statistics and per-event details
-
-Both modules are declared in the infrastructure template and deployed automatically via SAM, not created manually through the AWS Console.
+The function is defined in the AWS SAM infrastructure template and is deployed automatically as part of the application's infrastructure, rather than being created manually through the AWS Management Console.
 
 ---
 
-# PART 1: Notifications & Automated Reminders
+# Notifications & Automated Reminders
 
 ---
 
@@ -181,123 +176,3 @@ After completing the Notification section, the practitioner should be able to:
 - Test the reminder email flow by simulating a Scheduled Event via the AWS CLI with a JSON file.
 - Cross-check notification log data between the API response and the actual items in DynamoDB.
 - Confirm that the EventBridge rule's invocation count matches the number of ticket registrations tested.
-
----
-
-# PART 2: Data Analytics & Statistics
-
----
-
-This section demonstrates two independent statistics flows, both handled by a single Lambda function (AnalyticsFunction), triggered via API Gateway and automatically routed based on the path parameter.
-
-This logic reads data from the Events, Tickets, Attendance, and Notification Log tables, as well as the certificates S3 bucket — aggregating it into two types of reports: a system-wide overview and per-event details.
-
----
-
-## Routing Mechanism
-
-The main handler function receives requests from API Gateway and automatically determines which flow to run based on the path parameter:
-
-```text
-No "eventId" path parameter   → runs the Dashboard flow (system-wide overview)
-Has an "eventId" path parameter    → runs the per-event analytics flow
-```
-
----
-
-## Flow 1: System-Wide Overview Statistics
-
-The Dashboard handler aggregates metrics from multiple tables and from S3, returning the following information:
-
-- Total events — counted using a Scan with count-only mode on the Events table
-- Total registrations, confirmed, and waiting — scans the entire Tickets table page by page (pagination), classifying by status: Waiting, Cancelled (not counted), and everything else as Confirmed
-- Total check-ins — counted using a Scan with count-only mode on the Attendance table
-- Average attendance rate — calculated as the number of check-ins divided by the number confirmed, times 100, rounded to 1 decimal place
-- Number of emails sent and number failed — scans the Notification Log table by Sent or Failed status
-- Number of certificates issued — counts actual PDF files in S3 under the certificates/ prefix, without reading from DynamoDB, to ensure accuracy
-
----
-
-## Flow 2: Per-Event Detailed Statistics
-
-The per-event analytics handler receives an eventId from the path parameter, checks that the event exists, and then returns the following information:
-
-- Total registrations, confirmed count, and waiting count — scans the Tickets table filtered by EventId
-- Check-in count — uses a Query (not a Scan) on the Attendance table with EventId as the Partition Key — more efficient than a Scan since it doesn't read the entire table
-- The event's own attendance rate — calculated as the check-in count divided by the confirmed count, times 100
-
----
-
-## Step 1: Test the Dashboard Overview API
-
-```powershell
-Invoke-RestMethod -Uri "$baseUrl/admin/analytics/dashboard" -Method Get -Headers $headers
-```
-
-Expected response:
-
-```json
-{
-  "totalEvents": 5,
-  "totalRegistrations": 20,
-  "confirmedRegistrations": 18,
-  "waitingRegistrations": 2,
-  "totalCheckIns": 10,
-  "averageAttendanceRate": 55.6,
-  "emailSentCount": 18,
-  "emailFailedCount": 0,
-  "certificatesIssuedCount": 10
-}
-```
-
----
-
-## Step 2: Test the Per-Event Analytics API
-
-```powershell
-Invoke-RestMethod -Uri "$baseUrl/admin/analytics/events/$eventId" -Method Get -Headers $headers
-```
-
-Expected response:
-
-```json
-{
-  "eventId": "<EventId of the event>",
-  "eventTitle": "<Event name>",
-  "totalRegistrations": 5,
-  "confirmedCount": 5,
-  "waitingCount": 0,
-  "checkInCount": 3,
-  "attendanceRate": 60.0
-}
-```
-
----
-
-## Step 3: Cross-Check the Data Against DynamoDB
-
-Open `DynamoDB → Tables`, and check each of the following in turn:
-
-- The Tickets table — count the items with status Confirmed and Waiting
-- The Attendance table — count the items and compare against the total check-in count in the Dashboard
-- The Notification Log table — count the items with status Sent and Failed
-
-Confirm these numbers match the API responses from Step 1 and Step 2.
-
----
-
-## Step 4: Check the Lambda Logs
-
-Open CloudWatch → Log groups → the log group for AnalyticsFunction, find the log stream from the test time, and confirm there are no errors and that all the queries/scans ran successfully.
-
----
-
-## Expected Outcome (Part 2)
-
-After completing the Analytics section, the practitioner should be able to:
-
-- Understand how a single Lambda handles 2 different types of requests based on the path parameter.
-- Understand the difference between a Scan (reads the entire table) and a Query (uses a key, more efficient) in DynamoDB — specifically, the per-event analytics flow uses a Query for the Attendance table instead of a Scan.
-- Confirm the Dashboard data matches the actual data in the DynamoDB tables and S3.
-- Confirm that the certificates-issued count is counted directly from S3, independent of DynamoDB.
-- Have the Analytics data ready to be summarized and presented in the final report.

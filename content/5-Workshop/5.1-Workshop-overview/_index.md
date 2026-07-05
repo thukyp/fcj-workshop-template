@@ -6,8 +6,6 @@ chapter: false
 pre: " <b> 5.1. </b> "
 ---
 
----
-
 ## Introduction
 
 This workshop introduces how to deploy and test the Event Management Platform, a system that supports the full lifecycle of organizing and managing events, built with a serverless architecture on AWS.
@@ -20,8 +18,6 @@ The Event Management Platform is designed for two primary roles:
 - Admin: manages events (create/edit/delete), categories, banners, tracks registration and check-in counts in real time, and views the analytics dashboard.
 
 The workshop focuses on deploying the entire serverless backend infrastructure (6 Lambda functions) with AWS SAM, deploying the frontend through CloudFront, and running a real demo of the application.
-
-> 📌 Suggested image: include one screenshot of the live frontend event list or ticket registration page so readers can immediately see the final product.
 
 ---
 
