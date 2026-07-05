@@ -1,39 +1,30 @@
 ---
 title: "Worklog"
-date: 2024-01-01
+date: 2026-04-20
 weight: 1
 chapter: false
-pre: " <b> 1. </b> "
+pre: "<b>1.</b> "
 ---
 
-{{% notice warning %}}
-⚠️ **Note:** The information below is for reference purposes only. Please **do not copy verbatim** for your report, including this warning.
-{{% /notice %}}
+# Worklog
 
-**On this page**, you will need to introduce your worklog. **How** did you complete it? How many weeks did you take to complete the program? **What** did you do in those weeks?
+This section contains the weekly worklogs recorded throughout the **12-week AWS First Cloud Journey internship** from **April 20, 2026 to July 12, 2026**.
 
-Typically, and as a standard, a worklog is carried out over about 3 months (throughout the internship period) with weekly contents as follows:
+The worklogs document my learning progress, hands-on AWS labs, workshop participation, system design, implementation, deployment, testing, and documentation while developing the **AWS Event Management Platform**.
 
-**Week 1:** [Getting familiar with AWS and basic AWS services](1.1-week1/)
+Throughout the internship, I progressively learned and applied various AWS services, including **Amazon Cognito, API Gateway, AWS Lambda, Amazon DynamoDB, Amazon S3, Amazon CloudFront, AWS WAF, Amazon SES, CloudWatch, and AWS SAM**, following a serverless architecture.
 
-**Week 2:** [Doing task A...](1.2-week2/)
+The weekly worklogs are organized as follows:
 
-**Week 3:** [Doing task B...](1.3-week3/)
-
-**Week 4:** [Doing task C...](1.4-week4/)
-
-**Week 5:** [Doing task D...](1.5-week5/)
-
-**Week 6:** [Doing task E...](1.6-week6/)
-
-**Week 7:** [Doing task G...](1.7-week7/)
-
-**Week 8:** [Doing task H...](1.8-week8/)
-
-**Week 9:** [Doing task I...](1.9-week9/)
-
-**Week 10:** [Doing task L...](1.10-week10/)
-
-**Week 11:** [Doing task M...](1.11-week11/)
-
-**Week 12:** [Doing task N...](1.12-week12/)
+- **Week 1:** AWS account setup, Hugo installation, Cloud Computing fundamentals, IAM, VPC, EC2, RDS, Auto Scaling, Load Balancer, and AWS Budgets.
+- **Week 2:** Amazon VPC networking, Site-to-Site VPN, AWS Systems Manager, VPC Peering, and Transit Gateway.
+- **Week 3:** EC2 management, CloudWatch monitoring, Auto Scaling Group, Load Balancer, and Amazon Lightsail.
+- **Week 4:** Amazon S3, Storage Gateway, AWS Backup, Disaster Recovery, and AWS Application Migration Service.
+- **Week 5:** AWS Security, IAM, AWS Organizations, Amazon Cognito, AWS KMS, and AWS Security Hub.
+- **Week 6:** Amazon Redshift, Amazon ElastiCache, Database Migration Service (DMS), and Schema Conversion Tool (SCT).
+- **Week 7:** Data analytics using Amazon S3, AWS Glue, Amazon Redshift, Amazon QuickSight, and DynamoDB.
+- **Week 8:** AWS knowledge review, project planning, AWS architecture design, and repository setup.
+- **Week 9:** Design and implementation of the Attendance & Certificate module using AWS Lambda, Amazon DynamoDB, API Gateway, and QR Check-in.
+- **Week 10:** Complete the QR Check-in workflow, generate PDF certificates, store certificates in Amazon S3, and integrate the complete attendance workflow.
+- **Week 11:** Integrate all modules of the AWS Event Management Platform, optimize the serverless architecture, perform system testing, and complete the technical documentation.
+- **Week 12:** Final system testing, project documentation, AWS architecture review, presentation preparation, and final project submission.

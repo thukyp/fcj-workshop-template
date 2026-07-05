@@ -12,10 +12,9 @@ pre: " <b> 4.3. </b> "
 
 | Nội dung | Chi tiết |
 |----------|-----------|
-| **Sự kiện** | FCAJ Meetup |
+| **Sự kiện** |FCAJ Community Day 2026 |
 | **Ngày** | 27/06/2026 |
 | **Địa điểm** | Thành phố Hồ Chí Minh |
-| **Chủ đề** | AI Innovation & Cloud Operations |
 
 # Trải nghiệm của tôi
 

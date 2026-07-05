@@ -1,6 +1,6 @@
 ---
 title: "Event 2"
-date: 2026-05-23
+date: 2026-06-13
 weight: 2
 chapter: false
 pre: " <b> 4.2. </b> "
@@ -13,8 +13,8 @@ pre: " <b> 4.2. </b> "
 | Item | Details |
 |------|---------|
 | Event | FCAJ Community Day 2026 |
+| Date | 13/06/2026 |
 | Organizer | AWS First Cloud Journey Community |
-| Topic | Artificial Intelligence, Cloud Computing and Career Development |
 
 ---
 

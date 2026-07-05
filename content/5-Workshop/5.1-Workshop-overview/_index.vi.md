@@ -1,47 +1,133 @@
 ---
-title : "Giới thiệu"
-date : 2024-01-01
-weight : 1
-chapter : false
-pre : " <b> 5.1. </b> "
+title: "Tổng quan workshop"
+date: 2026-06-29
+weight: 1
+chapter: false
+pre: " <b> 5.1. </b> "
 ---
 
-#### Tổng quan dự án
+---
 
-**AWS Event Management Platform** là hệ thống quản lý sự kiện được phát triển trên nền tảng điện toán đám mây Amazon Web Services (AWS), nhằm tự động hóa toàn bộ quy trình tổ chức sự kiện. Hệ thống cho phép ban tổ chức tạo và quản lý sự kiện, trong khi người tham gia có thể đăng ký trực tuyến, nhận vé điện tử QR, thực hiện điểm danh bằng mã QR và nhận chứng nhận tham gia sau khi hoàn thành sự kiện.
+## Giới thiệu
 
-Dự án được xây dựng theo kiến trúc **Serverless**, giúp giảm chi phí vận hành, hạn chế việc quản lý máy chủ và tận dụng khả năng tự động mở rộng của các dịch vụ AWS. Nhờ đó, hệ thống có thể đáp ứng số lượng người dùng lớn mà vẫn đảm bảo hiệu năng, tính ổn định và khả năng mở rộng trong tương lai.
+Workshop này giới thiệu cách triển khai và kiểm thử dự án **Event Management Platform**, một hệ thống hỗ trợ tổ chức quản lý toàn bộ quy trình tổ chức sự kiện, được xây dựng theo kiến trúc serverless trên AWS.
 
-#### Tổng quan giải pháp
+Bài toán thực tế mà dự án giải quyết: các đơn vị tổ chức hội thảo, workshop công nghệ hiện vẫn quản lý đăng ký bằng Google Form/Excel — dẫn đến khó kiểm soát số lượng người tham dự thực tế, phải gửi email xác nhận thủ công, không kiểm soát được tình trạng gian lận vé, và không có dữ liệu để đánh giá hiệu quả sự kiện sau khi kết thúc. Event Management Platform số hóa toàn bộ quy trình này trên nền tảng serverless.
 
-Giải pháp được xây dựng từ nhiều dịch vụ AWS kết hợp với nhau để tạo thành một hệ thống quản lý sự kiện hoàn chỉnh.
+Event Management Platform được thiết kế cho hai vai trò chính:
 
-- **Amazon S3** dùng để lưu trữ và triển khai giao diện người dùng (React).
-- **Amazon CloudFront** phân phối nội dung thông qua mạng CDN nhằm tăng tốc độ truy cập.
-- **Amazon Cognito** quản lý xác thực và phân quyền người dùng.
-- **Amazon API Gateway** cung cấp các REST API cho ứng dụng.
-- **AWS Lambda** xử lý toàn bộ nghiệp vụ theo mô hình Serverless.
-- **Amazon DynamoDB** lưu trữ dữ liệu về sự kiện, người tham gia, vé và thông tin điểm danh.
-- **Amazon SES** gửi email xác nhận đăng ký và các thông báo liên quan đến sự kiện.
-- **Amazon CloudWatch** giám sát hoạt động của hệ thống và lưu trữ nhật ký (Logs).
+- **User (Attendee)**: sử dụng ứng dụng web để xem danh sách sự kiện, đăng ký tham gia, nhận vé điện tử, quét QR check-in tại sự kiện và tải chứng nhận tham dự sau khi hoàn thành.
+- **Admin**: quản lý sự kiện (tạo/sửa/xóa), quản lý danh mục, upload banner, theo dõi số lượng đăng ký/check-in theo thời gian thực và xem dashboard phân tích hiệu quả sự kiện.
 
-Việc sử dụng các dịch vụ quản lý của AWS giúp các thành phần trong hệ thống hoạt động độc lập, dễ bảo trì, dễ mở rộng và tối ưu chi phí vận hành.
+Workshop tập trung vào việc deploy toàn bộ hạ tầng backend serverless (6 Lambda function) bằng AWS SAM, deploy frontend qua CloudFront, và chạy demo ứng dụng thật.
 
-#### Tổng quan Workshop
+> 📌 **Gợi ý hình ảnh:** Chèn 1 ảnh chụp giao diện trang danh sách sự kiện (hoặc trang đăng ký vé) của Frontend thật để người đọc hình dung ngay sản phẩm cuối, tăng điểm phần 4.1 (bối cảnh & bài toán) vì giám khảo thấy được output cụ thể ngay từ đầu.
 
-Workshop này sẽ hướng dẫn từng bước xây dựng hệ thống **AWS Event Management Platform** bằng các dịch vụ Serverless trên AWS.
+---
 
-Các nội dung chính bao gồm:
+## Mục tiêu workshop
 
-- Xây dựng giao diện người dùng.
-- Thiết lập xác thực người dùng với Amazon Cognito.
-- Xây dựng REST API bằng Amazon API Gateway.
-- Phát triển các chức năng Backend bằng AWS Lambda.
-- Thiết kế cơ sở dữ liệu trên Amazon DynamoDB.
-- Gửi email tự động bằng Amazon SES.
-- Giám sát hệ thống với Amazon CloudWatch.
-- Triển khai ứng dụng bằng AWS SAM CLI.
+Sau khi hoàn thành workshop này, người thực hiện có thể:
 
-Sau khi hoàn thành Workshop, người thực hiện sẽ hiểu cách kết hợp nhiều dịch vụ AWS để xây dựng một hệ thống quản lý sự kiện theo kiến trúc Serverless, đồng thời nắm được quy trình triển khai, vận hành và giám sát một ứng dụng Cloud theo các khuyến nghị của AWS.
+- Hiểu kiến trúc serverless của Event Management Platform với 6 Lambda function độc lập.
+- Deploy backend bằng AWS SAM và quản lý tài nguyên qua AWS CloudFormation.
+- Sử dụng Amazon Cognito để xác thực người dùng và cấp JWT token.
+- Sử dụng API Gateway để cung cấp backend API, phân biệt route công khai và route được bảo vệ.
+- Sử dụng Lambda function (.NET 8) để xử lý logic nghiệp vụ: quản lý sự kiện, hồ sơ người dùng, đăng ký vé, check-in, cấp chứng nhận, thông báo và phân tích dữ liệu.
+- Sử dụng DynamoDB để lưu trữ dữ liệu ứng dụng.
+- Sử dụng S3 để lưu banner sự kiện, avatar người dùng, chứng nhận PDF và file build frontend.
+- Sử dụng SES để gửi email chứng nhận và thông báo.
+- Sử dụng EventBridge (default event bus + EventBridge Scheduler) để xử lý thông báo bất đồng bộ và nhắc lịch tự động — thay vì gọi trực tiếp hoặc dùng SNS/SQS.
+- Deploy Frontend React qua Amazon CloudFront với Origin Access Control (OAC).
+- Xem log backend bằng CloudWatch Logs.
+- Kiểm thử toàn bộ luồng nghiệp vụ chính end-to-end của User và Admin.
 
-![Kiến trúc AWS Event Management Platform](/images/5-Workshop/5.1-Introduction/aws-event-architecture.png)
+---
+
+## Dịch vụ và công cụ AWS sử dụng
+
+Workshop này sử dụng các dịch vụ và công cụ AWS sau:
+
+| Dịch vụ / Công cụ | Mục đích |
+|---|---|
+| Amazon Cognito | Xác thực người dùng, cấp JWT token, phân quyền User/Admin |
+| Amazon API Gateway | Cung cấp backend API; bảo vệ phần lớn route bằng Cognito Authorizer mặc định, một số route đọc công khai được khai báo riêng |
+| AWS Lambda (.NET 8) | Chạy logic nghiệp vụ backend qua 6 function: EventFunction, UserProfileFunction, TicketFunction, AttendanceCertificateFunction, NotificationFunction, AnalyticsFunction |
+| Amazon DynamoDB | Lưu events, categories, tickets, attendance, users, notification log |
+| Amazon S3 | Lưu banner sự kiện, avatar người dùng, chứng nhận PDF và file build frontend |
+| Amazon SES | Gửi email chứng nhận tham dự và email thông báo/nhắc lịch |
+| Amazon EventBridge (Default Event Bus + Scheduler) | Xử lý thông báo bất đồng bộ khi đăng ký vé và nhắc lịch định kỳ trước sự kiện |
+| Amazon CloudFront + OAC | Phân phối Frontend React từ S3 private, không cần bucket public |
+| Amazon CloudWatch Logs | Theo dõi log Lambda/API và hỗ trợ debug |
+| AWS SAM | Build và deploy backend serverless |
+| AWS CloudFormation | Quản lý tài nguyên AWS thông qua stack |
+
+![Sơ đồ kiến trúc Serverless Event Platform](/images/5-Workshop/5.1-Workshop-overview/system-architecture.jpg)
+
+---
+
+## Dịch vụ không nằm trong phạm vi workshop
+
+Các dịch vụ sau không nằm trong phạm vi workshop hiện tại:
+
+| Dịch vụ | Trạng thái |
+|---|---|
+| AWS Amplify Hosting | Không sử dụng (dùng CloudFront + S3 trực tiếp thay thế) |
+| Amazon EC2 | Không sử dụng |
+| Amazon VPC | Không sử dụng |
+| Amazon RDS | Không sử dụng |
+| Amazon SNS / SQS | Không sử dụng cho luồng thông báo (thay bằng EventBridge) |
+
+---
+
+## Công nghệ và cấu trúc dự án hiện tại
+
+Source code dự án được chia thành hai phần chính:
+
+- **Backend (BE):** kiến trúc Serverless trên AWS Lambda (.NET 8/C#), dùng AWS SAM (template.yaml) làm Infrastructure as Code, tổ chức theo src/Functions (6 Lambda function) và src/Shared (Services, Repositories, DTOs, Validators, Constants dùng chung).
+- **Frontend (FE):** React 18+ với TypeScript, build bằng Vite, tổ chức theo feature (components/events, components/tickets, components/certificates, components/notifications...), gọi API qua Axios và xác thực qua Cognito.
+
+
+| ![Ảnh 1](/images/5-Workshop/5.1-Workshop-overview/BE.jpg) | ![Ảnh 2](/images/5-Workshop/5.1-Workshop-overview/FE.jpg) |
+|---|---|
+
+---
+
+## Thông tin deploy
+
+Backend hiện tại sử dụng cấu hình deploy như sau:
+
+| Nội dung | Giá trị |
+|---|---|
+| AWS Region | ap-southeast-1 |
+| CloudFormation Stack | aws-event-management |
+| API Gateway Endpoint | https://<api-id>.execute-api.ap-southeast-1.amazonaws.com/dev |
+| Cognito User Pool ID | ap-southeast-1_XXXXXXXXX |
+| CloudFront Domain | <distribution-id>.cloudfront.net |
+
+*Các giá trị định danh thật (Pool ID, endpoint, domain) được quản lý riêng qua tham số deploy và biến môi trường, không commit vào source code; sẽ cung cấp trực tiếp khi demo.*
+
+---
+
+## Flow demo chính
+
+Workshop demo theo flow sau:
+
+1. Admin đăng nhập, tạo danh mục và tạo sự kiện mới kèm banner.
+2. User đăng ký hoặc đăng nhập thông qua Cognito.
+3. User xem danh sách sự kiện (route công khai) và chọn sự kiện muốn tham gia.
+4. User gửi yêu cầu đăng ký vé; hệ thống kiểm tra số chỗ còn trống và tạo vé CONFIRMED.
+5. Hệ thống publish sự kiện TicketRegistered lên EventBridge; NotificationFunction gửi email xác nhận qua SES.
+6. User xem vé cá nhân qua GET /my-tickets.
+7. Gần đến giờ sự kiện, EventBridge Scheduler trigger NotificationFunction quét và gửi email nhắc lịch.
+8. Tại sự kiện, User đưa mã QR (chứa TicketId) để check-in.
+9. Sau khi check-in, User yêu cầu chứng nhận; hệ thống tạo PDF, upload S3 và gửi email qua SES.
+10. Admin xem dashboard phân tích: số lượng đăng ký, tỷ lệ check-in, log thông báo theo từng sự kiện.
+
+---
+
+## Kết quả mong đợi
+
+Sau khi hoàn thành workshop, backend gồm 6 Lambda function sẽ được deploy thành công lên AWS, đồng thời Frontend React được build và phân phối qua CloudFront có thể kết nối với backend đã deploy.
+
+Người thực hiện có thể kiểm thử toàn bộ các luồng chính của Event Management Platform: quản lý sự kiện, đăng ký vé, check-in bằng QR, cấp chứng nhận, thông báo/nhắc lịch tự động qua EventBridge, và xem dashboard phân tích hiệu quả sự kiện.

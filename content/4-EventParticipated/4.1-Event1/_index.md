@@ -1,20 +1,18 @@
 ---
 title: "Event 1"
-date: 2026-05-09
+date: 2026-05-23
 weight: 1
 chapter: false
 pre: " <b> 4.1. </b> "
 ---
 
-# GenAI-powered App-DB Modernization Workshop
-
 ## Event Information
 
 | Item | Details |
 |------|---------|
-| Event | GenAI-powered App-DB Modernization Workshop |
+| Event | FCAJ Community Day 2026 |
+| Date | 23/05/2026 |
 | Organizer | AWS First Cloud Journey Community |
-| Topic | Modern Application Architecture, DDD, Event-Driven Architecture and AI-assisted Development |
 
 ---
 

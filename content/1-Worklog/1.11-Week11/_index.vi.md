@@ -1,63 +1,35 @@
 ---
-title: "Nhật ký tuần 11"
-date: "2026-06-29"
+title: "Worklog Tuần 11"
+date: 2026-06-27
 weight: 11
 chapter: false
 pre: " <b> 1.11. </b> "
 ---
+## Mục tiêu tuần 11
 
-{{% notice info %}}
-Báo cáo này tóm tắt quá trình hoàn thiện, tích hợp và kiểm thử các module Attendance và Certificate của hệ thống AWS Event Management Platform.
-{{% /notice %}}
-
-### Mục tiêu tuần 11
-
-- Hoàn thiện module Attendance và Certificate.
-- Tích hợp các thành phần Backend còn lại.
-- Tối ưu các API Serverless.
-- Chuẩn bị hệ thống cho giai đoạn kiểm thử cuối.
+- Hoàn thiện các chức năng còn lại của dự án.
+- Kiểm thử và sửa lỗi toàn bộ hệ thống.
+- Hoàn thiện tài liệu và sơ đồ kiến trúc AWS.
+- Chuẩn bị cho buổi báo cáo dự án.
 
 ---
 
-### Công việc theo từng ngày
+## Các công việc thực hiện trong tuần
 
-| Ngày | Nội dung |
-|------|----------|
-| Thứ 2 | Rà soát module Attendance và Certificate, tổng hợp các lỗi còn tồn tại và lập kế hoạch hoàn thiện các chức năng còn thiếu. |
-| Thứ 3 | Tối ưu các hàm AWS Lambda, cải thiện tốc độ xử lý API và bổ sung cơ chế xử lý lỗi phù hợp. |
-| Thứ 4 | Hoàn thiện quy trình tạo Certificate PDF, kiểm tra chức năng tải xuống và xác minh dữ liệu hiển thị trên chứng nhận. |
-| Thứ 5 | Cải thiện quá trình tích hợp giữa React, Amazon API Gateway và AWS Lambda, đồng thời xử lý các lỗi đồng bộ dữ liệu. |
-| Thứ 6 | Kiểm thử toàn bộ quy trình đăng ký sự kiện, QR Check-in và tạo Certificate nhằm đảm bảo các chức năng hoạt động ổn định. |
-| Thứ 7 | Khắc phục các lỗi phát hiện trong quá trình kiểm thử, đồng thời cập nhật tài liệu API và tài liệu kỹ thuật của dự án. |
-| Chủ nhật | Rà soát tiến độ dự án, cập nhật tài liệu và chuẩn bị hệ thống cho giai đoạn hoàn thiện cuối cùng. |
+| Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
+|---|---|---|---|---|
+| 2 | - Rà soát các chức năng của hệ thống.<br>- Kiểm tra luồng đăng nhập, quản lý sự kiện và đăng ký tham gia. | 29/06/2026 | 29/06/2026 | Dự án AWS Event Management |
+| 3 | - Kiểm thử chức năng QR Check-in và Certificate.<br>- Khắc phục các lỗi phát sinh trong quá trình tích hợp. | 30/06/2026 | 30/06/2026 | Dự án AWS Event Management |
+| 4 | - Hoàn thiện sơ đồ kiến trúc AWS.<br>- Cập nhật tài liệu thiết kế và tài liệu API. | 01/07/2026 | 01/07/2026 | AWS Documentation |
+| 5 | - Chuẩn bị slide trình bày dự án.<br>- Kiểm tra lại quy trình triển khai và các dịch vụ AWS sử dụng. | 02/07/2026 | 02/07/2026 | AWS Documentation |
+| 6 | - Tổng kiểm thử hệ thống.<br>- Hoàn thiện báo cáo tiến độ và chuẩn bị bảo vệ dự án. | 03/07/2026 | 03/07/2026 | Dự án AWS Event Management |
 
 ---
 
-### Thực hành
+## Kết quả đạt được tuần 11
 
-- Tối ưu các hàm AWS Lambda.
-- Cải thiện phản hồi của REST API.
-- Kiểm tra chức năng tạo Certificate PDF.
-- Kiểm thử lưu trữ và tải xuống tệp trên Amazon S3.
-- Kiểm thử tích hợp giữa React và các dịch vụ Backend.
-- Cập nhật tài liệu API và tài liệu dự án.
-
----
-
-### Kiến thức đạt được
-
-- Tích hợp ứng dụng Serverless.
-- Tối ưu REST API.
-- AWS Lambda Best Practices.
-- Quản lý tệp trên Amazon S3.
-- Kiểm thử tích hợp hệ thống.
-- Viết và cập nhật tài liệu API.
-
----
-
-### Kết quả đạt được
-
-- Hoàn thiện và nâng cao tính ổn định của các module Attendance và Certificate.
-- Cải thiện hiệu năng xử lý của các API Serverless.
-- Hoàn thành kiểm thử tích hợp giữa các thành phần chính của hệ thống.
-- Chuẩn bị đầy đủ cho giai đoạn hoàn thiện và trình diễn dự án.
+- Hoàn thiện các chức năng chính của AWS Event Management Platform.
+- Kiểm thử toàn bộ hệ thống và xử lý các lỗi còn tồn tại.
+- Cập nhật sơ đồ kiến trúc AWS theo đúng mô hình Serverless.
+- Hoàn thiện tài liệu thiết kế, tài liệu API và tài liệu triển khai.
+- Chuẩn bị slide và nội dung trình bày cho buổi đánh giá cuối chương trình.

@@ -1,6 +1,6 @@
 ---
 title: "Sự kiện 2"
-date: 2026-05-23
+date: 2026-05-13
 weight: 2
 chapter: false
 pre: " <b> 4.2. </b> "
@@ -13,8 +13,8 @@ pre: " <b> 4.2. </b> "
 | Nội dung | Chi tiết |
 |----------|----------|
 | Sự kiện | FCAJ Community Day 2026 |
+| Date | 13/06/2026 |
 | Đơn vị tổ chức | AWS First Cloud Journey Community |
-| Chủ đề | Trí tuệ nhân tạo, Điện toán đám mây và Định hướng nghề nghiệp |
 
 ---
 

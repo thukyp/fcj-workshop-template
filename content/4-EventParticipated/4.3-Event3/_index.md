@@ -12,10 +12,9 @@ pre: " <b> 4.3. </b> "
 
 | Item | Details |
 |------|---------|
-| **Event** | FCAJ Meetup |
+| **Event** | FCAJ Community Day 2026 | 
 | **Date** | 27/06/2026 |
 | **Location** | Ho Chi Minh City |
-| **Theme** | AI Applications, DevOps, Cloud Operations and Enterprise Productivity |
 
 # My Experience
 

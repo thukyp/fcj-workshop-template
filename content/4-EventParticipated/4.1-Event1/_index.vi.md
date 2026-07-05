@@ -1,20 +1,17 @@
 ---
 title: "Sự kiện 1"
-date: 2026-05-09
+date: 2026-05-23
 weight: 1
 chapter: false
 pre: " <b> 4.1. </b> "
 ---
-
-# Workshop GenAI-powered App-DB Modernization
-
 ## Thông tin sự kiện
 
 | Nội dung | Chi tiết |
 |----------|----------|
-| Sự kiện | GenAI-powered App-DB Modernization Workshop |
+| Event | FCAJ Community Day 2026 |
+| Date | 23/05/2026 |
 | Đơn vị tổ chức | AWS First Cloud Journey Community |
-| Chủ đề | Kiến trúc ứng dụng hiện đại, Domain-Driven Design, Event-Driven Architecture và AI hỗ trợ phát triển phần mềm |
 
 ---
 
