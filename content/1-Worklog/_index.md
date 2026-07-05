@@ -6,8 +6,6 @@ chapter: false
 pre: "<b>1.</b> "
 ---
 
-# Worklog
-
 This section contains the weekly worklogs recorded throughout the **12-week AWS First Cloud Journey internship** from **April 20, 2026 to July 12, 2026**.
 
 The worklogs document my learning progress, hands-on AWS labs, workshop participation, system design, implementation, deployment, testing, and documentation while developing the **AWS Event Management Platform**.

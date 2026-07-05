@@ -1,5 +1,5 @@
 ---
-title: "Week 9 Worklog"
+title: "Week 9"
 date: 2026-06-15
 weight: 9
 chapter: false
