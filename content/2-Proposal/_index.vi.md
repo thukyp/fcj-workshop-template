@@ -55,7 +55,7 @@ Hệ thống được triển khai tập trung tại AWS Region Singapore (**ap-
 
 #### Sơ đồ kiến trúc và luồng dữ liệu tổng thể
 
-![Sơ đồ kiến trúc Serverless Event Platform](../../../images/2-Proposal/system-architecture.jpg)
+![Serverless Event Platform Architecture Diagram](/fcj-workshop-template/images/2-Proposal/system-architecture.jpg)
 <p style="text-align: center;"><i>Hình 3.1: Sơ đồ kiến trúc và luồng tương tác dữ liệu Serverless trên AWS.</i></p>
 
 **Mô tả luồng vận hành:**

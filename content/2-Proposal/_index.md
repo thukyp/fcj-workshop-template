@@ -56,7 +56,7 @@ The system is deployed centrally in the AWS Singapore region (ap-southeast-1).
 
 #### Architecture Diagram and Overall Data Flow
 
-![Serverless Event Platform Architecture Diagram](../../images/2-Proposal/system-architecture.jpg)
+![Serverless Event Platform Architecture Diagram](/fcj-workshop-template/images/2-Proposal/system-architecture.jpg)
 <p style="text-align: center;"><i>Figure 3.1: Serverless architecture and data interaction flow on AWS.</i></p>
 
 **Operational flow description:**
