@@ -48,7 +48,7 @@ dotnet restore EventManagement.Serverless.sln
 
 Lệnh này khôi phục các package NuGet cần thiết cho cả 6 Lambda function và project Shared.
 
-![restore](../../images/5-Workshop/5.3-Deploy-backend/restore.jpg)
+![restore](../../../images/5-Workshop/5.3-Deploy-backend/restore.jpg)
 ---
 
 ## Bước 3: Kiểm tra SAM template
@@ -129,7 +129,7 @@ Mở AWS Management Console → `CloudFormation > Stacks`, tìm stack vừa tạ
 
 Kiểm tra trạng thái stack là CREATE_COMPLETE hoặc UPDATE_COMPLETE.
 
-![User Pool](../../images/5-Workshop/5.3-Deploy-backend/CloudFormation.jpg)
+![User Pool](../../../images/5-Workshop/5.3-Deploy-backend/CloudFormation.jpg)
 
 Nếu stack bị lỗi, mở tab **Events** để xem tài nguyên nào deploy thất bại.
 
@@ -172,7 +172,7 @@ EventManagementNotificationLog
 
 Tất cả đều dùng BillingMode: PAY_PER_REQUEST (on-demand), phù hợp cho môi trường workshop/demo vì không cần ước lượng capacity trước và tránh phát sinh chi phí khi không có traffic.
 
-![User Pool](../../images/5-Workshop/5.3-Deploy-backend/DynamoDB.jpg)
+![User Pool](../../../images/5-Workshop/5.3-Deploy-backend/DynamoDB.jpg)
 
 ---
 
@@ -189,7 +189,7 @@ Mở `Amazon S3 > Buckets`, kiểm tra 4 bucket được tạo bởi stack:
 
 Riêng FrontendBucket được cấu hình **chặn public hoàn toàn** (BlockPublicAcls/BlockPublicPolicy/IgnorePublicAcls/RestrictPublicBuckets: true) — chỉ CloudFront mới đọc được thông qua Origin Access Control, không truy cập trực tiếp bằng URL S3.
 
-![Buckets](../../images/5-Workshop/5.3-Deploy-backend/Buckets.jpg)
+![Buckets](../../../images/5-Workshop/5.3-Deploy-backend/Buckets.jpg)
 ---
 
 ## Bước 10: Kiểm tra Cognito User Pool (tham chiếu, không tạo mới)
@@ -198,7 +198,7 @@ Mở `Amazon Cognito > User pools`, kiểm tra đúng User Pool đã dùng làm 
 
 Lưu ý: User Pool này **không do stack này tạo ra** — backend chỉ tham chiếu tới ARN của User Pool có sẵn để cấu hình CognitoAuthorizer cho API Gateway.
 
-![User Pool](../../images/5-Workshop/5.3-Deploy-backend/UserPool.jpg)
+![User Pool](../../../images/5-Workshop/5.3-Deploy-backend/UserPool.jpg)
 
 
 ---
@@ -207,7 +207,7 @@ Lưu ý: User Pool này **không do stack này tạo ra** — backend chỉ tham
 
 Mở `AWS Lambda > Functions`, kiểm tra 6 function đã được tạo: EventLambda, UserProfileLambda, TicketLambda, AttendanceCertificateLambda, NotificationLambda, AnalyticsLambda.
 
-!["Lệnh khởi tạo FE](../../images/5-Workshop/5.3-Deploy-backend/Functions.jpg)
+!["Lệnh khởi tạo FE](../../../images/5-Workshop/5.3-Deploy-backend/Functions.jpg)
 
 Sau đó mở `CloudWatch > Log groups`, tìm các log group dạng /aws/lambda/<function-name>. Các log này hữu ích khi debug lỗi API, lỗi xác thực và lỗi nghiệp vụ.
 
@@ -219,7 +219,7 @@ Mở `Amazon CloudFront > Distributions`, kiểm tra distribution vừa tạo ch
 
 Truy cập thử domain CloudFront (dạng <id>.cloudfront.net) — nếu Frontend chưa được build & upload lên FrontendBucket, bước này sẽ chưa hiển thị giao diện (sẽ thực hiện ở mục 5.11).
 
-!["Lệnh khởi tạo FE](../../images/5-Workshop/5.3-Deploy-backend/CloudFront.jpg)
+!["Lệnh khởi tạo FE](../../../images/5-Workshop/5.3-Deploy-backend/CloudFront.jpg)
 
 ---
 

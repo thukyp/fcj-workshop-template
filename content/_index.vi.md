@@ -2,7 +2,8 @@
 
 <div style="text-align:center; margin-top: 20px;">
 
-<img src="/images/avatar.jpg" width="160" height="160" style="border-radius: 50%; object-fit: cover; border: 4px solid #ff9900;" />
+<img src="/fcj-workshop-template/images/avatar.jpg" width="160" height="160"
+style="border-radius:50%;object-fit:cover;border:4px solid #ff9900;">
 
 <h2 style="margin-bottom: 4px;">Phan Thư Kỳ</h2>
 

@@ -66,7 +66,7 @@ Song song với sự kiện, Admin quản lý danh mục qua các route riêng:
 3. Tạo sự kiện mới: nhập tiêu đề, mô tả, địa điểm, thời gian, chọn danh mục, upload banner, nhập số lượng chỗ tối đa.
 4. Lưu sự kiện, kiểm tra sự kiện xuất hiện trong danh sách quản trị.
 
-![Event](../../images/5-Workshop/5.5-Event-management-flow/Event.jpg)
+![Event](../../../images/5-Workshop/5.5-Event-management-flow/Event.jpg)
 
 
 ---
@@ -75,7 +75,7 @@ Song song với sự kiện, Admin quản lý danh mục qua các route riêng:
 
 `Mở DynamoDB > Tables > EventManagementEvents > Explore table items`, kiểm tra item vừa tạo có đầy đủ các field: EventId, Title, Status, BannerUrl, MaxSlots, RegisteredCount (khởi tạo bằng 0), IsVisible.
 
-![Dynamo](../../images/5-Workshop/5.5-Event-management-flow/Dynamo.jpg)
+![Dynamo](../../../images/5-Workshop/5.5-Event-management-flow/Dynamo.jpg)
 ---
 
 ## Bước 3: Test bật/tắt hiển thị sự kiện
@@ -84,7 +84,7 @@ Song song với sự kiện, Admin quản lý danh mục qua các route riêng:
 2. Kiểm tra sự kiện không còn xuất hiện ở trang danh sách công khai (GET /events) nhưng vẫn còn trong danh sách quản trị (GET /admin/events).
 3. Bật lại hiển thị, xác nhận sự kiện xuất hiện trở lại ở trang công khai.
 
-| ![Ảnh 1](../../images/5-Workshop/5.5-Event-management-flow/EventUnHiden.jpg) | ![Ảnh 2](../../images/5-Workshop/5.5-Event-management-flow/EventHiden.jpg) |
+| ![Ảnh 1](../../../images/5-Workshop/5.5-Event-management-flow/EventUnHiden.jpg) | ![Ảnh 2](../../../images/5-Workshop/5.5-Event-management-flow/EventHiden.jpg) |
 |---|---|
 
 ---

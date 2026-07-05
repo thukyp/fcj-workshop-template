@@ -20,7 +20,7 @@ Bài viết này tổng hợp những kiến thức mình tìm hiểu được v
 
 Hình dưới đây minh họa vòng đời của một request khi được gửi đến AWS Lambda.
 
-![AWS Lambda Request Flow](../../images/3-Blogs/lambda-how-it-works.jpg)
+![AWS Lambda Request Flow](../../../images/3-Blogs/lambda-how-it-works.jpg)
 
 Một request thông thường sẽ trải qua các bước sau:
 
@@ -60,7 +60,7 @@ Khi số lượng request tăng lên, AWS sẽ tạo thêm nhiều Execution Env
 
 Hình dưới đây minh họa cách AWS Lambda phân phối các request đồng thời đến nhiều Execution Environment khác nhau.
 
-![AWS Lambda Concurrency](../../images/3-Blogs/lambda-concurrency.jpg)
+![AWS Lambda Concurrency](../../../images/3-Blogs/lambda-concurrency.jpg)
 
 Thiết kế này giúp cô lập các request với nhau, giảm nguy cơ chia sẻ trạng thái ngoài ý muốn và cho phép Lambda mở rộng theo chiều ngang mà không cần quản lý hạ tầng.
 
