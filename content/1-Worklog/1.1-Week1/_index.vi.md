@@ -6,31 +6,34 @@ chapter: false
 pre: " <b> 1.1. </b> "
 ---
 
-### Mục tiêu tuần 1
+## Mục tiêu tuần 1
 
-- Làm quen với chương trình AWS First Cloud Journey và các thành viên.
-- Hiểu các khái niệm nền tảng về Cloud Computing và Amazon Web Services.
-- Thiết lập môi trường học tập và thực hành các dịch vụ AWS cơ bản.
+- Làm quen với chương trình AWS First Cloud Journey.
+- Chuẩn bị môi trường học tập và phát triển.
+- Tìm hiểu các khái niệm cơ bản về Cloud Computing và Amazon Web Services (AWS).
+- Làm quen với các dịch vụ nền tảng như IAM và Amazon EC2.
 
-### Các công việc thực hiện trong tuần
+---
 
-| Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
-| ---- | --------- | ------------ | ---------------- | -------------- |
-| 2 | - Làm quen với mentor và các thành viên First Cloud Journey.<br>- Đọc nội quy chương trình và thành lập nhóm Furious Five.<br>- Cài đặt Hugo Extended phục vụ viết Workshop và Blog. | 20/04/2026 | 20/04/2026 | https://cloudjourney.awsstudygroup.com/ |
-| 3 | - Đăng ký AWS Free Tier Account.<br>- Tìm hiểu Cloud Computing và mô hình Shared Responsibility Model.<br>- Thực hành tạo IAM User, Group và Policy cơ bản. | 21/04/2026 | 21/04/2026 | https://cloudjourney.awsstudygroup.com/ |
-| 4 | - Tìm hiểu Amazon VPC, Subnet, Route Table, Internet Gateway và Security Group.<br>- Thực hành xây dựng mạng VPC cơ bản. | 22/04/2026 | 22/04/2026 | https://cloudjourney.awsstudygroup.com/ |
-| 5 | - Tìm hiểu Amazon EC2, AMI, Instance Type, EBS và Elastic IP.<br>- Thực hành tạo EC2 Instance, kết nối SSH và quản lý máy chủ Linux. | 23/04/2026 | 24/04/2026 | https://cloudjourney.awsstudygroup.com/ |
-| 6 | - Tìm hiểu Amazon RDS, Auto Scaling Group và Elastic Load Balancer.<br>- Nghiên cứu AWS Budgets và IAM nâng cao.<br>- Hoàn thành các bài Lab tổng hợp của tuần. | 25/04/2026 | 26/04/2026 | https://cloudjourney.awsstudygroup.com/ |
+## Công việc thực hiện trong tuần
 
-### Kết quả đạt được tuần 1
+| Ngày | Công việc | Ngày bắt đầu | Ngày kết thúc | Tham khảo |
+| ---- | --------- | ------------ | ------------- | --------- |
+| Thứ Hai | - Tham gia buổi giới thiệu chương trình AWS First Cloud Journey.<br>- Làm quen với mentor và các thành viên trong chương trình.<br>- Tìm hiểu lộ trình học tập và nội quy của chương trình. | 20/04/2026 | 20/04/2026 | https://cloudjourney.awsstudygroup.com/ |
+| Thứ Ba | - Cài đặt **Visual Studio Code**.<br>- Cài đặt **AWS CLI**.<br>- Cài đặt **Kiro IDE** để hỗ trợ học tập và phát triển ứng dụng.<br>- Thiết lập môi trường làm việc ban đầu. | 21/04/2026 | 21/04/2026 | https://cloudjourney.awsstudygroup.com/ |
+| Thứ Tư | - Tạo tài khoản **AWS Free Tier**.<br>- Đăng nhập và làm quen với **AWS Management Console**.<br>- Tìm hiểu Regions, Availability Zones và các dịch vụ AWS cơ bản. | 22/04/2026 | 22/04/2026 | https://cloudjourney.awsstudygroup.com/ |
+| Thứ Năm | - Học các khái niệm cơ bản về **Cloud Computing**.<br>- Tìm hiểu **AWS IAM**, Users, Groups, Roles và Policies.<br>- Thực hành tạo IAM User và phân quyền cơ bản. | 23/04/2026 | 23/04/2026 | https://cloudjourney.awsstudygroup.com/ |
+| Thứ Sáu | - Tìm hiểu tổng quan về **Amazon EC2**.<br>- Thực hành khởi tạo một EC2 Instance và kết nối bằng SSH.<br>- Cấu hình AWS CLI và thực hiện một số lệnh cơ bản để làm quen với môi trường AWS. | 24/04/2026 | 24/04/2026 | https://cloudjourney.awsstudygroup.com/ |
 
-- Cài đặt thành công Hugo Extended và thiết lập môi trường phục vụ quá trình học tập.
-- Đăng ký thành công AWS Free Tier Account và làm quen với AWS Management Console.
-- Hiểu các khái niệm cơ bản về Cloud Computing và mô hình Shared Responsibility Model.
-- Thực hành tạo IAM User, Group và Policy để quản lý quyền truy cập trên AWS.
-- Hiểu kiến trúc mạng cơ bản trên AWS gồm VPC, Subnet, Route Table, Internet Gateway và Security Group.
-- Tạo và cấu hình thành công EC2 Instance, kết nối SSH từ máy tính cá nhân và thực hiện các thao tác quản trị cơ bản.
-- Tìm hiểu cơ chế lưu trữ của Amazon EBS và dịch vụ cơ sở dữ liệu Amazon RDS.
-- Hiểu nguyên lý hoạt động của Auto Scaling Group và Elastic Load Balancer trong việc xây dựng hệ thống có khả năng mở rộng.
-- Tìm hiểu AWS Budgets để theo dõi và kiểm soát chi phí sử dụng dịch vụ.
-- Hoàn thành các bài Lab thực hành của tuần và ghi chép lại kiến thức phục vụ cho các nội dung học tiếp theo.
+---
+
+## Kết quả đạt được
+
+- Hoàn thành việc tham gia và làm quen với chương trình AWS First Cloud Journey.
+- Cài đặt thành công Visual Studio Code, AWS CLI và Kiro IDE.
+- Tạo và cấu hình thành công tài khoản AWS Free Tier.
+- Hiểu được các khái niệm cơ bản về Cloud Computing và AWS.
+- Thực hành sử dụng AWS IAM để quản lý người dùng và phân quyền cơ bản.
+- Khởi tạo và kết nối thành công một Amazon EC2 Instance thông qua SSH.
+- Cấu hình thành công AWS CLI để kết nối với tài khoản AWS.
+- Chuẩn bị đầy đủ môi trường cho các bài thực hành ở những tuần tiếp theo.

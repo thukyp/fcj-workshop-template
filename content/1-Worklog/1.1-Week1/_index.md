@@ -6,31 +6,36 @@ chapter: false
 pre: " <b> 1.1. </b> "
 ---
 
-### Week 1 Objectives
+## Week 1 Objectives
 
-- Connect and get familiar with the AWS First Cloud Journey program members.
-- Understand the fundamental concepts of Cloud Computing and Amazon Web Services.
-- Set up the learning environment and practice basic AWS services.
+- Become familiar with the AWS First Cloud Journey program.
+- Prepare the development and learning environment.
+- Understand the fundamental concepts of Cloud Computing and Amazon Web Services (AWS).
+- Learn the basics of AWS Identity and Access Management (IAM) and Amazon EC2.
 
-### Tasks Completed This Week
+---
+
+## Tasks Completed This Week
 
 | Day | Tasks | Start Date | End Date | Reference |
 | ---- | ----- | ---------- | -------- | --------- |
-| Monday | - Got to know the mentors and members of the AWS First Cloud Journey program.<br>- Reviewed the program rules and internship guidelines.<br>- Formed the **Furious Five** study group.<br>- Installed **Hugo Extended** for workshop and blog documentation. | 20/04/2026 | 20/04/2026 | https://cloudjourney.awsstudygroup.com/ |
-| Tuesday | - Created an **AWS Free Tier Account**.<br>- Learned the fundamentals of **Cloud Computing** and the **AWS Shared Responsibility Model**.<br>- Practiced creating IAM Users, Groups, and Policies. | 21/04/2026 | 21/04/2026 | https://cloudjourney.awsstudygroup.com/ |
-| Wednesday | - Studied **Amazon VPC**, Subnets, Route Tables, Internet Gateway, and Security Groups.<br>- Built a basic VPC network following the hands-on lab. | 22/04/2026 | 22/04/2026 | https://cloudjourney.awsstudygroup.com/ |
-| Thursday | - Learned the fundamentals of **Amazon EC2**, including Instance Types, AMIs, EBS Volumes, and Elastic IP.<br>- Practiced launching an EC2 instance, connecting via SSH, and managing a Linux server. | 23/04/2026 | 24/04/2026 | https://cloudjourney.awsstudygroup.com/ |
-| Friday | - Studied **Amazon RDS**, **Auto Scaling Groups**, and **Elastic Load Balancer**.<br>- Explored **AWS Budgets** and advanced IAM concepts.<br>- Completed the weekly hands-on labs. | 25/04/2026 | 26/04/2026 | https://cloudjourney.awsstudygroup.com/ |
+| Monday | - Joined the AWS First Cloud Journey program.<br>- Met the mentors and other participants.<br>- Reviewed the learning roadmap and program guidelines. | 20/04/2026 | 20/04/2026 | https://cloudjourney.awsstudygroup.com/ |
+| Tuesday | - Installed **Visual Studio Code**.<br>- Installed **AWS CLI**.<br>- Installed **Kiro IDE** for AI-assisted development.<br>- Configured the basic development environment. | 21/04/2026 | 21/04/2026 | https://cloudjourney.awsstudygroup.com/ |
+| Wednesday | - Created an **AWS Free Tier Account**.<br>- Explored the **AWS Management Console**.<br>- Learned about AWS Regions, Availability Zones, and basic AWS services. | 22/04/2026 | 22/04/2026 | https://cloudjourney.awsstudygroup.com/ |
+| Thursday | - Studied the fundamentals of **Cloud Computing**.<br>- Learned **AWS Identity and Access Management (IAM)**, including Users, Groups, Roles, and Policies.<br>- Practiced creating IAM users and assigning permissions. | 23/04/2026 | 23/04/2026 | https://cloudjourney.awsstudygroup.com/ |
+| Friday | - Learned the fundamentals of **Amazon EC2**.<br>- Launched an EC2 instance and connected to it using SSH.<br>- Configured AWS CLI and practiced basic AWS CLI commands. | 24/04/2026 | 24/04/2026 | https://cloudjourney.awsstudygroup.com/ |
 
-### Week 1 Achievements
+---
 
-- Successfully installed Hugo Extended and prepared the environment for AWS workshop documentation.
-- Created and configured an AWS Free Tier Account.
-- Gained an understanding of Cloud Computing concepts and the AWS Shared Responsibility Model.
-- Practiced AWS Identity and Access Management, including Users, Groups, and Policies.
-- Learned the core networking components of Amazon VPC, including Subnets, Route Tables, Internet Gateway, and Security Groups.
-- Successfully launched an Amazon EC2 instance and connected to it securely using SSH.
-- Understood the basic concepts of Amazon EBS and Amazon RDS.
-- Learned how Auto Scaling Groups and Elastic Load Balancers help improve scalability and availability.
-- Explored AWS Budgets for monitoring and controlling cloud spending.
-- Completed the Week 1 hands-on labs and documented the knowledge gained during the learning process.
+## Week 1 Achievements
+
+- Successfully joined the AWS First Cloud Journey program.
+- Completed the installation of Visual Studio Code, AWS CLI, and Kiro IDE.
+- Created and configured an AWS Free Tier account.
+- Became familiar with the AWS Management Console and AWS Global Infrastructure.
+- Understood the fundamental concepts of Cloud Computing.
+- Practiced AWS Identity and Access Management (IAM), including user creation and permission management.
+- Successfully launched and connected to an Amazon EC2 instance via SSH.
+- Configured AWS CLI and executed basic commands to interact with AWS services.
+- Prepared the development environment for upcoming AWS hands-on labs.
+```
