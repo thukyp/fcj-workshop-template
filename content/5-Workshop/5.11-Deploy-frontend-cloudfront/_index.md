@@ -132,7 +132,7 @@ aws cloudfront create-invalidation `
 
 ## Step 6: Test access through CloudFront
 
-Open the CloudFront default domain in the browser: https://<distribution-domain>
+Open the CloudFront default domain in the browser: [https://](https://dfu4o0ltvpe4o.cloudfront.net)
 
 1. Verify that the home page loads and calls the public GET /events route correctly.
 2. Try signing in through Cognito and confirm that navigation and protected routes such as Profile and Registration work correctly.
