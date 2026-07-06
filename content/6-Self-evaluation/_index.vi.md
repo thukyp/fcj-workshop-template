@@ -5,8 +5,6 @@ weight: 6
 chapter: false
 pre: " <b> 6. </b> "
 ---
-Trong quá trình tham gia chương trình **AWS First Cloud AI Journey (FCAJ)**, tôi có cơ hội áp dụng những kiến thức đã học vào một dự án thực tế trên nền tảng AWS. Xuyên suốt thời gian thực tập, tôi tham gia phát triển dự án **AWS Event Management Platform**, đảm nhận các chức năng Backend, Notification, Analytics, Deployment và Monitoring theo kiến trúc Serverless.
-
 # Tự đánh giá
 
 Trong thời gian tham gia chương trình **AWS First Cloud AI Journey (FCAJ)**, tôi có cơ hội tham gia phát triển dự án **AWS Event Management Platform** theo mô hình Serverless trên nền tảng Amazon Web Services.
