@@ -128,7 +128,7 @@ Mở DynamoDB → Tables → bảng Tickets → Explore table items, kiểm tra 
 
 Tiếp tục mở DynamoDB → Tables → bảng Events, kiểm tra số lượng đã đăng ký của sự kiện đã tăng đúng số lượng vé đã đăng ký thành công, và đã chạm số chỗ tối đa khi giao diện hiển thị "Đã hết slot đăng ký".
 
-![FullFe](/fcj-workshop-template/images/5-Workshop/5.7-Registration-ticketing-flow/FullSlotFe.jpg)
+![alt text](../../../static/images/5-Workshop/5.7-Registration-ticketing-flow/FullSlotFE.jpg)
 
 ![FullAWS](/fcj-workshop-template/images/5-Workshop/5.7-Registration-ticketing-flow/FullSlot.jpg)
 
