@@ -5,7 +5,6 @@ weight: 6
 chapter: false
 pre: " <b> 6. </b> "
 ---
-
 During my participation in the **AWS First Cloud AI Journey (FCAJ)** program, I had the opportunity to contribute to the development of the **AWS Event Management Platform**, a serverless application built on Amazon Web Services.
 
 Within the project team, I was mainly responsible for **Notification Management**, **Dashboard & Analytics**, **Cloud Deployment**, **System Monitoring**, and preparing the **Workshop Documentation**. In addition, I also participated in the research and implementation of several features in the **Attendance** and **Certificate** modules, while collaborating with other team members to refine the overall AWS architecture.

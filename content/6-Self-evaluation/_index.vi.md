@@ -5,8 +5,6 @@ weight: 6
 chapter: false
 pre: " <b> 6. </b> "
 ---
-# Tự đánh giá
-
 Trong thời gian tham gia chương trình **AWS First Cloud AI Journey (FCAJ)**, tôi có cơ hội tham gia phát triển dự án **AWS Event Management Platform** theo mô hình Serverless trên nền tảng Amazon Web Services.
 
 Trong nhóm, tôi được phân công phụ trách các nội dung liên quan đến  module **Attendance** và **Certificate**, đồng thời phối hợp với các thành viên để hoàn thiện kiến trúc tổng thể của hệ thống. 
