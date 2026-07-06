@@ -150,7 +150,7 @@ The role (IsAdmin) is synchronized into DynamoDB in the EventManagementUsers tab
 3. Open DevTools (Network tab) and verify that API requests carry the Authorization: Bearer <idToken> header for both authentication methods.
 4. In the Cognito Console, add one of the users to the Admins group, sign out and sign in again, and call GET /profile/me to confirm the role is returned as Admin.
 
-![Profile view](/fcj-workshop-template/images/5-Workshop/5.4-Configure-authentication/Profileme.jpg)
+![Profile view](/fcj-workshop-template/images/5-Workshop/5.4-Configure-authentication/profileme.jpg)
 
 ---
 

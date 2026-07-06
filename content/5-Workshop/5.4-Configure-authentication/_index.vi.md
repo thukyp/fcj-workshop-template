@@ -149,7 +149,7 @@ Vai trò (IsAdmin) được đồng bộ vào DynamoDB (bảng EventManagementUs
 3. Mở DevTools (Network tab), kiểm tra các request gọi API có header Authorization: Bearer <idToken> với cả hai loại tài khoản.
 4. Vào Cognito Console, thêm một trong hai user vào group Admins, đăng xuất/đăng nhập lại, gọi GET /profile/me để xác nhận vai trò trả về là Admin.
 
-![Profileme](/fcj-workshop-template/images/5-Workshop/5.4-Configure-authentication/Profileme.jpg)
+![Profileme](/fcj-workshop-template/images/5-Workshop/5.4-Configure-authentication/profileme.jpg)
 
 ---
 
