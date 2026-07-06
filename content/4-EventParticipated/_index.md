@@ -6,8 +6,6 @@ chapter: false
 pre: " <b> 4. </b> "
 ---
 
-# Events Participated
-
 This section summarizes the technical events, meetups and community activities that I attended during my internship.
 
 Throughout the internship, I had the opportunity to participate in several AWS and technology community events. These sessions helped me expand my knowledge of cloud computing, artificial intelligence, DevOps, serverless architecture and modern software development practices.

@@ -5,9 +5,6 @@ weight: 1
 chapter: false
 pre: "<b>1.</b> "
 ---
-
-# Worklog
-
 Phần này ghi lại toàn bộ quá trình thực tập trong **12 tuần** tại chương trình **AWS First Cloud Journey**, từ **20/04/2026 đến 12/07/2026**.
 
 Nội dung worklog phản ánh quá trình học tập, thực hành các dịch vụ AWS, tham gia workshop, thiết kế kiến trúc hệ thống, phát triển ứng dụng, triển khai, kiểm thử và hoàn thiện dự án **AWS Event Management Platform**.

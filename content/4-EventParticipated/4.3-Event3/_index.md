@@ -38,7 +38,3 @@ The final session discussed **Building Secure Private MCP Connections with Amazo
 - Gained knowledge about AI applications in workforce planning.
 - Learned best practices for securing MCP-based AI integrations.
 - Better understood how AI and cloud technologies can work together to improve enterprise productivity.
-
-# Event Photos
-
-*Add your event photos here.*

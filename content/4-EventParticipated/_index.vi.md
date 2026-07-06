@@ -6,8 +6,6 @@ chapter: false
 pre: " <b> 4. </b> "
 ---
 
-# Sự kiện tham gia
-
 Phần này tổng hợp các buổi hội thảo, meetup và sự kiện công nghệ mà tôi đã tham gia trong suốt quá trình thực tập tại AWS First Cloud AI Journey.
 
 Thông qua các sự kiện này, tôi có cơ hội tiếp cận nhiều kiến thức mới về điện toán đám mây, trí tuệ nhân tạo, DevOps, kiến trúc Serverless cũng như các xu hướng công nghệ hiện đại. Bên cạnh việc lắng nghe chia sẻ từ các chuyên gia, tôi còn học hỏi được nhiều kinh nghiệm thực tế trong việc thiết kế, triển khai và vận hành các hệ thống trên nền tảng AWS.
