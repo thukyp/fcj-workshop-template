@@ -68,7 +68,7 @@ VITE_COGNITO_REDIRECT_SIGN_IN=<URL callback sau khi đăng nhập, VD http://loc
 VITE_COGNITO_REDIRECT_SIGN_OUT=<URL sau khi đăng xuất>
 ```
 
-| ![Ảnh 1](../../../images/5-Workshop/5.4-Configure-authentication/Login.jpg) | ![Ảnh 2](../../../images/5-Workshop/5.4-Configure-authentication/Logingg.jpg) |
+| ![Ảnh 1](/fcj-workshop-template/images/5-Workshop/5.4-Configure-authentication/Login.jpg) | ![Ảnh 2](/fcj-workshop-template/images/5-Workshop/5.4-Configure-authentication/Logingg.jpg) |
 |---|---|
 
 ---
@@ -105,12 +105,12 @@ Mở AWS Management Console → `Amazon Cognito > User pools`, chọn đúng Use
 
 Mở Amazon Cognito > User pools > Sign-in experience > Federated identity provider sign-in, kiểm tra provider **Google** đã được cấu hình với Client ID/Client Secret lấy từ Google Cloud Console (OAuth Consent Screen + Credentials).
 
-![Ảnh sign-inGoogle](../../../images/5-Workshop/5.4-Configure-authentication/sign-inGoogle.jpg)
+![Ảnh sign-inGoogle](/fcj-workshop-template/images/5-Workshop/5.4-Configure-authentication/sign-inGoogle.jpg)
 
 Kiểm tra tiếp `App integration > App client > Hosted UI` để đảm bảo:
 - Provider **Google** đã được bật cho App Client đang dùng.
 - **Allowed callback URLs** và **Allowed sign-out URLs** khớp với VITE_COGNITO_REDIRECT_SIGN_IN / VITE_COGNITO_REDIRECT_SIGN_OUT ở Frontend.
-![Ảnh sign-inGoogle](../../../images/5-Workshop/5.4-Configure-authentication/sign-inGoogle1.jpg)
+![Ảnh sign-inGoogle](/fcj-workshop-template/images/5-Workshop/5.4-Configure-authentication/sign-inGoogle1.jpg)
 ---
 
 ## Bước 4: Kiểm tra Cognito User Groups
@@ -119,7 +119,7 @@ Event Management Platform dùng **Cognito Group Admins** để phân biệt vai 
 
 Mở `Amazon Cognito > User pools > Groups`, kiểm tra group Admins. Người dùng thuộc group này khi đăng nhập sẽ có claim cognito:groups chứa "Admins" — áp dụng cho cả user đăng nhập bằng email lẫn Google.
 
-![UserPoolAdmin](../../../images/5-Workshop/5.4-Configure-authentication/UserPoolAdmin.jpg)
+![UserPoolAdmin](/fcj-workshop-template/images/5-Workshop/5.4-Configure-authentication/UserPoolAdmin.jpg)
 
 ---
 
@@ -149,7 +149,7 @@ Vai trò (IsAdmin) được đồng bộ vào DynamoDB (bảng EventManagementUs
 3. Mở DevTools (Network tab), kiểm tra các request gọi API có header Authorization: Bearer <idToken> với cả hai loại tài khoản.
 4. Vào Cognito Console, thêm một trong hai user vào group Admins, đăng xuất/đăng nhập lại, gọi GET /profile/me để xác nhận vai trò trả về là Admin.
 
-![Profileme](../../../images/5-Workshop/5.4-Configure-authentication/Profileme.jpg)
+![Profileme](/fcj-workshop-template/images/5-Workshop/5.4-Configure-authentication/Profileme.jpg)
 
 ---
 
