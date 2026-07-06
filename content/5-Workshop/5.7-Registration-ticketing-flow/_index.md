@@ -128,8 +128,8 @@ Open DynamoDB → Tables → the Tickets table → Explore table items, and chec
 
 Next, open DynamoDB → Tables → the Events table, and check that the event's registered count has increased correctly to match the number of successful ticket registrations, and that it reaches the maximum slot count at the point when the UI shows "Registration slots full".
 
-![FullFE](../../images/5-Workshop/5.7-Registration-ticketing-flow/FullSlotFE.jpg)
 
+![Full slot frontend](/fcj-workshop-template/images/5-Workshop/5.7-Registration-ticketing-flow/FullSlotFE.jpg)
 ![FullAWS](/fcj-workshop-template/images/5-Workshop/5.7-Registration-ticketing-flow/FullSlot.jpg)
 
 ---
